@@ -24,9 +24,14 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Fundamentos de Estadistica:
-      - Estadistica y Probabilidad: fundamentos-estadistica-probabilidad.md
-      - Estadistica Multivariada: estadistica-multivariada-y-probabilidad.md
+  - Fundamentos de Estadística:
+      - Introducción: estadistica/index.md
+      - Estadística y Probabilidad: estadistica/fundamentos-estadistica-probabilidad.md
+      - Estadística Multivariada: estadistica/estadistica-multivariada-y-probabilidad.md
+  - Ingles:
+      - Introducción: ingles/index.md
+      - Gramática: ingles/gramatica.md
+      - Vocabulario: ingles/vocabulario.md
 
 markdown_extensions:
   - admonition

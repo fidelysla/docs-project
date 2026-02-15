@@ -1,9 +1,11 @@
 # Estadística Descriptiva Avanzada y Axiomas de Probabilidad
 
 ## Introducción
+
 Este documento profundiza en la estadística descriptiva introduciendo medidas de forma (curtosis) y herramientas para el análisis bivariado (relación entre dos variables). Posteriormente, se formaliza la teoría de la probabilidad mediante su definición axiomática, leyes de conjuntos y principios de conteo. Finalmente, se presenta una sección práctica con ejercicios resueltos que integran conceptos teóricos y manipulación de datos con R.
 
 ## Objetivos de aprendizaje
+
 Al finalizar este capítulo, el estudiante será capaz de:
 
 - Interpretar la curtosis y la forma de la distribución de los datos.
@@ -17,6 +19,7 @@ Al finalizar este capítulo, el estudiante será capaz de:
 ## Tema 1: Medidas de Forma y Análisis Multivariado
 
 ### 1.1. Curtosis (Cuarto Momento)
+
 La curtosis mide el grado de apuntamiento o achatamiento de una distribución en comparación con la distribución normal. Analiza la concentración de datos en la zona central y en las colas.
 
 **Fórmula:**
@@ -25,16 +28,18 @@ $$ C = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^4}{n\sigma^4} - 3 $$
 
 **Clasificación de distribuciones:**
 
-*   **Mesocúrtica ($C=0$):** Distribución normal estándar.
+- **Mesocúrtica ($C=0$):** Distribución normal estándar.
 
-*   **Leptocúrtica ($C>0$):** Más puntiaguda que la normal. Los datos están muy concentrados en la media y las colas son "pesadas" (mayor probabilidad de valores extremos).
+- **Leptocúrtica ($C>0$):** Más puntiaguda que la normal. Los datos están muy concentrados en la media y las colas son "pesadas" (mayor probabilidad de valores extremos).
 
-*   **Platicúrtica ($C<0$):** Más achatada que la normal. Los datos están más dispersos y las colas son "ligeras".
+- **Platicúrtica ($C<0$):** Más achatada que la normal. Los datos están más dispersos y las colas son "ligeras".
 
 ### 1.2. Análisis Bivariado: Covarianza y Correlación
+
 Mientras el análisis univariado describe una sola variable, el multivariado estudia la relación entre ellas (ej. relación entre edad y salarios).
 
 #### Covarianza ($Cov$)
+
 Mide la dirección de la relación lineal entre dos variables $X$ e $Y$.
 
 **Definición Teórica:**
@@ -42,9 +47,9 @@ $$ Cov(X, Y) = E[(X - \bar{X})(Y - \bar{Y})] $$
 
 **Propiedades:**
 
-1.  **Conmutatividad:** $Cov(X, Y) = Cov(Y, X)$.
+1. **Conmutatividad:** $Cov(X, Y) = Cov(Y, X)$.
 
-2.  **Relación con la Varianza:** La covarianza de una variable consigo misma es su varianza.
+2. **Relación con la Varianza:** La covarianza de una variable consigo misma es su varianza.
     $$ Cov(X, X) = \sigma^2 $$
 
 **Fórmula de Cálculo:**
@@ -71,15 +76,16 @@ $$ Cov(X,Y) = \frac{\sum xy}{n} - \bar{x}\bar{y} $$
 
 **Interpretación:**
 
-*   $Cov > 0$: Relación positiva (Si $X \uparrow \implies Y \uparrow$).
+- $Cov > 0$: Relación positiva (Si $X \uparrow \implies Y \uparrow$).
 
-*   $Cov < 0$: Relación negativa (Si $X \uparrow \implies Y \downarrow$).
+- $Cov < 0$: Relación negativa (Si $X \uparrow \implies Y \downarrow$).
 
-*   $Cov = 0$: No existe relación lineal.
+- $Cov = 0$: No existe relación lineal.
 
 **Limitación:** El valor depende de las unidades de medida, dificultando la comparación.
 
 #### Coeficiente de Correlación ($r$ o $Corr$)
+
 Es una medida estandarizada (sin unidades) que cuantifica la fuerza y dirección de la relación lineal. Rango: $[-1, 1]$.
 
 $$ Corr(X, Y) = \frac{Cov(X, Y)}{\sigma_x \sigma_y} $$
@@ -93,34 +99,37 @@ $$ Corr(X, Y) = \frac{E(XY) - E(X)E(Y)}{\sqrt{E(X^2) - [E(X)]^2} \sqrt{E(Y^2) - 
 ## Tema 2: Teoría de la Probabilidad
 
 ### 2.1. Leyes de Conjuntos
+
 La probabilidad se fundamenta en la teoría de conjuntos.
 
-*   **Ley Conmutativa:** $A \cup B = B \cup A$  |  $A \cap B = B \cap A$
+- **Ley Conmutativa:** $A \cup B = B \cup A$  |  $A \cap B = B \cap A$
 
-*   **Ley Asociativa:** $A \cup (B \cup C) = (A \cup B) \cup C$
+- **Ley Asociativa:** $A \cup (B \cup C) = (A \cup B) \cup C$
 
-*   **Ley Distributiva:** $(A \cup B) \cap C = (A \cap C) \cup (B \cap C)$
+- **Ley Distributiva:** $(A \cup B) \cap C = (A \cap C) \cup (B \cap C)$
 
 ### 2.2. Definición Axiomática (Kolmogorov)
+
 Una medida de probabilidad $P$ sobre un espacio muestral $\Omega$ debe cumplir tres axiomas:
 
-1.  **No negatividad:** Para cualquier evento $A$, $P(A) \geq 0$.
-2.  **Certidumbre:** La probabilidad del espacio muestral es 1 ($P(\Omega) = 1$).
-3.  **Aditividad:** Si $A_1, A_2, \dots$ son eventos disjuntos ($A_i \cap A_j = \emptyset$), entonces:
+1. **No negatividad:** Para cualquier evento $A$, $P(A) \geq 0$.
+2. **Certidumbre:** La probabilidad del espacio muestral es 1 ($P(\Omega) = 1$).
+3. **Aditividad:** Si $A_1, A_2, \dots$ son eventos disjuntos ($A_i \cap A_j = \emptyset$), entonces:
 
     $$ P(A_1 \cup A_2) = P(A_1) + P(A_2) $$
 
 **Propiedades derivadas:**
 
-*   **Complemento:** $P(A^c) = 1 - P(A)$.
+- **Complemento:** $P(A^c) = 1 - P(A)$.
 
-*   **Evento Imposible:** $P(\emptyset) = 0$.
+- **Evento Imposible:** $P(\emptyset) = 0$.
 
-*   **Subconjunto:** Si $A \subset B \implies P(A) \leq P(B)$.
+- **Subconjunto:** Si $A \subset B \implies P(A) \leq P(B)$.
 
-*   **Regla de la Suma (General):** $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+- **Regla de la Suma (General):** $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 
 ### 2.3. Definición Clásica y Conteo
+
 Para espacios muestrales finitos y equiprobables:
 
 $$ P(A) = \frac{\#A}{\#\Omega} = \frac{\text{Casos Favorables}}{\text{Casos Totales}} $$
@@ -133,11 +142,11 @@ $$ \#\Omega = n_1 \times n_2 \times \dots \times n_k $$
 
 **Ejemplos de cálculo de espacio muestral:**
 
-*   **Monedas:** Lanzar $k$ monedas genera $2^k$ resultados. (Ej. 5 monedas $\rightarrow 32$ resultados).
+- **Monedas:** Lanzar $k$ monedas genera $2^k$ resultados. (Ej. 5 monedas $\rightarrow 32$ resultados).
 
-*   **Dados:** Lanzar 2 dados genera $6 \times 6 = 36$ resultados.
+- **Dados:** Lanzar 2 dados genera $6 \times 6 = 36$ resultados.
 
-*   **Combinado:** 5 dados y 10 monedas.
+- **Combinado:** 5 dados y 10 monedas.
 
     $$ \#\Omega = 6^5 \times 2^{10} = 7,962,624 \text{ resultados posibles} $$
 
@@ -153,37 +162,37 @@ Esta sección compila problemas teóricos de valor esperado y varianza, junto co
 ### 3.1. Problemas de Valor Esperado y Varianza
 
 #### Ejercicio 1: Propiedad de Linealidad en Dados
+
 **Pregunta:** Si se lanza un dado y el valor obtenido se multiplica por 2, ¿cuál es la nueva esperanza matemática?
 
-*   **Dado normal ($d$):** $E(d) = 3.5$.
+- **Dado normal ($d$):** $E(d) = 3.5$.
 
-*   **Dado modificado ($X = 2d$):** Valores posibles $\{2, 4, 6, 8, 10, 12\}$.
+- **Dado modificado ($X = 2d$):** Valores posibles $\{2, 4, 6, 8, 10, 12\}$.
 
-*   **Cálculo directo:**
+- **Cálculo directo:**
 
     $$ E(X) = \frac{2+4+6+8+10+12}{6} = \frac{42}{6} = 7 $$
 
-*   **Conclusión:** Se cumple que $E(aX) = aE(X) \rightarrow 2(3.5) = 7$.
+- **Conclusión:** Se cumple que $E(aX) = aE(X) \rightarrow 2(3.5) = 7$.
 
 #### Ejercicio 2: Varianza del Dado Modificado
 
 **Pregunta:** Calcule la varianza para el dado del ejercicio anterior ($X = 2d$).
 
-*   Sabemos que $E(X) = 7$.
-*   Calculamos el segundo momento $E(X^2)$:
+- Sabemos que $E(X) = 7$.
+- Calculamos el segundo momento $E(X^2)$:
     $$ E(X^2) = \frac{2^2+4^2+6^2+8^2+10^2+12^2}{6} = \frac{364}{6} \approx 60.67 $$
-*   Varianza:
+- Varianza:
     $$ V(X) = E(X^2) - [E(X)]^2 \approx 60.67 - 49 = 11.67 $$
-*   *Nota Teórica:* También se cumple que $V(aX) = a^2V(X)$. Para un dado normal, $V(d) \approx 2.91$. Entonces $V(2d) = 2^2(2.91) = 4(2.91) \approx 11.64$.
-
+- *Nota Teórica:* También se cumple que $V(aX) = a^2V(X)$. Para un dado normal, $V(d) \approx 2.91$. Entonces $V(2d) = 2^2(2.91) = 4(2.91) \approx 11.64$.
 
 #### Ejercicio 3: Moneda Sesgada
 
 **Pregunta:** Sea una moneda donde Cara ($C=0$) tiene $P(C)=3/4$ y Sello ($S=1$) tiene $P(S)=1/4$. Calcule $E(X)$ y $V(X)$.
 
-1.  **Esperanza:**
+1. **Esperanza:**
     $$ E(X) = 0(\tfrac{3}{4}) + 1(\tfrac{1}{4}) = 0.25 $$
-2.  **Varianza:**
+2. **Varianza:**
 
     $$ E(X^2) = 0^2(\tfrac{3}{4}) + 1^2(\tfrac{1}{4}) = 0.25 $$
 
@@ -203,9 +212,9 @@ $$ E(X) = \frac{2 + 6 + 12 + 10 + 6}{9} = \frac{36}{9} = 4 $$
 
 Para incluir una variable categórica en un modelo de regresión:
 
-*   Si la variable tiene $m$ categorías, se deben construir **$m-1$ variables dummy** (binarias).
+- Si la variable tiene $m$ categorías, se deben construir **$m-1$ variables dummy** (binarias).
 
-*   Esto evita la multicolinealidad perfecta (trampa de la variable dummy).
+- Esto evita la multicolinealidad perfecta (trampa de la variable dummy).
 
 #### Interpretación de Coeficiente de Variación (CV)
 
@@ -216,12 +225,14 @@ Si en un conjunto de datos (ej. distrito Surquillo) se tiene un CV mayor al prom
 !!! warning "Requisito de Datos"
     Los siguientes códigos asumen la existencia de un DataFrame llamado `bdata`.
 
-1.  **Promedio agrupado:** Calcular la media de `superficie` por `Año`.
-    ```r
-    aggregate(bdata$superficie, by = list(bdata$Año), FUN = mean)
-    ```
+1. **Promedio agrupado:** Calcular la media de `superficie` por `Año`.
 
-2.  **Filtrado y cálculo específico:** Promedio de precios en "Miraflores" año 2010.
+```r
+    aggregate(bdata$superficie, by = list(bdata$Año), FUN = mean)
+```
+
+2. **Filtrado y cálculo específico:** Promedio de precios en "Miraflores" año 2010.
+
     ```r
     # Filtra filas donde Distrito es Miraflores Y Año es 2010
     # Selecciona la columna 5 (Precio)
@@ -231,6 +242,7 @@ Si en un conjunto de datos (ej. distrito Surquillo) se tiene un CV mayor al prom
 ---
 
 ## Observaciones y notas
+
 - **Corrección en Ejercicio 3:** El apunte original sugería un resultado de 0.29 para la varianza de la moneda. El cálculo correcto es $0.1875$ (o $3/16$).
 - **Variables categóricas:** Aunque en bases de datos pueden aparecer como `string` o `byte`, para el análisis cuantitativo deben transformarse a variables numéricas o dummies.
 - **Interpretación de Asimetría:** Si la asimetría es positiva (ej. 3.316) y la curtosis es alta (ej. 27), la distribución es asimétrica a la derecha y leptocúrtica (picos altos, colas pesadas).

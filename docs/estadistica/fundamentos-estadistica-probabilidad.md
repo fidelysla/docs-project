@@ -144,11 +144,16 @@ Estudian la relación lineal entre dos variables $X$ e $Y$.
 2.  **Correlación ($Corr(X,Y)$):**
 
     Estandariza la covarianza.
+
     $$ Corr(X,Y) = \frac{Cov(X,Y)}{\sigma_X \sigma_Y} $$
 
-    *   Rango: $[-1, 1]$.
-    
-    *   Mide la fuerza y dirección de la relación lineal. $0$ indica ausencia de relación lineal.
+      - Mide la fuerza y dirección de la relación lineal. $0$ indica ausencia de relación lineal.
+      - Rango: $[-1, 1]$.
+      - **-1:** Relación lineal negativa perfecta.
+      - **Entre -1 y 0:** Relación lineal negativa.
+      - **0:** No existe relación lineal ($X$ e $Y$ son incorrelacionados).
+      - **Entre 0 y 1:** Relación lineal positiva.
+      - **+1:** Relación lineal positiva perfecta.
 
 ---
 
