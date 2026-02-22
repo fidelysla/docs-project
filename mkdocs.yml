@@ -38,6 +38,9 @@ nav:
       - Gramática: ingles/gramatica.md
       - Vocabulario: ingles/vocabulario.md
       - Básico 8: ingles/basic08.md
+  - POO (Programación Orientada a Objetos):
+      - Introducción: poo/index.md
+      - Clases y Objetos: poo/clases-objetos-y-metodos.md
 
 markdown_extensions:
   - admonition
