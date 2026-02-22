@@ -32,6 +32,7 @@ nav:
       - Introducción: ingles/index.md
       - Gramática: ingles/gramatica.md
       - Vocabulario: ingles/vocabulario.md
+      - Básico 8: ingles/basic08.md
 
 markdown_extensions:
   - admonition

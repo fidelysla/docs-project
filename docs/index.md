@@ -11,8 +11,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Temas
 
-[**Estadística**](estadistica/)
+[**Estadística**](estadistica/index.md)
 
 <!-- [**Matemáticas**]() -->
 
-[**Inglés**](ingles/)
+[**Inglés**](ingles/index.md)
