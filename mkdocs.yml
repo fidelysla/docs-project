@@ -28,6 +28,11 @@ nav:
       - Introducción: estadistica/index.md
       - Estadística y Probabilidad: estadistica/fundamentos-estadistica-probabilidad.md
       - Estadística Multivariada: estadistica/estadistica-multivariada-y-probabilidad.md
+      - Técnicas de Conteo: estadistica/tecnicas-de-conteo-y-probabilidad.md
+      - Practica de Probabilidad: estadistica/probabilidad-condicional-y-practica.md
+      - Probabilidad Condicional Independiencia y Teorema de Bayes: estadistica/probabilidad-condicional-bayes-variables-aleatorias.md
+      - Variables Aleatorias Discretas y Distribuciones de Probabilidad : estadistica/variables-aleatorias-discretas.md
+      - Ejercicios de Repaso: estadistica/ejercicios-distribucion-binomial-y-esperanza.md
   - Ingles:
       - Introducción: ingles/index.md
       - Gramática: ingles/gramatica.md
