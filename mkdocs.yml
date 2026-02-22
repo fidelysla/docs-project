@@ -9,15 +9,20 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - content.code.select
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/weather-night
         name: Modo oscuro
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: indigo
+      accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Modo claro
@@ -38,9 +43,19 @@ nav:
       - Gramática: ingles/gramatica.md
       - Vocabulario: ingles/vocabulario.md
       - Básico 8: ingles/basic08.md
-  - POO (Programación Orientada a Objetos):
-      - Introducción: poo/index.md
-      - Clases y Objetos: poo/clases-objetos-y-metodos.md
+  - Java:
+      - Introducción: java/index.md
+      - Java SE:
+          - Indice: java/java-se/index.md
+          - Vectores: java/java-se/vectores.md
+          - Matrices: java/java-se/matrices.md
+          - Modelo de Capas: java/java-se/modelo-de-capas.md
+      - POO:
+          - Indice: java/poo/index.md
+          - Clases y Objetos: java/poo/clases-objetos-y-metodos.md
+          - Abstracción, Herencia, Polimorfismo y Encapsulamiento: java/poo/abstraccion-herencia-polimorfismo-encapsulamiento.md
+          - Collections Framework: java/poo/collections.md
+
 
 markdown_extensions:
   - admonition
@@ -48,6 +63,11 @@ markdown_extensions:
       generic: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight:        # ← Activa el resaltado mejorado
+      anchor_linenums: true    #   Permite enlazar líneas específicas
+      line_spans: __span       #   Necesario para resaltar líneas
+      pygments_lang_class: true
+  - pymdownx.inlinehilite      # ← Resaltado en código inline `como este`
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
