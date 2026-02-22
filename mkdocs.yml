@@ -55,6 +55,11 @@ nav:
           - Clases y Objetos: java/poo/clases-objetos-y-metodos.md
           - Abstracción, Herencia, Polimorfismo y Encapsulamiento: java/poo/abstraccion-herencia-polimorfismo-encapsulamiento.md
           - Collections Framework: java/poo/collections.md
+          - Excepciones: java/poo/excepciones.md
+          - Relaciones entre Clases: java/poo/relaciones-entre-clases.md
+          - ORM y JPA (CRUD): java/poo/orm-jpa-crud.md
+          - Hilos (Threads): java/poo/hilos.md
+          - Utils y Generics: java/poo/utils-generics.md
 
 
 markdown_extensions:

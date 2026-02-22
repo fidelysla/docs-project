@@ -13,11 +13,11 @@
     *   [Clases, objetos y métodos](poo/clases-objetos-y-metodos.md)
     *   [Abstracción, Herencia, Polimorfismo y Encapsulamiento](poo/abstraccion-herencia-polimorfismo-encapsulamiento.md)
     *   [Collections Framework](poo/collections.md)
-    *   Excepciones
-    *   Relaciones entre clases
-    *   ORM y JPA (CRUD)
-    *   Hilos (Threads)
-    *   Utils y Generics
+    *   [Excepciones](poo/excepciones.md)
+    *   [Relaciones entre clases](poo/relaciones-entre-clases.md)
+    *   [ORM y JPA (CRUD)](poo/orm-jpa-crud.md)
+    *   [Hilos (Threads)](poo/hilos.md)
+    *   [Utils y Generics](poo/utils-generics.md)
 
 *   **3. WEB Java/Jakarta EE**
     *   Protocolo HTTP

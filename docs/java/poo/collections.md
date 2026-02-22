@@ -25,6 +25,7 @@ import java.util.Collections;
 
 public class ListExample {
     public static void main(String[] args) {
+
         // BUENA PRÁCTICA: Programar contra la Interfaz (List), no la implementación (ArrayList)
         // Esto permite cambiar la implementación luego sin romper el código cliente.
         List<String> orderIds = new ArrayList<>();
@@ -73,6 +74,7 @@ import java.util.Set;
 
 public class SetExample {
     public static void main(String[] args) {
+
         // HashSet es ideal para eliminar duplicados o verificar pertenencia rápidamente
         Set<String> activeUsers = new HashSet<>();
 
@@ -108,6 +110,7 @@ import java.util.Map;
 
 public class MapExample {
     public static void main(String[] args) {
+
         // Map<KeyType, ValueType>
         Map<String, String> appConfig = new HashMap<>();
 
@@ -154,6 +157,7 @@ import java.util.stream.Collectors;
 public class StreamExample {
 
     public static void main(String[] args) {
+        
         List<Product> products = getProductList(); // Supongamos que devuelve una lista llena
 
         List<String> expensiveProductNames = products.stream()
@@ -181,7 +185,3 @@ Un profesional debe saber qué colección elegir según la operación más frecu
 | **Map**  | `HashMap`      | $O(1)$       | $O(1)$          | $O(1)$              | Diccionario estándar        |
 
 _\* $O(1)$ amortizado (a veces debe redimensionar el array interno)._
-
----
-
-_Fin de la Parte 3. Por favor, indica cuándo proceder con la Parte 4: Excepciones._
