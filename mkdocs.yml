@@ -9,7 +9,6 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
-    - content.code.select
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

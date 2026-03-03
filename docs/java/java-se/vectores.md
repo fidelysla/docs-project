@@ -9,10 +9,11 @@ En el ecosistema Java, lo que comúnmente llamamos "Vectores" en la lógica de p
 Un Array es una estructura de datos que almacena una colección de elementos del **mismo tipo** en ubicaciones de memoria contiguas.
 
 **Características Principales:**
-*   **Homogeneidad:** Todos los elementos deben ser del mismo tipo de dato (o subtipos).
-*   **Tamaño Fijo:** Una vez creado, su longitud (`length`) no puede cambiar.
-*   **Indexación:** Se accede a los elementos mediante un índice numérico basado en **cero** (0).
-*   **Es un Objeto:** En Java, los arrays son objetos, por lo que se almacenan en el *Heap* de la memoria.
+
+- **Homogeneidad:** Todos los elementos deben ser del mismo tipo de dato (o subtipos).
+- **Tamaño Fijo:** Una vez creado, su longitud (`length`) no puede cambiar.
+- **Indexación:** Se accede a los elementos mediante un índice numérico basado en **cero** (0).
+- **Es un Objeto:** En Java, los arrays son objetos, por lo que se almacenan en el _Heap_ de la memoria.
 
 ---
 
@@ -28,10 +29,10 @@ Para usar un arreglo en Java, debemos seguir tres pasos (que pueden hacerse en u
 
 ```java
 // Sintaxis recomendada (tipo[] nombre)
-int[] numeros; 
+int[] numeros;
 
 // Sintaxis estilo C/C++ (válida pero menos común en Java)
-int numerosC[]; 
+int numerosC[];
 ```
 
 ### Creación en Memoria
@@ -45,10 +46,10 @@ public class EjemploCreacion {
 
         // 2. Declaración, Instanciación e Inicialización (Línea única)
         String[] nombres = {"Ana", "Pedro", "Luis"};
-        
+
         // 3. Sintaxis alternativa con 'new' explícito
         double[] salarios = new double[]{1000.50, 2500.00, 3200.75};
-        
+
         System.out.println("Tamaño del array edades: " + edades.length);
     }
 }
@@ -75,7 +76,7 @@ public class ManipulacionArray {
 
         // Modificación
         puntajes[1] = 95; // Cambiamos 90 por 95
-        
+
         // Error común: ArrayIndexOutOfBoundsException
         // puntajes[3] = 100; // Esto lanzará una excepción porque el índice 3 no existe (0, 1, 2)
     }
@@ -89,6 +90,7 @@ public class ManipulacionArray {
 Un profesional debe conocer las diferentes formas de recorrer un array según la necesidad (lectura vs. modificación).
 
 ### A. Bucle `for` tradicional
+
 Ideal cuando necesitamos el **índice** (por ejemplo, para modificar el array o acceder a posiciones específicas).
 
 ```java
@@ -102,6 +104,7 @@ for (int i = 0; i < numeros.length; i++) {
 ```
 
 ### B. Bucle `for-each` (Enhanced for)
+
 Introducido en Java 5. Es más limpio y legible. Ideal para **solo lectura**. No tenemos acceso directo al índice.
 
 ```java
@@ -126,7 +129,7 @@ public class UtilidadesArrays {
         int[] vector = {5, 1, 4, 2, 3};
 
         // 1. Ordenar (Sort) - Algoritmo Dual-Pivot Quicksort (O(n log n))
-        Arrays.sort(vector); 
+        Arrays.sort(vector);
         // vector ahora es {1, 2, 3, 4, 5}
 
         // 2. Imprimir contenido legible (toString)
@@ -141,7 +144,7 @@ public class UtilidadesArrays {
         int[] vacio = new int[5];
         Arrays.fill(vacio, 9); // Llena todo con 9
         System.out.println("Relleno: " + Arrays.toString(vacio));
-        
+
         // 5. Copia de Arrays (Redimensionamiento simulado)
         // Crea un nuevo array más grande y copia los datos del anterior
         int[] vectorExpandido = Arrays.copyOf(vector, 10);
@@ -156,8 +159,8 @@ public class UtilidadesArrays {
 
 Entender esto distingue a un principiante de un experto.
 
-*   **Variable de Referencia:** `int[] a` se guarda en el **Stack**. Contiene la dirección de memoria.
-*   **Objeto Array:** Los datos reales `{1, 2, 3}` se guardan en el **Heap**.
+- **Variable de Referencia:** `int[] a` se guarda en el **Stack**. Contiene la dirección de memoria.
+- **Objeto Array:** Los datos reales `{1, 2, 3}` se guardan en el **Heap**.
 
 **Consecuencia:** Si copias un array con `int[] b = a;`, no estás creando un nuevo array, solo estás copiando la referencia. Si modificas `b`, se modifica `a`.
 
