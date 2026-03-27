@@ -37,6 +37,9 @@ nav:
       - Probabilidad Condicional Independiencia y Teorema de Bayes: estadistica/probabilidad-condicional-bayes-variables-aleatorias.md
       - Variables Aleatorias Discretas y Distribuciones de Probabilidad : estadistica/variables-aleatorias-discretas.md
       - Ejercicios de Repaso: estadistica/ejercicios-distribucion-binomial-y-esperanza.md
+  - Estadística Aplicada:
+      - Temas: estadistica-aplicada/index.md
+      - Distribucion Normal: estadistica-aplicada/distribucion-normal.md
   - Ingles:
       - Introducción: ingles/index.md
       - Gramática: ingles/gramatica.md
