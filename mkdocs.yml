@@ -40,6 +40,9 @@ nav:
   - Estadística Aplicada:
       - Temas: estadistica-aplicada/index.md
       - Distribucion Normal: estadistica-aplicada/distribucion-normal.md
+  - Matematica Financiera:
+      - Temas: mate-financiera/index.md
+      - Conceptos Basicos: mate-financiera/conceptos-basicos.md
   - Ingles:
       - Introducción: ingles/index.md
       - Gramática: ingles/gramatica.md
