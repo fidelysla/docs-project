@@ -1,5 +1,7 @@
 # Temas
 
+[Interés Simple](interes-simple.md)
+
 ## Recursos
 
 [Aliaga, C. (2011). Manual de Matemática Financiera: Problemas y Casos. Lima, Perú ECITEC S.A.](https://repositorio.up.edu.pe/item/ab5117c2-5c42-469d-aec2-50dec5314f81)

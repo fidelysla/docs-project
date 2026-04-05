@@ -43,6 +43,10 @@ nav:
   - Matematica Financiera:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md
+      - Interés Simple: mate-financiera/interes-simple.md
+  - Economia:
+      - Temas: economia/index.md
+      - Los 12 Principios de la Economía: economia/principios.md
   - Ingles:
       - Introducción: ingles/index.md
       - Gramática: ingles/gramatica.md

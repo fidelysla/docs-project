@@ -13,7 +13,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 [**Estadística**](estadistica/index.md)
 
-<!-- [**Matemáticas**]() -->
+[**Matemática Financiera**](mate-financiera/index.md)
+
+[**Economía 2**](economia/index.md)
 
 [**Inglés**](ingles/index.md)
 
