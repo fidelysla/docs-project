@@ -40,6 +40,7 @@ nav:
   - Estadística Aplicada:
       - Temas: estadistica-aplicada/index.md
       - Distribucion Normal: estadistica-aplicada/distribucion-normal.md
+      - Distribucion Continuas: estadistica-aplicada/distribuciones-continuas.md
   - Matematica Financiera:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md

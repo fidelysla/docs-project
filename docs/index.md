@@ -13,6 +13,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 [**Estadística**](estadistica/index.md)
 
+[**Estadística Aplicada**](estadistica-aplicada/index.md)
+
 [**Matemática Financiera**](mate-financiera/index.md)
 
 [**Economía 2**](economia/index.md)
