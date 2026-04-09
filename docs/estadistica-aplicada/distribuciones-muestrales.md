@@ -148,6 +148,7 @@ Para llevar a la práctica estos conceptos, Microsoft Excel ofrece funciones mod
 ```
 =DISTR.NORM.N(x; media; desv_estandar; VERDADERO)
 ```
+
 _Devuelve la probabilidad acumulada $P(X \le x)$. Para la Normal estándar, usa `DISTR.NORM.ESTAND.N(z; VERDADERO)`._
 
 - **Calcular el valor dado una probabilidad (Inverso):**
@@ -155,25 +156,31 @@ _Devuelve la probabilidad acumulada $P(X \le x)$. Para la Normal estándar, usa 
 ```
 =INV.NORM(probabilidad; media; desv_estandar)
 ```
+
 _Devuelve el valor $x$ correspondiente al área acumulada (ej. los cuantiles del Ejemplo 1). Para estandarizada usa `INV.NORM.ESTAND(probabilidad)`._
 
 #### 2. Distribución t de Student (T)
 
 - **Calcular probabilidad dado un valor t (Directo):**
+
 ```
 =DISTR.T.N(x; grados_de_libertad;1)
 ```
+
 _Devuelve el área acumulada a la izquierda._ _(También existen `DISTR.T.CD` para cola derecha y `DISTR.T.2C` para dos colas)._
 
 - **Calcular el valor t dado una probabilidad (Inverso):**
+
 ```
 =INV.T(probabilidad; grados_de_libertad)
 ```
-  _Devuelve el valor $t$ (cola izquierda)._
+
+_Devuelve el valor $t$ (cola izquierda)._
 
 #### 3. Distribución Chi-Cuadrada ($\chi^2$)
 
 - **Calcular probabilidad dado un valor Chi-cuadrada (Directo):**
+
 ```
 =DISTR.CHICUAD.N(x; grados_de_libertad;1) (Acumulada a la izquierda)
 ```
@@ -199,7 +206,9 @@ _Devuelve el área acumulada a la izquierda._ _(También existen `DISTR.T.CD` pa
 ## 7. Distribución de la Diferencia de Proporciones
 
 Sean dos poblaciones independientes, $X$ e $Y$, cuyas proporciones poblacionales respecto a una característica son $\pi_1$ y $\pi_2$, respectivamente. Si se toman muestras independientes en cada una de estas poblaciones, de tamaños $n_1$ y $n_2$, se pueden obtener las dos proporciones muestrales siguientes:
+
 $$p_1 = \frac{k_1}{n_1} \quad \text{y} \quad p_2 = \frac{k_2}{n_2}$$
+
 _(Donde $k_1$ y $k_2$ representan el número de éxitos en cada muestra)._
 
 Si los tamaños de muestras son grandes (es decir, $n_1 + n_2 > 30$), se puede aproximar la **Distribución Muestral de la Diferencia de Proporciones** a una distribución normal. La estadística $Z$ estandarizada estará dada por:
@@ -242,6 +251,7 @@ $$F = \frac{s_1^2}{s_2^2} \sim F_{(n_1-1, \, n_2-1)}$$
 ## 9. Distribución de la Diferencia de Medias
 
 Sean $X_1$ y $X_2$ dos poblaciones independientes que tienen distribuciones normales. Se toman muestras independientes de tamaños $n_1$ y $n_2$ obteniéndose las medias muestrales:
+
 $$\bar{x}_1 = \frac{\sum x_{1i}}{n_1} \quad \text{y} \quad \bar{x}_2 = \frac{\sum x_{2i}}{n_2}$$
 
 Dependiendo del conocimiento sobre las varianzas poblacionales ($\sigma_1^2$ y $\sigma_2^2$), se presentan tres casos:
@@ -249,7 +259,9 @@ Dependiendo del conocimiento sobre las varianzas poblacionales ($\sigma_1^2$ y $
 ### a) Caso de varianzas $\sigma_1^2$ y $\sigma_2^2$ conocidas
 
 La distribución de la diferencia de medias se ajusta a una **distribución Normal**.
+
 $$Z = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}} \sim N(0,1)$$
+
 Donde: $\mu_{\bar{x}_1-\bar{x}_2} = \mu_1 - \mu_2 \quad$ y $\quad \sigma_{\bar{x}_1-\bar{x}_2} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$
 
 ### b) Caso de varianzas $\sigma_1^2$ y $\sigma_2^2$ desconocidas pero iguales ($\sigma_1^2 = \sigma_2^2$)
@@ -259,6 +271,7 @@ Si las varianzas poblacionales son desconocidas pero se asume que son iguales, s
 $$t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{s_p^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} \sim t_{(n_1+n_2-2)}$$
 
 Donde la varianza conjunta estimada ($s_p^2$) es un promedio ponderado definido por:
+
 $$s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$$
 
 ### c) Caso de varianzas $\sigma_1^2$ y $\sigma_2^2$ desconocidas y diferentes ($\sigma_1^2 \neq \sigma_2^2$)
@@ -268,6 +281,7 @@ En este caso, también se utiliza la **distribución t-Student**, pero no se agr
 $$t = \frac{(\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \sim t_{(G)}$$
 
 Donde los grados de libertad aproximados ($G$) son:
+
 $$G \cong \frac{\left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right)^2}{\frac{\left( \frac{s_1^2}{n_1} \right)^2}{n_1 - 1} + \frac{\left( \frac{s_2^2}{n_2} \right)^2}{n_2 - 1}}$$
 
 ### Ejercicios Propuestos (Diferencia de Medias)
@@ -287,14 +301,25 @@ Además de las funciones vistas en la Parte 1 (Normal, t-Student y Chi-cuadrada)
 #### Distribución F (Fisher)
 
 - **Calcular probabilidad dado un valor F (Cola Derecha - Frecuente en ratios de varianzas):**
-  `=DISTR.F.CD(x; grados_libertad1; grados_libertad2)`
-  _Devuelve la probabilidad de la cola derecha $P(F > x)$. Es muy útil ya que usualmente analizamos si la razón de varianzas es "demasiado grande" (como en el Ejemplo 1)._
+
+`=DISTR.F.CD(x; grados_libertad1; grados_libertad2)`
+
+_Devuelve la probabilidad de la cola derecha $P(F > x)$. Es muy útil ya que usualmente analizamos si la razón de varianzas es "demasiado grande" (como en el Ejemplo 1)._
+
 - **Calcular probabilidad dado un valor F (Acumulada Izquierda):**
-  `=DISTR.F.N(x; grados_libertad1; grados_libertad2; VERDADERO)`
-  _Devuelve la probabilidad acumulada desde menos infinito hasta el valor $x$: $P(F \le x)$._
+  
+`=DISTR.F.N(x; grados_libertad1; grados_libertad2; VERDADERO)`
+
+_Devuelve la probabilidad acumulada desde menos infinito hasta el valor $x$: $P(F \le x)$._
+
 - **Calcular el valor F dado una probabilidad (Inverso - Cola Derecha):**
-  `=INV.F.CD(probabilidad; grados_libertad1; grados_libertad2)`
-  _Devuelve el valor crítico $F$ dado el área en la cola superior._
+
+`=INV.F.CD(probabilidad; grados_libertad1; grados_libertad2)`
+
+_Devuelve el valor crítico $F$ dado el área en la cola superior._
+
 - **Calcular el valor F dado una probabilidad (Inverso - Cola Izquierda):**
-  `=INV.F(probabilidad; grados_libertad1; grados_libertad2)`
-  _Devuelve el valor crítico $F$ de la función de distribución acumulada inversa._
+
+`=INV.F(probabilidad; grados_libertad1; grados_libertad2)`
+
+_Devuelve el valor crítico $F$ de la función de distribución acumulada inversa._
