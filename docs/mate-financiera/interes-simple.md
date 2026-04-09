@@ -1,4 +1,3 @@
-
 # Interés Simple
 
 - Interpretar y analizar porcentajes en el contexto financiero.
@@ -37,7 +36,7 @@ $$I = P \cdot r \cdot t$$
 
 ---
 
-## 3. Fórmulas Derivadas (Despejes)
+## 3. Fórmulas Derivadas del Interes Simple (Despejes)
 
 A partir de la ecuación principal ($I = P \cdot r \cdot t$), usando álgebra básica, podemos despejar cualquier variable si conocemos las otras tres. Esto es vital para resolver distintos tipos de problemas financieros.
 
@@ -70,11 +69,11 @@ El **Monto** o **Valor Futuro ($VF$)** representa la cantidad total de dinero qu
 1. Fórmula conceptual: $VF = P + I$
 
 2. Sustituyendo el valor de $I$ ($P \cdot r \cdot t$):
-   
+
 $$VF = P + (P \cdot r \cdot t)$$
 
 3. **Fórmula Simplificada (Factorizando $P$):**
-   
+
 $$VF = P \cdot (1 + r \cdot t)$$
 
 > **Ejemplo Práctico (Tasa Constante):**
@@ -105,25 +104,27 @@ $$VP = \frac{VF}{1 + r \cdot t}$$
 >
 > $$VP = \frac{1150}{1 + 0.05 \cdot 3} = \frac{1150}{1.15} = \$1,000$$
 
-### **Definición de Tasa Nominal Constante:**
+## 6. Monto y Valor Actual con Tasa Nominal Constante
+
+### 6.1 **Definición de Tasa Nominal Constante:**
 
 Es aquella tasa de interés que permanece fija o inalterable durante todo el período que dura la operación financiera. Al no haber variaciones, se puede aplicar una única fórmula directa para todo el horizonte de tiempo.
 
-**Monto (VF)**: La fórmula es la ya vista: 
+**Monto (VF)**:
 
 $$VF=P⋅(1+r⋅t)$$
 
-**Valor Actual (VP)**: La fórmula es la ya vista: 
+**Valor Actual (VP)**:
 
-$$VP=VF/1+r⋅t$$
+$$VP = \frac{VF}{1+r⋅t}$$
 
 ---
 
-## 6. Operaciones con Tasa Nominal Variable
+## 7. Monto y Valor Actual con Tasa Nominal Variable
 
 En el mundo real, las tasas de interés pueden cambiar a lo largo de la vida de una operación. A esto se le llama **Tasa Nominal Variable**.
 
-### 6.1 Cálculo del Monto ($VF$) con tasas variables
+### 7.1 Cálculo del Monto ($VF$) con tasa nominal variable
 
 Como el capital inicial en el interés simple nunca cambia, calculamos el interés de cada período por separado y luego los sumamos al capital original.
 
@@ -140,7 +141,7 @@ Donde cada porción de interés se calcula como: $I_n = P \cdot r_n \cdot t_n$
 > - **Interés Tramo 2:** $I_2 = 1000 \cdot 0.06 \cdot 3 = \$180$
 > - **Valor Futuro Total:** $VF = 1000 + 100 + 180 = \$1,280$
 
-### 6.2 Cálculo del Valor Actual ($VP$) con tasas variables
+### 7.2 Cálculo del Valor Actual ($VP$) con tasa nominal variable
 
 Para traer un flujo futuro al presente cuando hubo múltiples tasas, lo más práctico en el régimen de interés simple es calcular una **Tasa de Interés Promedio Ponderada ($r_{prom}$)** por el tiempo que estuvo vigente cada una.
 
@@ -158,8 +159,8 @@ $$VP = \frac{VF}{1 + r_{prom} \cdot t_{total}}$$
 
 | Concepto                        | Descripción                                        | Fórmula Principal                                   |
 | :------------------------------ | :------------------------------------------------- | :-------------------------------------------------- |
-| **Interés Simple ($I$)**        | Ganancia calculada solo sobre el capital inicial.  | $$I = P \cdot r \cdot t$$                           |
-| **Monto / Valor Futuro ($VF$)** | Capital inicial + Intereses generados.             | $$VF = P(1 + r \cdot t)$$                           |
-| **Valor Actual ($VP$ / $VA$)**  | Capital necesario hoy para lograr un monto futuro. | $$VP = \frac{VF}{1 + r \cdot t}$$                   |
+| **Interés Simple ($I$)**        | Ganancia calculada solo sobre el capital inicial.  | $I = P \cdot r \cdot t$                             |
+| **Monto / Valor Futuro ($VF$)** | Capital inicial + Intereses generados.             | $VF = P(1 + r \cdot t)$                             |
+| **Valor Actual ($VP$ / $VA$)**  | Capital necesario hoy para lograr un monto futuro. | $VP = \frac{VF}{1 + r \cdot t}$                     |
 | **Tasa Constante**              | Una sola tasa rige toda la operación.              | Aplicación directa de fórmulas.                     |
 | **Tasa Variable**               | Múltiples tasas en distintos períodos.             | Suma de intereses individuales o uso de $r_{prom}$. |

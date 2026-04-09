@@ -35,12 +35,13 @@ nav:
       - Técnicas de Conteo: estadistica/tecnicas-de-conteo-y-probabilidad.md
       - Practica de Probabilidad: estadistica/probabilidad-condicional-y-practica.md
       - Probabilidad Condicional Independiencia y Teorema de Bayes: estadistica/probabilidad-condicional-bayes-variables-aleatorias.md
-      - Variables Aleatorias Discretas y Distribuciones de Probabilidad : estadistica/variables-aleatorias-discretas.md
+      - Variables Aleatorias Discretas y Distribuciones de Probabilidad: estadistica/variables-aleatorias-discretas.md
       - Ejercicios de Repaso: estadistica/ejercicios-distribucion-binomial-y-esperanza.md
   - Estadística Aplicada:
       - Temas: estadistica-aplicada/index.md
-      - Distribucion Normal: estadistica-aplicada/distribucion-normal.md
-      - Distribucion Continuas: estadistica-aplicada/distribuciones-continuas.md
+      # - Distribucion Normal: estadistica-aplicada/distribucion-normal.md
+      - Principales Distribuciones Continuas: estadistica-aplicada/distribuciones-continuas.md
+      - Distribuciones Muestrales: estadistica-aplicada/distribuciones-muestrales.md
   - Matematica Financiera:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md
@@ -48,28 +49,29 @@ nav:
   - Economia:
       - Temas: economia/index.md
       - Los 12 Principios de la Economía: economia/principios.md
-  - Ingles:
-      - Introducción: ingles/index.md
-      - Gramática: ingles/gramatica.md
-      - Vocabulario: ingles/vocabulario.md
-      - Básico 8: ingles/basic08.md
-  - Java:
-      - Introducción: java/index.md
-      - Java SE:
-          - Indice: java/java-se/index.md
-          - Vectores: java/java-se/vectores.md
-          - Matrices: java/java-se/matrices.md
-          - Modelo de Capas: java/java-se/modelo-de-capas.md
-      - POO:
-          - Indice: java/poo/index.md
-          - Clases y Objetos: java/poo/clases-objetos-y-metodos.md
-          - Abstracción, Herencia, Polimorfismo y Encapsulamiento: java/poo/abstraccion-herencia-polimorfismo-encapsulamiento.md
-          - Collections Framework: java/poo/collections.md
-          - Excepciones: java/poo/excepciones.md
-          - Relaciones entre Clases: java/poo/relaciones-entre-clases.md
-          - ORM y JPA (CRUD): java/poo/orm-jpa-crud.md
-          - Hilos (Threads): java/poo/hilos.md
-          - Utils y Generics: java/poo/utils-generics.md
+
+#   - Ingles:
+#       - Introducción: ingles/index.md
+#       - Gramática: ingles/gramatica.md
+#       - Vocabulario: ingles/vocabulario.md
+#       - Básico 8: ingles/basic08.md
+#   - Java:
+#       - Introducción: java/index.md
+#       - Java SE:
+#           - Indice: java/java-se/index.md
+#           - Vectores: java/java-se/vectores.md
+#           - Matrices: java/java-se/matrices.md
+#           - Modelo de Capas: java/java-se/modelo-de-capas.md
+#       - POO:
+#           - Indice: java/poo/index.md
+#           - Clases y Objetos: java/poo/clases-objetos-y-metodos.md
+#           - Abstracción, Herencia, Polimorfismo y Encapsulamiento: java/poo/abstraccion-herencia-polimorfismo-encapsulamiento.md
+#           - Collections Framework: java/poo/collections.md
+#           - Excepciones: java/poo/excepciones.md
+#           - Relaciones entre Clases: java/poo/relaciones-entre-clases.md
+#           - ORM y JPA (CRUD): java/poo/orm-jpa-crud.md
+#           - Hilos (Threads): java/poo/hilos.md
+#           - Utils y Generics: java/poo/utils-generics.md
 
 
 markdown_extensions:

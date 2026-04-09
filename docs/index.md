@@ -1,13 +1,16 @@
 # Mis Documentos de Estudio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- **Activate virtual Python Environment**
+```
+source .venv/Scripts/activate
+```
+
+- **Start the live-reloading docs server.**
+```
+mkdocs serve --livereload
+```
 
 ## Temas
 
@@ -19,6 +22,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 [**Economía 2**](economia/index.md)
 
-[**Inglés**](ingles/index.md)
+<!-- [**Inglés**](ingles/index.md) -->
 
-[**JAVA**](java/index.md)
+<!-- [**JAVA**](java/index.md) -->
