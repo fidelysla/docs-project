@@ -1,4 +1,4 @@
-# Estadística Aplicada: Distribuciones Muestrales (Parte 1)
+# Distribuciones Muestrales
 
 ## 1. Muestra Aleatoria
 
