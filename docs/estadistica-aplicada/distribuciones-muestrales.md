@@ -19,6 +19,7 @@ Se dice que $X_1, X_2, \dots, X_n$ es una **muestra aleatoria de tamaño $n$**, 
 ## 2. Definición de Distribución Muestral
 
 Una **estadística $T$** es una función de los valores observados de una muestra de tamaño $n$; es decir:
+
 $$T = t(x_1, x_2, \dots, x_n)$$
 
 Para una población de $N$ elementos, se pueden obtener $N^n$ (con reemplazo) o variaciones/combinaciones dependiendo de si el muestreo es sin reemplazo. La **Distribución Muestral o de Muestreo** es la distribución de probabilidad de la estadística $T$, que tiene tantos valores diferentes como muestras posibles de tamaño $n$ se puedan extraer.
@@ -58,10 +59,13 @@ Sea $X$ una población con distribución normal con media $\mu$ y varianza $\sig
 ### a) Caso de varianza $\sigma^2$ conocida
 
 Si $X$ tiene varianza poblacional conocida, la estadística $Z$ estandarizada es:
+
 $$Z = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$$
 
 **Factor de corrección para población finita:**
+
 Si el tamaño de la población $N$ es conocido, la varianza de la media se ajusta y la distribución está dada por:
+
 $$Z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}} \sqrt{\frac{N-n}{N-1}}} \sim N(0,1)$$
 
 > **Nota aclaratoria:** El término $\sqrt{\frac{N-n}{N-1}}$ se conoce como _Factor de Corrección por Población Finita (FCPF)_. Suele omitirse si la muestra $n$ es menor al 5% del tamaño de la población $N$, ya que su efecto se vuelve insignificante. El denominador total se llama _Error Estándar de la media muestral_.
@@ -69,9 +73,11 @@ $$Z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}} \sqrt{\frac{N-n}{N-1}}} \sim 
 ### b) Caso de varianza $\sigma^2$ desconocida
 
 Cuando la varianza poblacional es desconocida y la muestra es moderada, usamos la varianza muestral $s^2$. La distribución cambia a una **t de Student** con $n-1$ grados de libertad:
+
 $$T = \frac{\bar{x} - \mu}{s/\sqrt{n}} \sim t_{(n-1)}$$
 
 Si la población $N$ es finita y conocida:
+
 $$T = \frac{\bar{x} - \mu}{\sqrt{\frac{s^2}{n} \left(\frac{N-n}{N-1}\right)}} \sim t_{(n-1)}$$
 
 Para una variable $T \sim t_{(n)}$ con $n$ grados de libertad, se tiene:
@@ -96,9 +102,11 @@ b) Si se selecciona al azar una muestra de 30 exámenes correspondientes al parc
 Sea $\pi$ la proporción poblacional de elementos que satisfacen cierta característica y $p = \frac{k}{n}$ la proporción en la muestra.
 
 Cuando el tamaño de muestra es grande ($n > 30$), la distribución muestral de la proporción $p$ se aproxima a una distribución normal:
+
 $$Z = \frac{p - \pi}{\sigma_p} = \frac{p - \pi}{\sqrt{\frac{\pi(1-\pi)}{n}}} \sim N(0,1)$$
 
 **Factor de corrección para población finita ($N$ conocido):**
+
 $$Z = \frac{p - \pi}{\sqrt{\frac{\pi(1-\pi)}{n} \left(\frac{N-n}{N-1}\right)}} \sim N(0,1)$$
 
 ### Ejercicio Propuesto (Proporción Muestral)
@@ -112,6 +120,7 @@ $$Z = \frac{p - \pi}{\sqrt{\frac{\pi(1-\pi)}{n} \left(\frac{N-n}{N-1}\right)}} \
 Sea $X$ una población con distribución normal. Si se toma una muestra aleatoria y se calcula la varianza muestral $s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$, la distribución muestral se basa en la familia **Chi-cuadrada ($\chi^2$)**.
 
 La estadística $V$ definida a continuación tiene una distribución Chi-cuadrada con $n-1$ grados de libertad:
+
 $$V = \frac{(n-1)s^2}{\sigma^2} \sim \chi^2_{n-1}$$
 
 > **Nota aclaratoria:** Si una variable $V$ tiene una distribución Chi-cuadrado genérica con $n$ grados de libertad, se cumple que $E(V) = n$ y $V(V) = 2n$. Para nuestra estadística muestral de varianza, al tener $(n-1)$ grados de libertad, su esperanza matemática sería $n-1$ y su varianza $2(n-1)$.
@@ -135,29 +144,55 @@ Para llevar a la práctica estos conceptos, Microsoft Excel ofrece funciones mod
 #### 1. Distribución Normal (Z)
 
 - **Calcular probabilidad dado un valor (Directo):**
-  `=DISTR.NORM.N(x; media; desv_estandar; VERDADERO)`
-  _Devuelve la probabilidad acumulada $P(X \le x)$. Para la Normal estándar, usa `DISTR.NORM.ESTAND.N(z; VERDADERO)`._
+
+```
+=DISTR.NORM.N(x; media; desv_estandar; VERDADERO)
+```
+_Devuelve la probabilidad acumulada $P(X \le x)$. Para la Normal estándar, usa `DISTR.NORM.ESTAND.N(z; VERDADERO)`._
+
 - **Calcular el valor dado una probabilidad (Inverso):**
-  `=INV.NORM(probabilidad; media; desv_estandar)`
-  _Devuelve el valor $x$ correspondiente al área acumulada (ej. los cuantiles del Ejemplo 1). Para estandarizada usa `INV.NORM.ESTAND(probabilidad)`._
+
+```
+=INV.NORM(probabilidad; media; desv_estandar)
+```
+_Devuelve el valor $x$ correspondiente al área acumulada (ej. los cuantiles del Ejemplo 1). Para estandarizada usa `INV.NORM.ESTAND(probabilidad)`._
 
 #### 2. Distribución t de Student (T)
 
 - **Calcular probabilidad dado un valor t (Directo):**
-  `=DISTR.T.N(x; grados_de_libertad; VERDADERO)`
-  _Devuelve el área acumulada a la izquierda._ _(También existen `DISTR.T.CD` para cola derecha y `DISTR.T.2C` para dos colas)._
+```
+=DISTR.T.N(x; grados_de_libertad;1)
+```
+_Devuelve el área acumulada a la izquierda._ _(También existen `DISTR.T.CD` para cola derecha y `DISTR.T.2C` para dos colas)._
+
 - **Calcular el valor t dado una probabilidad (Inverso):**
-  `=INV.T(probabilidad; grados_de_libertad)`
+```
+=INV.T(probabilidad; grados_de_libertad)
+```
   _Devuelve el valor $t$ (cola izquierda)._
 
 #### 3. Distribución Chi-Cuadrada ($\chi^2$)
 
 - **Calcular probabilidad dado un valor Chi-cuadrada (Directo):**
-  `=DISTR.CHICUAD.N(x; grados_de_libertad; VERDADERO)` (Acumulada a la izquierda)
-  `=DISTR.CHICUAD.CD(x; grados_de_libertad)` (Acumulada a la derecha, muy útil en pruebas de varianza donde se busca $P(\chi^2 > \text{valor})$).
+```
+=DISTR.CHICUAD.N(x; grados_de_libertad;1) (Acumulada a la izquierda)
+```
+
+**(Acumulada a la derecha, muy útil en pruebas de varianza donde se busca $P(\chi^2 > \text{valor})$)**.
+
+```excel
+=DISTR.CHICUAD.CD(x; grados_de_libertad)
+```
+
 - **Calcular el valor crítico dado una probabilidad (Inverso):**
-  `=INV.CHICUAD(probabilidad; grados_de_libertad)` (Basado en cola izquierda).
-  `=INV.CHICUAD.CD(probabilidad; grados_de_libertad)` (Basado en cola derecha).
+
+```excel
+=INV.CHICUAD(probabilidad; grados_de_libertad) (Basado en cola izquierda).
+```
+
+```excel
+=INV.CHICUAD.CD(probabilidad; grados_de_libertad) (Basado en cola derecha).
+```
 
 ---
 
