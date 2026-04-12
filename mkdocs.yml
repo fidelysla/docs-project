@@ -46,6 +46,7 @@ nav:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md
       - Interés Simple: mate-financiera/interes-simple.md
+      - Ecuaciones de Valor y Descuento Simple: mate-financiera/ecuaciones-valor-descuento-simple.md
   - Economia:
       - Temas: economia/index.md
       - Los 12 Principios de la Economía: economia/principios.md

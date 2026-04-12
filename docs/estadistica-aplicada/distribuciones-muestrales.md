@@ -6,11 +6,17 @@ Sea $X$ una variable aleatoria (población) que tiene una función de probabilid
 
 Se dice que $X_1, X_2, \dots, X_n$ es una **muestra aleatoria de tamaño $n$**, tomada de la población $X$, si se cumple que:
 
-1. $X_1, X_2, \dots, X_n$ es una sucesión de variables aleatorias independientes.
-2. Cada variable $X_i$ tiene:
-   - La misma función de probabilidad de $X$; es decir: $f(x)$
-   - La misma esperanza matemática de $X$; es decir: $E(X_i) = \mu \quad \forall X_i$
-   - La misma varianza de $X$; es decir: $V(X_i) = \sigma^2 \quad \forall X_i$
+1) $X_1, X_2, \dots, X_n$ es una sucesión de variables aleatorias independientes.
+
+2) Cada variable aleatoria $X_i$ tiene:
+
+- A. La misma función de probabilidad de $X$; es decir: $f(x)$
+
+- B. La misma esperanza matemática de $X$; es decir: $E(X_i) = \mu \quad ; \quad \forall X_i$
+
+- C. La misma varianza de $X$; es decir: $V(X_i) = \sigma^2 \quad \forall X_i$
+
+
 
 > **Nota aclaratoria:** En estadística, a esto se le conoce como variables _independientes e idénticamente distribuidas (i.i.d.)_. Esto garantiza que cada elemento seleccionado en la muestra es una representación fiel de la población y que la elección de un elemento no afecta la probabilidad de elegir cualquier otro.
 
@@ -43,9 +49,23 @@ Al aumentar el tamaño de la muestra, la distribución de las estadísticas mues
 
 Ejemplos de estadísticas muestrales comunes:
 
-- **Media Muestral:** $\quad T_1 = \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$
-- **Varianza Muestral:** $\quad T_2 = s^2 = \frac{\sum_{i=1}^{n} x_i^2 - n(\bar{x})^2}{n - 1}$
-- **Proporción Muestral:** $\quad T_3 = p = \frac{\sum_{i=1}^{n} x_i}{n} \quad ; \text{donde } x_i = \begin{cases} 1 & \text{caso favorable} \\ 0 & \text{caso contrario} \end{cases}$
+- **Media Muestral:**
+
+$$
+\quad T_1 = \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}
+$$
+
+- **Varianza Muestral:** 
+
+$$
+\quad T_2 = s^2 = \frac{\sum_{i=1}^{n} x_i^2 - n(\bar{x})^2}{n - 1}
+$$
+
+- **Proporción Muestral:** 
+
+$$
+\quad T_3 = p = \frac{\sum_{i=1}^{n} x_i}{n} \quad ; \text{donde } x_i = \begin{cases} 1 & \text{caso favorable} \\ 0 & \text{caso contrario} \end{cases}
+$$
 
 ---
 

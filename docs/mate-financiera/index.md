@@ -1,6 +1,8 @@
 # Temas
 
-[Interés Simple](interes-simple.md)
+1. [Interés Simple](interes-simple.md)
+2. [Ecuaciones de Valor Equivalente y Descuento Simple](ecuaciones-valor-descuento-simple.md)
+
 
 ## Recursos
 
