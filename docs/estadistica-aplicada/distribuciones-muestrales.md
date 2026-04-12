@@ -110,8 +110,9 @@ Para una variable $T \sim t_{(n)}$ con $n$ grados de libertad, se tiene:
 **Ejemplo Introductorio:** Suponga que se tiene una población cuyos elementos son: $\{ 1, 2, 3, 4 \}$. Se extrae una muestra de tamaño $n = 2$. Demuestre que el valor esperado de la media muestral es igual a la media poblacional, y verifique su varianza.
 
 **Ejemplo 1:** De acuerdo a los registros de calificaciones de la universidad, los resultados de los exámenes del curso de marketing siguen una distribución normal con una media de 78 y una varianza de 36.
-a) ¿Qué calificación mínima debe obtener un alumno para ser considerado dentro del quinto superior del curso?
-b) Si se selecciona al azar una muestra de 30 exámenes correspondientes al parcial de Marketing del ciclo pasado, ¿Cuál debe ser la calificación promedio mínima en dicha muestra, para que sea considerada dentro del quinto superior de los promedios de todas las muestras posibles del mismo tamaño?
+
+- a) ¿Qué calificación mínima debe obtener un alumno para ser considerado dentro del quinto superior del curso?
+- b) Si se selecciona al azar una muestra de 30 exámenes correspondientes al parcial de Marketing del ciclo pasado, ¿Cuál debe ser la calificación promedio mínima en dicha muestra, para que sea considerada dentro del quinto superior de los promedios de todas las muestras posibles del mismo tamaño?
 
 **Ejemplo 2:** El gerente de producción de una fábrica de productos marinos envasados asegura que el producto presentado en el nuevo envase tiene un peso promedio de 100 gramos. La gerencia antes de lanzar el producto al mercado, exige al jefe del área de control de calidad que someta a una prueba de pesos y medidas a dicho producto. El jefe del Área de CC, selecciona al azar 10 envases y obtienen los siguientes resultados: 97; 102; 103; 92; 103; 96; 98; 97; 99; y 95. ¿Cuál será la probabilidad de que el peso promedio de la muestra supere los 102 gramos?
 
