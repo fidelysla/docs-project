@@ -76,6 +76,35 @@ Sea $X$ una población con distribución normal con media $\mu$ y varianza $\sig
 - **Valor esperado:** $E(\bar{x}) = \mu$
 - **Varianza:** $V(\bar{x}) = \frac{\sigma^2}{n}$
 
+$$
+\operatorname{Var}(X) = E\left(X^2\right) - \left[E(X)\right]^2
+$$
+
+$$
+E(X) = \sum_{i=1}^{n} x_i \, p(x_i)
+$$
+
+
+$$
+\operatorname{Var}(X) = \boxed{\sum_{i=1}^{n} x_i^2 \, p(x_i) - \left[ E(X) \right]^2}
+$$
+
+---
+
+$$
+s^2 = \frac{1}{n} \sum_{i=1}^{n} x_i^2 - \bar{x}^2
+$$
+
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+
+$$
+s^2 = \frac{1}{n} \sum_{i=1}^{n} x_i^2 - \left( \frac{1}{n} \sum_{i=1}^{n} x_i \right)^2
+$$
+
+---
+
 ### a) Caso de varianza $\sigma^2$ conocida
 
 Si $X$ tiene varianza poblacional conocida, la estadística $Z$ estandarizada es:
