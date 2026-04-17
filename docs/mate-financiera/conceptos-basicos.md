@@ -54,16 +54,6 @@ La tasa de interés (*i*) es el costo de alquilar dinero ajeno. Se resume en tre
 - **Efectiva**: Es el rendimiento o costo real de la operación; sí incluye la capitalización (interés sobre interés).
 - **Real**: Es lo que realmente ganas o pagas tras descontar la inflación (poder adquisitivo).
 
-## Aplicaciones de las Matemáticas Financieras
-
-- **Amortización**: Es el plan para matar una deuda. Te dice qué parte de tu cuota mensual va a pagar el préstamo (capital) y qué parte se queda el banco (intereses). Tabla de Amortización
-
-- **VPN (Valor Presente Neto)**: Trae las ganancias futuras al valor de hoy y le resta la inversión. Si sobra dinero (es positivo), el negocio va.
-
-- **TIR (Tasa Interna de Retorno)**: Es la tasa de rentabilidad propia del proyecto. Si la TIR es más alta que lo que te cobra el banco por prestarte, el proyecto es rentable.
-
-- **Ahorro e Inversión**: Te permite proyectar cuánto tendrás en el futuro si ahorras una cantidad fija cada mes (anualidades), considerando que esos ahorros también generan intereses.
-
 ## Plazo Comprendido entre dos Fechas
 
 El tiempo (*n* o *t*) es el multiplicador que define cuánto crece el dinero. En finanzas, existen dos formas de medirlo:
@@ -91,3 +81,89 @@ Ejemplo: Del 1 de marzo al 15 de abril.
 
 - Comercial: 30 (marzo) + 15 (abril) - 1 = 44 días.
 - Exacto: 31 (marzo) + 15 (abril) - 1 = 45 días.
+
+---
+
+## Aplicaciones de las Matemáticas Financieras
+
+- **Amortización**: Es el plan para matar una deuda. Te dice qué parte de tu cuota mensual va a pagar el préstamo (capital) y qué parte se queda el banco (intereses). Tabla de Amortización
+
+- **VPN (Valor Presente Neto)**: Trae las ganancias futuras al valor de hoy y le resta la inversión. Si sobra dinero (es positivo), el negocio va.
+
+- **TIR (Tasa Interna de Retorno)**: Es la tasa de rentabilidad propia del proyecto. Si la TIR es más alta que lo que te cobra el banco por prestarte, el proyecto es rentable.
+
+- **Ahorro e Inversión**: Te permite proyectar cuánto tendrás en el futuro si ahorras una cantidad fija cada mes (anualidades), considerando que esos ahorros también generan intereses.
+
+---
+
+## Amortización
+
+La **amortización** es el proceso mediante el cual una deuda se extingue gradualmente a través de pagos periódicos que incluyen:
+
+* **Intereses** sobre el saldo pendiente
+* **Capital** (reducción de la deuda)
+
+Cada pago se denomina **cuota**, y su estructura depende del sistema (francés, alemán, americano, etc.).
+
+## VPN (Valor Presente Neto)
+
+El **Valor Presente Neto (VPN)** es la diferencia entre:
+
+* El valor presente de los flujos de caja futuros
+* La inversión inicial
+
+> “¿Vale la pena esta inversión hoy?”
+
+Se expresa como:
+
+$$
+VPN = \sum_{t=1}^{n} \frac{F_t}{(1+i)^t} - I_0
+$$
+
+Donde:
+
+* $F_t$: flujo en el periodo (t)
+* $i$: tasa de descuento
+* $I_0$: inversión inicial
+
+**Criterio:**
+
+* $VPN > 0$: proyecto rentable
+* $VPN = 0$: indiferente
+* $VPN < 0$: no rentable
+
+---
+
+## TIR (Tasa Interna de Retorno)
+
+La **TIR** es la tasa de descuento que hace que el VPN sea igual a cero:
+
+> “¿Qué porcentaje me está rindiendo esta inversión?”
+
+$$
+0 = \sum_{t=1}^{n} \frac{F_t}{(1+\text{TIR})^t} - I_0
+$$
+
+**Criterio:**
+
+* Si $\text{TIR} > i$ → aceptar
+* Si $\text{TIR} < i$ → rechazar
+
+---
+
+## Ahorro e Inversión
+
+* **Ahorro**: parte del ingreso no consumida, destinada a preservar valor.
+* **Inversión**: utilización del ahorro con el objetivo de generar rentabilidad futura, asumiendo riesgo.
+
+---
+
+| Concepto     | Idea clave                 |
+| ------------ | -------------------------- |
+| Amortización | Pagar deuda poco a poco    |
+| VPN          | ¿Gano o pierdo dinero hoy? |
+| TIR          | ¿Qué % me rinde?           |
+| Ahorro       | Guardar dinero             |
+| Inversión    | Hacer crecer el dinero     |
+
+> El VPN mide la rentabilidad absoluta de un proyecto, mientras que la TIR mide su rentabilidad relativa; ambos permiten evaluar decisiones de inversión en el tiempo.

@@ -127,7 +127,7 @@ El descuento simple ocurre cuando decides pagar (o cobrar) una deuda **antes** d
 
 **Componentes Clave:**
 
-- **Valor Nominal ($VN$ o Valor Futuro):** Es el monto total de la deuda impreso en el documento (lo que se pagaría si se espera hasta la fecha de vencimiento).
+- **Valor Nominal ($VN$ o Valor Futuro):** Es el monto total de la deuda impreso en el documento (lo que se pagaría si se espera hasta la fecha de vencimiento). Esto ocurre cuando existe un documento financiero con valor (VF) fijado al vencimiento.
 - **Valor Actual ($VA$ o Valor Líquido):** Es el dinero que se recibe o se paga HOY, una vez que ya se ha restado el descuento.
 - **Descuento ($D$):** Es la cantidad de dinero exacta que se rebaja de la deuda.
 

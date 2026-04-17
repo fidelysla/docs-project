@@ -272,7 +272,7 @@
 **28.** ¿Por qué no se pueden sumar directamente cantidades de dinero que se encuentran en fechas distintas?
 
 - [ ] a) Porque las monedas pueden ser diferentes.
-- [ ] b) Porque el dinero cambia de valor con el tiempo y no es comparable sin trasladarlo a una misma fecha.
+- [x] b) Porque el dinero cambia de valor con el tiempo y no es comparable sin trasladarlo a una misma fecha.
 - [ ] c) Porque las tasas de interés siempre son distintas en cada período.
 - [ ] d) Porque las regulaciones bancarias lo prohíben.
 
@@ -281,7 +281,7 @@
 **29.** Cuando una cantidad de dinero se encuentra en una fecha **anterior** a la Fecha Focal, se debe:
 
 - [ ] a) Actualizar o descontar el valor (traerlo al pasado).
-- [ ] b) Capitalizar o llevar el valor hacia adelante (al futuro).
+- [x] b) Capitalizar o llevar el valor hacia adelante (al futuro).
 - [ ] c) Dejar el valor igual, sin ningún ajuste.
 - [ ] d) Dividirlo entre la tasa de interés aplicable.
 
@@ -290,7 +290,7 @@
 **30.** La ecuación clave del Principio de Equivalencia establece que en la Fecha Focal:
 
 - [ ] a) La suma de las deudas debe ser siempre mayor que la suma de los pagos.
-- [ ] b) La suma del valor de las deudas debe ser igual a la suma del valor de los pagos.
+- [x] b) La suma del valor de las deudas debe ser igual a la suma del valor de los pagos.
 - [ ] c) Los pagos deben realizarse antes del vencimiento de las deudas.
 - [ ] d) Solo se considera el valor nominal de las deudas, sin ajuste por tiempo.
 
@@ -300,7 +300,7 @@
 
 - [ ] a) La fecha de vencimiento ocurre después del punto focal y se descuentan intereses.
 - [ ] b) La operación se realiza en el mismo día que el punto focal.
-- [ ] c) La fecha de vencimiento ocurre antes del punto focal y se están generando intereses (capitalización).
+- [x] c) La fecha de vencimiento ocurre antes del punto focal y se están generando intereses (capitalización).
 - [ ] d) La tasa de interés aplicada es positiva y no nula.
 
 ---
@@ -309,7 +309,7 @@
 
 - [ ] a) Plantear directamente la igualdad matemática entre deudas y pagos.
 - [ ] b) Calcular la tasa de interés promedio ponderada del período.
-- [ ] c) Dibujar una línea de tiempo con las deudas y pagos identificados.
+- [x] c) Dibujar una línea de tiempo con las deudas y pagos identificados.
 - [ ] d) Convertir todas las tasas a tasas mensuales antes de operar.
 
 ---
@@ -321,7 +321,7 @@
 **33.** El **Descuento Simple** ocurre cuando:
 
 - [ ] a) Se cobra un interés adicional por pagar una deuda después de su fecha de vencimiento.
-- [ ] b) Se decide pagar o cobrar una deuda antes de su fecha de vencimiento, rebajando los intereses no devengados.
+- [x] b) Se decide pagar o cobrar una deuda antes de su fecha de vencimiento, rebajando los intereses no devengados.
 - [ ] c) El banco reduce voluntariamente la tasa de interés de un préstamo vigente.
 - [ ] d) El deudor negocia una quita del capital principal de la deuda.
 
@@ -330,7 +330,7 @@
 **34.** El **Valor Nominal ($VN$)** en el contexto del Descuento Simple es:
 
 - [ ] a) El dinero que se recibe hoy una vez aplicado el descuento.
-- [ ] b) El monto total de la deuda que se pagaría en la fecha de vencimiento original.
+- [x] b) El monto total de la deuda que se pagaría en la fecha de vencimiento original.
 - [ ] c) La diferencia entre el Valor Actual y el descuento aplicado.
 - [ ] d) El capital inicial invertido antes de generar intereses.
 
@@ -340,7 +340,7 @@
 
 - [ ] a) $VA = VN + D$
 - [ ] b) $VA = VN \times D$
-- [ ] c) $VA = VN - D$
+- [x] c) $VA = VN - D$
 - [ ] d) $D = VA + VN$
 
 ---
@@ -348,7 +348,7 @@
 **36.** En el **Descuento Racional (Verdadero)**, los intereses se calculan sobre:
 
 - [ ] a) El Valor Nominal ($VN$), es decir, el monto total de la deuda futura.
-- [ ] b) El Valor Actual ($VA$), es decir, el dinero real que se recibe o paga en ese momento.
+- [x] b) El Valor Actual ($VA$), es decir, el dinero real que se recibe o paga en ese momento.
 - [ ] c) El promedio entre el Valor Nominal y el Valor Actual.
 - [ ] d) El capital inicial de la operación original.
 
@@ -358,7 +358,7 @@
 
 - [ ] a) El Valor Actual ($VA$).
 - [ ] b) El promedio ponderado de la deuda.
-- [ ] c) El Valor Nominal ($VN$), lo que genera un descuento mayor.
+- [x] c) El Valor Nominal ($VN$), lo que genera un descuento mayor.
 - [ ] d) El interés acumulado de períodos anteriores.
 
 ---
@@ -367,7 +367,7 @@
 
 - [ ] a) $VA = \frac{VN}{1 + r \cdot t}$
 - [ ] b) $VA = VN \cdot (1 + r \cdot t)$
-- [ ] c) $VA = VN \cdot (1 - r \cdot t)$
+- [x] c) $VA = VN \cdot (1 - r \cdot t)$
 - [ ] d) $VA = VN - r + t$
 
 ---
@@ -376,7 +376,7 @@
 
 - [ ] a) El Descuento Racional, porque se calcula sobre el VA.
 - [ ] b) Ambos producen el mismo Valor Actual en todos los casos.
-- [ ] c) El Descuento Comercial, porque se calcula sobre el VN (mayor base de cálculo).
+- [x] c) El Descuento Comercial, porque se calcula sobre el VN (mayor base de cálculo).
 - [ ] d) Depende exclusivamente del plazo de la operación.
 
 ---
@@ -389,7 +389,7 @@
 
 - [ ] a) Calcula la tasa de rentabilidad propia de un proyecto de inversión.
 - [ ] b) Distribuye el pago de una deuda en cuotas periódicas de capital e interés.
-- [ ] c) Trae las ganancias futuras al valor de hoy y les resta la inversión inicial; si es positivo, el proyecto es viable.
+- [x] c) Trae las ganancias futuras al valor de hoy y les resta la inversión inicial; si es positivo, el proyecto es viable.
 - [ ] d) Mide el impacto de la inflación sobre el rendimiento real de una inversión.
 
 ---

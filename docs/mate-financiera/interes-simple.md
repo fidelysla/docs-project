@@ -7,6 +7,8 @@
 
 ---
 
+![Interes Simple y Compuesto](/assets/images/mate-financiera/interes-simple-interes-compuesto.jpg)
+
 ## 1. Conceptos Básicos del Interés Simple
 
 El **Interés Simple** es la ganancia o costo que genera un capital prestado o invertido, el cual se calcula **únicamente sobre el capital inicial** (también llamado principal) durante todo el período que dura la transacción.
