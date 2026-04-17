@@ -1,8 +1,6 @@
-Aquí tienes el documento en formato Markdown, estructurado y redactado para explicar detalladamente los conceptos de la presentación, incluyendo notas aclaratorias para facilitar su comprensión legal y práctica.
+# Ley General de Sociedades y Sociedades
 
----
-
-# Análisis de la Ley General de Sociedades N° 26887 (L.G.S.) Sem 1
+## SEMANA-1 Análisis de la Ley General de Sociedades N° 26887 (L.G.S.)
 
 Este documento expone los lineamientos principales que rigen a las empresas en el Perú bajo la **Ley General de Sociedades (Ley N° 26887)**. Su objetivo principal es formalizar, mejorar y dar a conocer las ventajas y desventajas de los distintos tipos de organizaciones empresariales, permitiendo a los emprendedores e inversionistas tomar decisiones informadas al momento de constituir una empresa.
 
@@ -134,11 +132,7 @@ Significa la disminución de la cifra del capital que originalmente se había as
 
 ---
 
-Aquí tienes el documento en formato Markdown, estructurado y redactado para explicar en detalle las características de la Sociedad Anónima y las reglas generales de constitución y funcionamiento según la Ley General de Sociedades (L.G.S.).
-
----
-
-# Análisis de la Sociedad Anónima y Reglas Generales de Constitución (L.G.S.) Sem 2
+## SEMANA-2 Análisis de la Sociedad Anónima y Reglas Generales de Constitución (L.G.S.)
 
 Este documento profundiza en la figura de la **Sociedad Anónima (S.A.)**, el tipo societario más emblemático en el ámbito empresarial, y detalla las normas transversales que la Ley General de Sociedades (Ley N° 26887) exige para la válida constitución, registro y funcionamiento de las empresas en el Perú.
 
@@ -247,11 +241,7 @@ Es la ubicación legal de la sociedad para efectos de notificaciones y jurisdicc
 
 ---
 
-Aquí tienes el documento estructurado en formato Markdown, diseñado para explicar de manera clara, ordenada y exhaustiva los órganos de gobierno y las distintas formas societarias contempladas en los documentos, incluyendo notas aclaratorias para facilitar su comprensión legal y práctica.
-
----
-
-# Estructura Orgánica y Formas Societarias según la L.G.S. Sem 3
+## SEMANA-3 Estructura Orgánica y Formas Societarias según la L.G.S.
 
 Este documento detalla cómo se organizan y dirigen las empresas por dentro (sus órganos sociales) y cuáles son las características específicas de las diferentes modalidades de sociedades empresariales reconocidas en el Perú.
 

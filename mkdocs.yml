@@ -47,6 +47,7 @@ nav:
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md
       - Interés Simple: mate-financiera/interes-simple.md
       - Ecuaciones de Valor y Descuento Simple: mate-financiera/ecuaciones-valor-descuento-simple.md
+      - Examen 1: mate-financiera/examen-teorico-1.md
   - Economia:
       - Temas: economia/index.md
       - Los 12 Principios de la Economía: economia/principios.md
@@ -89,6 +90,8 @@ markdown_extensions:
       line_spans: __span       #   Necesario para resaltar líneas
       pygments_lang_class: true
   - pymdownx.inlinehilite      # ← Resaltado en código inline `como este`
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

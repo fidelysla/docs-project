@@ -1,6 +1,6 @@
 # **Matemática Financiera**
 
-La **Matemática Financiera** estudia cómo el dinero gana valor con el tiempo. Analiza la relación entre el _capital_, la _tasa_ y el _plazo_ para calcular _intereses_ y facilitar la toma de decisiones de inversión.
+La **Matemática Financiera** estudia el valor del dinero en el tiempo. Analiza la relación entre el _capital_, la _tasa_ y el _plazo_ para calcular _intereses_ y facilitar la toma de decisiones de inversión.
 
 ## Valor del Dinero en el Tiempo (TVM)
 
