@@ -201,7 +201,7 @@
 **21.** Con una **tasa nominal variable**, ¿cómo se calcula el Valor Futuro en Interés Simple?
 
 - [ ] a) Aplicando directamente la fórmula $VF = P(1 + r \cdot t)$ con una sola tasa promedio.
-- [ ] b) Calculando el interés de cada tramo por separado y sumándolos al capital original.
+- [x] b) Calculando el interés de cada tramo por separado y sumándolos al capital original.
 - [ ] c) Multiplicando el capital por la tasa más alta registrada durante el período.
 - [ ] d) Dividiendo el capital entre el número de tasas distintas aplicadas.
 
@@ -210,7 +210,7 @@
 **22.** Para calcular el **Valor Actual con tasa nominal variable**, el método más práctico en Interés Simple consiste en:
 
 - [ ] a) Usar la tasa del último período para descontar todo el flujo.
-- [ ] b) Calcular una tasa de interés promedio ponderada por el tiempo de cada tramo.
+- [x] b) Calcular una tasa de interés promedio ponderada por el tiempo de cada tramo.
 - [ ] c) Sumar todas las tasas y dividirlas entre el número de períodos.
 - [ ] d) Aplicar la tasa nominal anual directamente sin ajuste alguno.
 
@@ -223,7 +223,7 @@
 **23.** El **Tiempo Exacto (Real)** en el cálculo financiero de fechas se caracteriza por:
 
 - [ ] a) Usar meses de 30 días y años de 360 días.
-- [ ] b) Usar los días exactos del calendario (365 o 366 días según el año).
+- [x] b) Usar los días exactos del calendario (365 o 366 días según el año).
 - [ ] c) Simplificar el año a 300 días para facilitar los cálculos.
 - [ ] d) Considerar todos los meses con 28 días.
 
@@ -232,7 +232,7 @@
 **24.** El **Tiempo Ordinario (Comercial)** es el estándar en cálculos comerciales porque:
 
 - [ ] a) Usa los días exactos del calendario y es el más preciso.
-- [ ] b) Simplifica a meses de 30 días y años de 360 días, facilitando las divisiones.
+- [x] b) Simplifica a meses de 30 días y años de 360 días, facilitando las divisiones.
 - [ ] c) Es exigido por la legislación bancaria internacional.
 - [ ] d) Reduce el número de períodos para disminuir el interés a pagar.
 
@@ -243,7 +243,7 @@
 - [ ] a) Se incluye el primer día y se excluye el último.
 - [ ] b) Se excluyen ambos días (primero y último).
 - [ ] c) Se incluyen ambos días (primero y último).
-- [ ] d) Se excluye el primer día y se incluye el último.
+- [x] d) Se excluye el primer día y se incluye el último.
 
 ---
 
@@ -251,7 +251,7 @@
 
 - [ ] a) 45 días
 - [ ] b) 43 días
-- [ ] c) 44 días
+- [x] c) 44 días
 - [ ] d) 46 días
 
 ---
@@ -263,7 +263,7 @@
 **27.** El **Punto Focal (Fecha Focal)** en una ecuación de valor equivalente es:
 
 - [ ] a) La fecha en que se firmó el contrato original de la deuda.
-- [ ] b) Una fecha arbitraria donde se concentran todas las deudas y pagos para compararlos en igualdad de condiciones.
+- [x] b) Una fecha arbitraria donde se concentran todas las deudas y pagos para compararlos en igualdad de condiciones.
 - [ ] c) Siempre la fecha actual del día en que se realiza el cálculo.
 - [ ] d) La fecha de vencimiento del pago más grande de la operación.
 

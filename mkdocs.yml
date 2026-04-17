@@ -28,6 +28,7 @@ theme:
 
 nav:
   - Inicio: index.md
+  - Multimedia: multimedia/index.md
   - Fundamentos de Estadística:
       - Introducción: estadistica/index.md
       - Estadística y Probabilidad: estadistica/fundamentos-estadistica-probabilidad.md
@@ -92,6 +93,7 @@ markdown_extensions:
   - pymdownx.inlinehilite      # ← Resaltado en código inline `como este`
   - pymdownx.tasklist:
       custom_checkbox: true
+  - md_in_html
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
