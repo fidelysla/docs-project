@@ -365,3 +365,119 @@ Sociedades complejas que mezclan dos tipos de socios en una misma empresa:
 - **Naturaleza:** Genera una persona jurídica independiente. El titular no responde con su patrimonio personal por las deudas de la empresa.
 - **Órganos:** El dueño se denomina **Titular**. Puede contratar a un tercero como Gerente, o puede asumir ambos roles, denominándose **Titular-Gerente**.
 - **Capital:** Conformado por aportes de dinero o bienes muebles/inmuebles. Su duración es indeterminada.
+
+---
+
+## SEMANA-4 Ley General de Sociedades (LGS) - Ley N° 26887
+
+La Ley General de Sociedades (LGS) peruana regula las distintas formas jurídicas bajo las cuales un grupo de personas (o en algunos casos, una sola figura jurídica) pueden agruparse para realizar actividades económicas.
+
+A continuación, se detallan las principales formas societarias contempladas en la normativa, sus características, órganos y niveles de responsabilidad.
+
+---
+
+## 1. La Sociedad Anónima (S.A.) y sus variantes
+
+La Sociedad Anónima es una sociedad de capitales, donde la participación de los socios está representada por **acciones**. La LGS contempla subtipos específicos dependiendo del tamaño y la naturaleza de la empresa.
+
+### 1.1 Sociedad Anónima Abierta (S.A.A.)
+
+Diseñada para empresas con capital social masificado que buscan financiamiento público.
+
+- **Número de socios:** Requiere un mínimo de **750 socios**.
+- **Responsabilidad:** Limitada. Los socios solo arriesgan el capital aportado.
+- **Capital Social:** Representado por **acciones**.
+- **Transferencia de acciones:** Es completamente libre y **no puede ser limitada** por ninguna razón.
+- **Supervisión:** Sus acciones deben inscribirse obligatoriamente en el Registro Público del Mercado de Valores. Es la única forma societaria supervisada directamente por el Estado.
+- **Ejemplos:** Alicorp, Interbank, Backus, Luz del Sur.
+
+> **📌 Nota Aclaratoria sobre la Supervisión:** El documento original menciona la "CONASEV" (Comisión Nacional Supervisora de Empresas y Valores). Es importante aclarar que esta institución cambió de nombre en el año 2011 y actualmente se denomina **SMV (Superintendencia del Mercado de Valores)**.
+
+### 1.2 Sociedad Anónima Cerrada (S.A.C.)
+
+Diseñada para empresas con un círculo cerrado de socios, donde prevalece la confianza personal (muy común en empresas familiares).
+
+- **Número de socios:** Mínimo de 2 y un máximo de **20 socios**.
+- **Responsabilidad:** Limitada al aporte efectuado.
+- **Capital Social:** Representado por **acciones**. Estas pueden ser pagadas en moneda (nacional o extranjera) o mediante contribuciones tecnológicas intangibles. El capital debe estar suscrito al 100% y cada acción pagada en al menos un **25%** al momento de la constitución.
+- **Transferencia de acciones:** Restringida. Si un accionista desea vender, debe comunicarlo a la sociedad para solicitar su aprobación (derecho de adquisición preferente de los demás socios).
+- **Mercado de Valores:** Tiene prohibición expresa de inscribir sus acciones en el Registro Público del Mercado de Valores.
+- **Órganos de administración:** Tener un **Directorio es opcional**. Si se decide prescindir de él, sus funciones son asumidas por la Gerencia General.
+- **Duración:** Puede ser determinada o indeterminada.
+- **Ejemplos:** Cadenas de supermercados bajo ciertas razones sociales (como las operadoras de Plaza Vea, Makro, Mass, Vivanda).
+
+---
+
+## 2. Sociedad Comercial de Responsabilidad Limitada (S.R.L.)
+
+Es una alternativa a la S.A.C., también ideal para empresas familiares o de pocos miembros, pero con una naturaleza jurídica ligeramente distinta respecto a su capital.
+
+- **Número de socios:** Mínimo de 2 y un máximo de **20 participacionistas**.
+- **Responsabilidad:** Limitada al aporte efectuado.
+- **Capital Social:** Representado por **participaciones** (no acciones). Al igual que en la S.A.C., cada participación debe estar pagada en al menos un 25%.
+- **Transferencia de participaciones:** Es un proceso formal y más complejo que la venta de acciones. Requiere redactar una minuta, elevarla a escritura pública e inscribirla en los Registros Públicos (SUNARP).
+- **Derecho de preferencia:** Los socios tienen preferencia para adquirir nuevas participaciones si la empresa aumenta su capital, evitando así ver diluido su porcentaje de control.
+- **Órganos:** Junta General de Socios y Gerentes (no existe la figura del Directorio).
+- **Duración:** Determinada o indeterminada.
+- **Ejemplos:** Clínica Cayetano Heredia S.R.L., Corporación Inca Kola Perú S.R.L., Directv Perú S.R.L.
+
+> **📌 Nota Aclaratoria: Acciones vs. Participaciones**
+>
+> - **Acciones (S.A., S.A.A., S.A.C.):** Son "títulos valores". Se transfieren de forma privada y ágil mediante un asiento en la Matrícula de Acciones de la empresa.
+> - **Participaciones (S.R.L., Sociedades Civiles):** No son títulos valores. Representan una porción del capital, pero su transferencia implica modificar el estatuto de la empresa mediante Escritura Pública en la SUNARP.
+
+---
+
+## 3. Sociedades Personales y Mixtas (Actualmente en desuso)
+
+Estas formas societarias se caracterizan por el alto riesgo que asumen los socios y son poco utilizadas en la actualidad empresarial.
+
+### 3.1 Sociedad Colectiva
+
+- **Número de socios:** Mínimo de 2, sin límite máximo.
+- **Razón Social:** Debe incluir el nombre de todos, de algunos o de un solo socio.
+- **Responsabilidad:** **Solidaria e ilimitada**.
+- **Capital Social:** Representado por participaciones.
+- **Administración:** Corresponde separada e individualmente a cada socio, lo que puede generar desorden administrativo.
+- **Toma de decisiones:** Requiere **unanimidad** para decisiones importantes (prórroga, modificación del pacto, transferencias). Un solo socio puede bloquear a toda la empresa.
+- **Duración:** Plazo fijo (ej. de 6 meses a 2 años).
+- **Ejemplos históricos:** Peluquerías, quioscos o pequeños bazares (antes de la popularización de las E.I.R.L. o S.A.C.).
+
+> **📌 Nota Aclaratoria sobre la Responsabilidad Solidaria e Ilimitada:**
+> Significa que, si la empresa contrae deudas y quiebra, los acreedores pueden cobrar el 100% de la deuda embargando los bienes personales (casas, autos, cuentas bancarias) de cualquiera de los socios ("solidaria") y sin límite ("ilimitada"). Esta es la razón principal por la que está en desuso.
+
+### 3.2 Sociedad en Comandita
+
+Se caracteriza por tener dos tipos distintos de socios conviviendo en la misma empresa:
+
+1.  **Socios Colectivos:** Administran la sociedad y responden de forma ilimitada y solidaria.
+2.  **Socios Comanditarios:** Solo aportan capital y su responsabilidad está limitada a dicho aporte.
+
+Existen dos subtipos:
+
+- **Sociedad en Comandita Simple:** Su capital está representado por **participaciones**. Es muy similar a la sociedad colectiva. Ejemplo: Negocios inmobiliarios antiguos.
+- **Sociedad en Comandita por Acciones:** Su capital está representado por **acciones**. Es una sociedad de capitales. Los socios comanditarios pueden transferir sus acciones libremente. Ejemplo: Un negocio donde unos socios ponen el local (inversionistas/comanditarios) y otros administran y operan (colectivos).
+
+---
+
+## 4. Sociedades Civiles
+
+Están diseñadas no para fines estrictamente comerciales, sino para el ejercicio conjunto de profesiones, oficios o pericias (abogados, contadores, médicos, etc.). El capital se representa en **participaciones** y su transferencia requiere el consentimiento de los demás socios.
+
+### 4.1 Sociedad Civil Ordinaria
+
+- **Número de socios:** Mínimo de 2, sin límite máximo.
+- **Naturaleza:** Altamente personalista (importa _quién_ es el socio por su habilidad profesional).
+- **Responsabilidad:** Personal, pero subsidiaria y proporcional.
+- **Ejemplo:** Un estudio contable ("Mendoza Luque y Asociados Sociedad Civil Ordinaria").
+
+> **📌 Nota Aclaratoria sobre el "Beneficio de Excusión":**
+> El documento indica que al socio se le puede exigir pagar las deudas con su patrimonio personal, pero este puede pedir que primero se agoten los bienes de la empresa. A esta figura jurídica se le conoce en el Derecho como "Beneficio de Excusión". Además, la deuda personal se divide proporcionalmente entre los socios, no es solidaria total como en la Sociedad Colectiva.
+
+### 4.2 Sociedad Civil de Responsabilidad Limitada
+
+Es idéntica a la Sociedad Civil Ordinaria, pero con dos diferencias fundamentales que limitan el riesgo patrimonial de los profesionales:
+
+- **Número de socios:** Tiene un mínimo de 2 y un **máximo de 30 socios**.
+- **Responsabilidad:** Los socios **no responden personalmente** por las deudas sociales. Su riesgo se limita estrictamente al aporte efectuado al capital social de la firma.
+- **Ejemplos:** Restaurantes de autor (ej. Restaurante Maido), tiendas especializadas que funcionan bajo la asociación de varios expertos con un régimen jurídico sencillo.
