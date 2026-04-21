@@ -257,10 +257,11 @@ Es el **órgano supremo y máximo** de la sociedad. Está conformada por todos l
 
 - **Funciones principales:** _Aprobar la gestión social_ (cómo se ha dirigido la empresa), _elegir a los miembros del Directorio_ y decidir el _destino de las utilidades_ (ganancias).
 - **Ejecución:** Las decisiones tomadas por la JGA no se ejecutan por sí mismas; son llevadas a cabo por el Directorio y la Gerencia.
+
 - **Tipos de Reuniones (Juntas):**
-  - **Junta Obligatoria Anual:** Se debe realizar por lo menos una vez al año (generalmente en el primer trimestre) para evaluar el ejercicio económico anterior.
-  - **Junta Universal:** Se lleva a cabo _sin necesidad de convocatoria previa_ siempre y cuando estén presentes los titulares del 100% de las acciones y todos acepten celebrar la sesión y los temas a tratar.
-  - **Junta Especial:** Reúne únicamente a los accionistas de una _clase específica_ de acciones para votar sobre modificaciones del estatuto que SI afecten sus derechos particulares.
+    - **Junta Obligatoria Anual:** Se debe realizar por lo menos una vez al año (generalmente en el primer trimestre) para evaluar el ejercicio económico anterior.
+    - **Junta Universal:** Se lleva a cabo _sin necesidad de convocatoria previa_ siempre y cuando estén presentes los titulares del 100% de las acciones y todos acepten celebrar la sesión y los temas a tratar.
+    - **Junta Especial:** Reúne únicamente a los accionistas de una _clase específica_ de acciones para votar sobre modificaciones del estatuto que SI afecten sus derechos particulares.
 
 ### 2. El Directorio
 
