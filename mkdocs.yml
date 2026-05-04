@@ -44,6 +44,7 @@ nav:
       - Métodos de Muestreo Probabilístico: estadistica-aplicada/introduccion-muestreo.md
       - Distribuciones Muestrales: estadistica-aplicada/distribuciones-muestrales.md
       - Resumen Teorico: estadistica-aplicada/resumen-teorico-est.md
+      - Estimación de Parámetros: estadistica-aplicada/estimacion-parametros.md
   - Matematica Financiera:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md
