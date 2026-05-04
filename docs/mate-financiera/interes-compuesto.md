@@ -1,13 +1,5 @@
-Aquí tienes un documento estructurado en formato Markdown, que sintetiza y mejora el contenido de ambas presentaciones. He unificado los temas, mejorado la redacción para que sea más explicativa y académica, y he transcrito todas las fórmulas utilizando sintaxis LaTeX.
 
----
-
-# Apuntes de Matemáticas Financieras: El Interés Compuesto
-
-**Facultad de Ciencias Económicas y Empresariales | Universidad Ricardo Palma**
-_(Basado en las sesiones de la Semana 5 y Semana 6)_
-
----
+# El Interés Compuesto
 
 ## 1. Introducción al Interés Compuesto
 
@@ -37,6 +29,7 @@ Cuando la tasa de interés se mantiene invariable a lo largo del tiempo, se apli
 
 **A. Valor Futuro (VF):**
 Se utiliza para proyectar un capital inicial hacia el futuro (proceso de capitalización).
+
 $$VF = VP(1+i)^n$$
 
 > **Ejemplo:** Si se invierten \$1,000 a una tasa anual del 5% durante 3 años, el valor futuro será:
@@ -44,6 +37,7 @@ $$VF = VP(1+i)^n$$
 
 **B. Valor Presente o Actual (VP):**
 Se utiliza para traer un flujo de dinero futuro al día de hoy (proceso de actualización o descuento).
+
 $$VP = \frac{VF}{(1+i)^n}$$
 
 > **Ejemplo:** Para saber cuánto invertir hoy para obtener \$1,500 en 5 años a una tasa del 6% anual:
@@ -51,10 +45,12 @@ $$VP = \frac{VF}{(1+i)^n}$$
 
 **C. Cálculo del Interés Monetario (I):**
 Es la diferencia absoluta entre el Valor Futuro y el Valor Presente.
+
 $$I = VF - VP \quad \text{o} \quad I = VP\left((1+i)^n - 1\right)$$
 
 **D. Cálculo del Tiempo (n):**
 Si conocemos los montos y la tasa, podemos despejar el tiempo utilizando logaritmos.
+
 $$n = \frac{\ln\left(\frac{VF}{VP}\right)}{\ln(1+i)}$$
 
 ### 3.2. Escenario con Tasa de Interés Variable
@@ -62,12 +58,14 @@ $$n = \frac{\ln\left(\frac{VF}{VP}\right)}{\ln(1+i)}$$
 En la realidad económica, las tasas fluctúan. Cuando la tasa cambia en diferentes períodos, las fórmulas se adaptan multiplicando los factores de crecimiento o descuento de cada tramo temporal secuencialmente.
 
 **A. Valor Futuro con tasa variable:**
+
 $$VF = VP \cdot (1+i_1) \cdot (1+i_2) \cdots (1+i_n)$$
 
 > **Ejemplo:** Inversión de \$2,000 con 4% el primer año y 6% el segundo:
 > $$VF = 2000(1 + 0.04)(1 + 0.06) = 2000(1.04)(1.06) = \$2,204.80$$
 
 **B. Valor Presente con tasa variable:**
+
 $$VP = \frac{VF}{(1+i_1) \cdot (1+i_2) \cdots (1+i_n)}$$
 
 ---
@@ -87,10 +85,14 @@ Es vital comprender la diferencia entre la tasa que se anuncia y la tasa que rea
 
 - **Tasa de Interés Nominal ($j$ o $i_N$):** Es una tasa de referencia o "tasa de cartel". Se anuncia de forma anual, pero **no considera la frecuencia con la que los intereses se capitalizan**. Por sí sola, no sirve para realizar cálculos de equivalencia financiera directa sin antes ser convertida.
 - **Tasa Proporcional ($i$ o $i_P$):** Es la tasa que se aplica efectivamente en cada sub-período (mensual, trimestral, diario, etc.). Se halla dividiendo la tasa nominal entre el número de períodos de capitalización al año ($m$).
-  $$i = \frac{j}{m}$$
-  _(Ejemplo: Una tasa nominal anual del 12% capitalizable mensualmente tiene una tasa proporcional del $12\% / 12 = 1\%$ mensual)._
+
+$$i = \frac{j}{m}$$
+
+_(Ejemplo: Una tasa nominal anual del 12% capitalizable mensualmente tiene una tasa proporcional del $12\% / 12 = 1\%$ mensual)._
+
 - **Tasa Efectiva ($i_e$ o $TEA$):** Es la verdadera medida de rentabilidad o costo de una operación. Muestra lo que realmente se gana o se paga en un año, ya que **sí incorpora el efecto de la acumulación de los intereses** (interés compuesto). Se calcula a partir de la tasa nominal mediante la siguiente fórmula:
-  $$i_e = \left(1 + \frac{j}{m}\right)^m - 1$$
+
+$$i_e = \left(1 + \frac{j}{m}\right)^m - 1$$
 
 **Tasas Equivalentes:** Dos tasas (ya sean nominales o efectivas) son equivalentes si, aplicadas a un mismo capital inicial durante un mismo período, producen exactamente el mismo Valor Futuro (y por ende, la misma Tasa Efectiva), sin importar que sus frecuencias de capitalización sean distintas.
 
