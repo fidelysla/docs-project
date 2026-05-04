@@ -145,22 +145,25 @@ Continuando con el estudio de la reorganización de sociedades, es fundamental e
 
 ## 1. Implicancias de la Transformación en las Deudas y Acreedores
 
-Cuando una sociedad se transforma, sus relaciones con terceros (acreedores, proveedores, trabajadores) están protegidas por la ley para evitar que el cambio de "ropaje legal" se utilice como un mecanismo para evadir responsabilidades. 
+Cuando una sociedad se transforma, sus relaciones con terceros (acreedores, proveedores, trabajadores) están protegidas por la ley para evitar que el cambio de "ropaje legal" se utilice como un mecanismo para evadir responsabilidades.
 
 La regla general es que la transformación **no puede afectar los derechos adquiridos** frente a la sociedad ni frente a los socios con anterioridad al acuerdo de transformación.
 
 ### 1.1 El cambio de Responsabilidad Ilimitada a Limitada
+
 Un escenario crítico ocurre cuando una empresa donde los socios responden con su patrimonio personal (como una Sociedad Colectiva) se transforma en una donde la responsabilidad se limita al aporte (como una S.A. o S.R.L.).
 
-*   **Regla de Protección:** La transformación **no libera a los socios** de responder solidaria y personalmente con sus propios bienes por las **deudas sociales contraídas antes** de la transformación.
-*   Para las nuevas deudas (posteriores a la inscripción de la transformación), sí aplicará la nueva regla de responsabilidad limitada.
+- **Regla de Protección:** La transformación **no libera a los socios** de responder solidaria y personalmente con sus propios bienes por las **deudas sociales contraídas antes** de la transformación.
+- Para las nuevas deudas (posteriores a la inscripción de la transformación), sí aplicará la nueva regla de responsabilidad limitada.
 
 > **📌 Nota Aclaratoria sobre Evación de Deudas:** Esta norma busca evitar el fraude a los acreedores. Si una Sociedad Colectiva tiene una deuda de un millón de soles y los socios deciden transformarla en una S.A.C. de la noche a la mañana, los acreedores seguirán teniendo el derecho de embargar las casas o cuentas bancarias personales de los socios fundadores para cobrar esa deuda específica previa al cambio.
 
 ### 1.2 Los Derechos de los Acreedores
-A diferencia de otros procesos de reorganización (como la Fusión o la Escisión), la Ley General de Sociedades (LGS) **no reconoce el derecho de oposición al acreedor** en el caso de la transformación. 
+
+A diferencia de otros procesos de reorganización (como la Fusión o la Escisión), la Ley General de Sociedades (LGS) **no reconoce el derecho de oposición al acreedor** en el caso de la transformación.
 
 Es decir, un banco o proveedor no puede paralizar ni oponerse a que la empresa se transforme. ¿Por qué la ley confía en este esquema? Porque el acreedor ya cuenta con mecanismos automáticos de protección:
+
 1.  **Conservación de la personalidad jurídica:** La empresa deudora sigue siendo exactamente la misma.
 2.  **Mantenimiento de garantías previas:** Se mantienen los criterios de responsabilidad ilimitada (explicados en el punto anterior) para las deudas viejas.
 3.  **Protección ante la separación de socios:** Si un socio decide ejercer su derecho de separación (irse de la empresa) por no estar de acuerdo con la transformación, **no se libera de su responsabilidad** por las acreencias de la empresa previas a su salida.
@@ -173,29 +176,33 @@ Dejando de lado la reorganización netamente societaria, las empresas también e
 
 Se lleva a cabo cuando resulta estratégicamente conveniente. Para decidir concentrarse, las empresas estudian factores como: el mercado, la competencia, la carga tributaria, la formación de monopolios u oligopolios, el comportamiento de compradores y clientes, entre otros.
 
-> **📌 Nota Aclaratoria sobre el marco legal:** El fenómeno de la concentración empresarial es tan amplio que **rebasa el campo de estudio de la legislación societaria peruana (LGS)**. Muchas formas de concentración (como los *Joint Ventures*, cárteles, holdings o consorcios) no están reguladas expresamente como "sociedades" tradicionales, sino que son estudiadas por la doctrina jurídica y económica, tanto nacional como extranjera, y reguladas por leyes antimonopolio (como INDECOPI).
+> **📌 Nota Aclaratoria sobre el marco legal:** El fenómeno de la concentración empresarial es tan amplio que **rebasa el campo de estudio de la legislación societaria peruana (LGS)**. Muchas formas de concentración (como los _Joint Ventures_, cárteles, holdings o consorcios) no están reguladas expresamente como "sociedades" tradicionales, sino que son estudiadas por la doctrina jurídica y económica, tanto nacional como extranjera, y reguladas por leyes antimonopolio (como INDECOPI).
 
 ### 2.1 Clases de Concentración Empresarial
 
 La forma en que las empresas deciden agruparse define el tipo de concentración. Existen dos modelos principales:
 
 #### A. Concentración Horizontal
+
 Busca ampliar la dimensión de la empresa agrupando diversas organizaciones **de la misma naturaleza o del mismo sector comercial**.
-*   **Objetivo:** Incrementar los factores de producción para lograr un aumento del volumen producido, el cual antes se realizaba por separado en cada empresa competidora.
-*   **Ejemplo:** Dos empresas que fabrican zapatos deciden fusionarse para crear una mega-fábrica. Al unirse, eliminan a un competidor directo y dominan una mayor cuota del mercado de calzado.
+
+- **Objetivo:** Incrementar los factores de producción para lograr un aumento del volumen producido, el cual antes se realizaba por separado en cada empresa competidora.
+- **Ejemplo:** Dos empresas que fabrican zapatos deciden fusionarse para crear una mega-fábrica. Al unirse, eliminan a un competidor directo y dominan una mayor cuota del mercado de calzado.
 
 #### B. Concentración Vertical
+
 Implica la reunión de varios establecimientos industriales o comerciales que **se complementan entre sí**, constituyendo o controlando toda una cadena de producción o distribución.
-*   **Objetivo:** Reducir la dependencia de proveedores externos y controlar todo el ciclo de vida del producto, desde la materia prima hasta el consumidor final.
-*   **Ejemplo:** Una empresa que fabrica zapatos (producción) adquiere una curtiembre de cuero (proveedor de materia prima) y una cadena de tiendas minoristas (distribución). 
+
+- **Objetivo:** Reducir la dependencia de proveedores externos y controlar todo el ciclo de vida del producto, desde la materia prima hasta el consumidor final.
+- **Ejemplo:** Una empresa que fabrica zapatos (producción) adquiere una curtiembre de cuero (proveedor de materia prima) y una cadena de tiendas minoristas (distribución).
 
 ### 2.2 ¿Por qué optar por la Concentración Empresarial?
 
 Las empresas recurren a estas agrupaciones persiguiendo múltiples ventajas competitivas:
 
-*   **Generación de una economía de escala:** Al producir más volumen, el costo de fabricar cada unidad disminuye, aumentando el margen de ganancia.
-*   **Mayor penetración en el mercado:** Se gana fuerza para entrar a nuevos sectores geográficos o desplazar a la competencia.
-*   **Racionalización de procesos:** Se eliminan áreas duplicadas (por ejemplo, en vez de tener dos departamentos de marketing en empresas separadas, se unifican en uno solo más potente).
-*   **Colaboración directiva y laboral:** Se suman los talentos, directivos y fuerza de trabajo de las empresas involucradas.
-*   **Control político y toma de decisiones:** Permite a los grupos de poder tener mayor influencia sobre los precios de un sector comercial.
-*   **Separación estratégica de unidades:** En estructuras complejas (como los *Holdings*), permite aislar los riesgos financieros de diferentes líneas de negocio.
+- **Generación de una economía de escala:** Al producir más volumen, el costo de fabricar cada unidad disminuye, aumentando el margen de ganancia.
+- **Mayor penetración en el mercado:** Se gana fuerza para entrar a nuevos sectores geográficos o desplazar a la competencia.
+- **Racionalización de procesos:** Se eliminan áreas duplicadas (por ejemplo, en vez de tener dos departamentos de marketing en empresas separadas, se unifican en uno solo más potente).
+- **Colaboración directiva y laboral:** Se suman los talentos, directivos y fuerza de trabajo de las empresas involucradas.
+- **Control político y toma de decisiones:** Permite a los grupos de poder tener mayor influencia sobre los precios de un sector comercial.
+- **Separación estratégica de unidades:** En estructuras complejas (como los _Holdings_), permite aislar los riesgos financieros de diferentes líneas de negocio.
