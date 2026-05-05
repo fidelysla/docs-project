@@ -3,6 +3,7 @@
 1. [Principales Distribuciones Continuas](distribuciones-continuas.md)
 2. [Métodos de Muestreo Probabilístico](introduccion-muestreo.md)
 3. [Distribuciones Muestrales](distribuciones-muestrales.md)
+4. [Estimación de Parámetros](estimacion-parametros.md)
 
 ---
 

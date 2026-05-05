@@ -1,4 +1,3 @@
-
 # Estadística Aplicada II: Estimación de Parámetros
 
 **Institución:** Universidad Ricardo Palma
@@ -34,12 +33,23 @@ A la fórmula o estadístico utilizado se le llama **estimador** (denotado como 
 Para que un estadístico sea considerado un buen estimador de un parámetro $\theta$, debe cumplir con cuatro propiedades ideales:
 
 1.  **Insesgamiento (Estimador Insesgado):** Un estimador es insesgado si, en promedio, su valor esperado es exactamente igual al parámetro poblacional que intenta estimar.
+
     $$E(\hat{\theta}) = \theta$$
+
     _Ejemplo:_ La media muestral ($\bar{x}$) es un estimador insesgado de $\mu$, y la varianza muestral ($s^2$ dividida entre $n-1$) es un estimador insesgado de $\sigma^2$.
+
 2.  **Consistencia:** A medida que el tamaño de la muestra ($n$) crece y se acerca al infinito, el valor del estimador se aproxima cada vez más al verdadero valor del parámetro, reduciendo su varianza a cero.
-    $$\lim_{n \to \infty} E(\hat{\theta}) = \theta \quad \text{y} \quad \lim_{n \to \infty} V(\hat{\theta}) = 0$$
+
+    $$
+    \lim_{n \to \infty} E(\hat{\theta}) = \theta \quad \text{y} \quad \lim_{n \to \infty} V(\hat{\theta}) = 0
+    $$
+
 3.  **Eficiencia:** Entre dos estimadores insesgados, el más eficiente es aquel que tiene la **menor varianza**. Menor varianza significa mayor precisión.
-    $$V(\hat{\theta}_1) < V(\hat{\theta}_2) \implies \hat{\theta}_1 \text{ es más eficiente}$$
+
+    $$
+    V(\hat{\theta}_1) < V(\hat{\theta}_2) \implies \hat{\theta}_1 \text{ es más eficiente}
+    $$
+
 4.  **Suficiencia:** Un estimador es suficiente si utiliza o extrae absolutamente toda la información relevante contenida en la muestra acerca del parámetro.
 
 #### Método de los Momentos
@@ -60,7 +70,10 @@ Debido a las fluctuaciones del azar, una estimación puntual casi nunca será ex
 Para solventar esto, se construye un **Intervalo de Confianza (IC)**: un rango de valores definido por un límite inferior y uno superior, dentro del cual se espera que se encuentre el verdadero parámetro con un cierto nivel de probabilidad o **nivel de confianza** (denotado como $1 - \alpha$).
 
 La estructura general de un intervalo de confianza es:
-$$IC = \text{Estimador Puntual} \pm (\text{Coeficiente de Confiabilidad} \times \text{Error Estándar})$$
+
+$$
+IC = \text{Estimador Puntual} \pm (\text{Coeficiente de Confiabilidad} \times \text{Error Estándar})
+$$
 
 ---
 
@@ -107,16 +120,20 @@ Un analista de investigación de mercados desea estimar el ingreso mensual prome
     - Nivel de confianza ($1 - \alpha$) = 0.95 (o 95%)
 
 2.  **Cálculo del valor crítico ($Z$):**
+
     Como el nivel de confianza es 95%, $\alpha = 0.05$. El área a la izquierda del valor crítico positivo es $1 - \alpha/2 = 0.975$.
     Buscando en la tabla Normal Estándar: $z_{0.975} = 1.96$.
 
 3.  **Cálculo del Error Estándar:**
+
     $$\text{Error Estándar} = \frac{\sigma}{\sqrt{n}} = \frac{300}{\sqrt{100}} = \frac{300}{10} = 30$$
 
 4.  **Cálculo del Margen de Error:**
+
     $$\text{Margen de Error} = z \times \text{Error Estándar} = 1.96 \times 30 = 58.80$$
 
 5.  **Construcción del Intervalo:**
+
     $$IC(\mu) = 1500 \pm 58.80$$
     - Límite Inferior: $1500 - 58.80 = 1441.20$
     - Límite Superior: $1500 + 58.80 = 1558.80$
@@ -137,27 +154,54 @@ b) Halle el intervalo asumiendo que BANAMEX tiene exactamente $N = 1000$ cuentas
 
 **Desarrollo paso a paso - Parte A (Población Infinita):**
 
-1.  **Datos:** $n = 100$, $\bar{x} = 1000$, $s = 500$ (desviación muestral, varianza poblacional desconocida), Confianza = 95%.
+1.  **Datos:**
+
+    $n = 100$,
+
+    $\bar{x} = 1000$,
+
+    $s = 500$ (desviación muestral, varianza poblacional desconocida),
+
+    Confianza = 95%.
+
 2.  **Valor crítico ($t$ de Student):**
+
     Dado que no conocemos $\sigma$, usamos la distribución $t$.
+
     Grados de libertad ($gl$) = $n - 1 = 99$.
-    Para un 95% de confianza, buscamos en la tabla $t$: $t_{(99; 0.975)} \approx 1.984$.
+
+    Para un 95% de confianza, buscamos en la tabla $t$:
+
+    $t_{(99; 0.975)} \approx 1.984$.
+
 3.  **Error Estándar y Margen de Error:**
+
     $$\text{Error Estándar} = \frac{s}{\sqrt{n}} = \frac{500}{10} = 50$$
+
     $$\text{Margen de Error} = 1.984 \times 50 = 99.21$$
+
 4.  **Intervalo:**
+
     $$IC(\mu) = 1000 \pm 99.21 = [900.79, 1099.21]$$
 
 **Desarrollo paso a paso - Parte B (Población Finita $N=1000$):**
 
 1.  **Factor de Corrección:** Como muestreamos 100 de 1000 (el 10%, que es mayor al 5%), debemos ajustar el error estándar.
+
     $$\text{Factor} = \sqrt{\frac{N-n}{N-1}} = \sqrt{\frac{1000-100}{1000-1}} = \sqrt{\frac{900}{999}} \approx 0.949$$
+
 2.  **Nuevo Error Estándar:**
+
     $$\text{Error Estándar Ajustado} = \frac{s}{\sqrt{n}} \times \text{Factor} = 50 \times 0.949 \approx 47.458$$
+
 3.  **Nuevo Margen de Error:**
+
     $$\text{Margen de Error} = 1.984 \times 47.458 \approx 94.157$$
+
 4.  **Intervalo Final:**
+
     $$IC(\mu) = 1000 \pm 94.157 = [905.83, 1094.16]$$
+
     _(Nota: Al conocer que la población es pequeña, el error disminuye y el intervalo se vuelve más estrecho y preciso)._
 
 ---
@@ -173,26 +217,52 @@ b) ¿Qué pasaría con el intervalo del 95% si la muestra aumentara a 45 cigarri
 
 **Desarrollo paso a paso - Parte A (Cambio de Confianza):**
 
-1.  **Datos iniciales:** $n = 35$, $\bar{x} = 3.0$, $\sigma = 1.0$.
+1.  **Datos iniciales:** 
+    
+    $n = 35$, $\bar{x} = 3.0$, $\sigma = 1.0$.
+    
     Error estándar constante: $\frac{\sigma}{\sqrt{n}} = \frac{1}{\sqrt{35}} \approx 0.169$
+
 2.  **Intervalo al 90%:**
+
     Valor $Z = 1.645$.
+
     $$IC = 3.0 \pm (1.645 \times 0.169) = 3.0 \pm 0.278 \implies [2.72, \; 3.28]$$
+
 3.  **Intervalo al 95%:**
+
     Valor $Z = 1.96$.
+
     $$IC = 3.0 \pm (1.96 \times 0.169) = 3.0 \pm 0.331 \implies [2.67, \; 3.33]$$
+
 4.  **Intervalo al 99%:**
+
     Valor $Z = 2.58$.
+
     $$IC = 3.0 \pm (2.58 \times 0.169) = 3.0 \pm 0.436 \implies [2.56, \; 3.44]$$
+
     _Explicación teórica:_ A medida que deseamos estar más seguros (mayor confianza), el intervalo necesita ensancharse para garantizar que capture al verdadero parámetro.
 
 **Desarrollo paso a paso - Parte B (Cambio en Tamaño de Muestra):**
 
-1.  **Nuevos Datos:** $n = 45$, $\bar{x} = 3.0$, $\sigma = 1.0$, Confianza = 95% ($Z = 1.96$).
+1.  **Nuevos Datos:** 
+    
+    $n = 45$, 
+    
+    $\bar{x} = 3.0$, 
+    
+    $\sigma = 1.0$, 
+    
+    Confianza = 95%: $1-\alpha = 0.95$ ($Z = 1.96$).
+
 2.  **Nuevo Error Estándar:**
+
     $$\frac{1}{\sqrt{45}} \approx 0.149$$
+
 3.  **Nuevo Intervalo:**
+
     $$IC = 3.0 \pm (1.96 \times 0.149) = 3.0 \pm 0.292 \implies [2.71, \; 3.29]$$
+
     _Explicación teórica:_ Al aumentar la muestra de 35 a 45, poseemos más información de la población. Esto reduce la incertidumbre, permitiendo que el intervalo de confianza sea más estrecho (más preciso) sin necesidad de sacrificar el nivel de confianza del 95%.
 
 ---
