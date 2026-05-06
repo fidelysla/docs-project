@@ -380,6 +380,60 @@ _(Nota analítica para el último tramo: Matemáticamente el consumo cae drásti
 
 ---
 
+### 1. Deflactor del PBI
+
+El **Deflactor del PBI** es un índice de precios que calcula la variación de los precios de *todos* los bienes y servicios producidos en una economía (es un indicador más amplio que el IPC, ya que incluye bienes de capital, exportaciones, etc., y excluye importaciones). 
+
+Se calcula dividiendo el PBI Nominal entre el PBI Real y multiplicando el resultado por 100.
+
+$$ \text{Deflactor del PBI} = \left( \frac{\text{PBI Nominal}}{\text{PBI Real}} \right) \times 100 $$
+
+**Donde:**
+*   **PBI Nominal:** Es el valor de la producción a precios corrientes (los precios del año actual).
+*   **PBI Real:** Es el valor de la producción a precios constantes (los precios de un año base fijado previamente).
+
+*(Nota: La tasa de inflación también se puede calcular usando la variación porcentual del deflactor del PBI de un año a otro, aunque es menos común para el día a día ciudadano que el IPC).*
+
+---
+
+### 2. Índice de Precios al Consumidor (IPC)
+
+El **IPC** mide el costo total de los bienes y servicios comprados por un consumidor representativo (la "canasta básica familiar"). Sirve para evaluar cómo cambia el costo de vida con el tiempo.
+
+La fórmula conceptual básica es:
+
+$$ \text{IPC}_t = \left( \frac{\text{Costo de la canasta en el año actual (t)}}{\text{Costo de la misma canasta en el año base}} \right) \times 100 $$
+
+Si lo expresamos matemáticamente detallando precios ($P$) y cantidades ($Q$) (usando la estructura de un índice de Laspeyres, que mantiene fijas las cantidades del año base):
+
+$$ \text{IPC}_t = \left( \frac{\sum_{i=1}^{n} (P_{i,t} \cdot Q_{i,base})}{\sum_{i=1}^{n} (P_{i,base} \cdot Q_{i,base})} \right) \times 100 $$
+
+**Donde:**
+*   $P_{i,t}$: Precio del bien $i$ en el año actual $t$.
+*   $P_{i,base}$: Precio del bien $i$ en el año base.
+*   $Q_{i,base}$: Cantidad del bien $i$ consumida en el año base (la canasta se mantiene fija).
+*   $\sum$: Sumatoria de todos los bienes de la canasta (desde el bien 1 hasta el $n$).
+
+---
+
+### 3. Tasa de Inflación (en base al IPC)
+
+La **Tasa de Inflación** es el cambio porcentual en el nivel general de precios de un período al siguiente. Generalmente, los bancos centrales y los gobiernos reportan la inflación utilizando el IPC.
+
+Para calcular la inflación entre un período actual ($t$) y un período anterior ($t-1$):
+
+$$ \pi_t = \left( \frac{\text{IPC}_t - \text{IPC}_{t-1}}{\text{IPC}_{t-1}} \right) \times 100 $$
+
+**Donde:**
+*   $\pi_t$: Tasa de inflación en el período $t$ (expresada en porcentaje).
+*   $\text{IPC}_t$: Índice de Precios al Consumidor en el período actual (puede ser un mes o un año).
+*   $\text{IPC}_{t-1}$: Índice de Precios al Consumidor en el período inmediatamente anterior.
+
+**Ejemplo rápido:**
+Si el IPC en 2023 fue de 115 y el IPC en 2024 es de 121, la inflación de 2024 sería:
+
+$$ \pi_{2024} = \left( \frac{121 - 115}{115} \right) \times 100 = \left( \frac{6}{115} \right) \times 100 \approx 5.22\% $$
+
 ## Recursos Adicionales (Videos de Interés)
 
 - [La función Keynesiana del consumo](https://www.youtube.com/watch?v=w8LepGDReDU)
