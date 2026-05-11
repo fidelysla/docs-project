@@ -15,7 +15,7 @@ El **PBI** es un indicador estadístico fundamental que mide el valor total de l
 
 Su fórmula general y más básica se expresa como la cantidad producida multiplicada por su precio:
 
-$$PBI = Q \times P$$
+$$\boxed{PBI = Q \times P}$$
 
 **Elementos básicos a considerar en su medición:**
 
@@ -75,13 +75,13 @@ $$PBI_{(4)} = 340 \times 10 = 3,400$$
 
 El PNB es la suma del PBI más el Saldo de Factores Primarios (SFP). El SFP es igual al total de rentas primarias obtenidas en el exterior por residentes nacionales, menos el total de rentas primarias generadas en el país y pagadas al exterior por residentes extranjeros.
 
-$$PNB = PBI + SFP$$
+$$\boxed{PNB = PBI + SFP}$$
 
 ### 4.2 PBI Per Cápita (PC)
 
 Se utiliza internacionalmente para expresar el **potencial económico** y se usa como medida indirecta de la **calidad de vida** de la población de una economía. Se calcula dividiendo el PBI total entre el número de habitantes.
 
-$$PBI_{PC} = \frac{PBI}{\text{N° de habitantes}}$$
+$$\boxed{PBI_{PC} = \frac{PBI}{\text{N° de habitantes}}}$$
 
 ---
 
@@ -93,7 +93,9 @@ Existen tres métodos principales para calcular el PBI. En teoría económica, l
 
 Suma todo el gasto realizado en la economía para adquirir bienes y servicios finales.
 
-$$PBI = GCH + GCG + FBKF + VE + X - M$$
+$$\boxed{PBI = GCH (C) + GCG (C) + FBKF (I) + VE + X - M}$$
+
+$$\boxed{PBI = C + I + G + XN}$$
 
 Donde:
 
@@ -105,14 +107,16 @@ Donde:
 - **M (Importaciones):** Bienes y servicios comprados del exterior.
 
 _Ejemplo de cálculo:_
+
 $$PBI = 400,000 + 170,000 + 300,000 + 0 + 100,000 - 170,000$$
+
 $$PBI = 800,000$$
 
 ### Método 2: Por el lado del Ingreso (o Renta)
 
 Suma todos los ingresos generados por los factores de producción en la economía.
 
-$$PBI = R + CKF + Imp + EE$$
+$$\boxed{PBI = R + CKF + Imp + EE}$$
 
 Donde:
 
@@ -122,14 +126,16 @@ Donde:
 - **EE (Excedente de Explotación):** Ganancias empresariales e ingresos de trabajadores independientes (honorarios).
 
 _Ejemplo de cálculo:_
+
 $$PBI = 500,000 + 30,000 + 120,000 + 150,000$$
+
 $$PBI = 800,000$$
 
 ### Método 3: Por el Valor Agregado (o Producción)
 
 Suma el valor añadido en cada etapa de producción, sumando impuestos y derechos correspondientes.
 
-$$PBI = \sum VAB + DM + Imp$$
+$$\boxed{PBI = \sum VAB + DM + Imp}$$
 
 Donde:
 
@@ -138,7 +144,9 @@ Donde:
 - **Imp:** Impuestos a los productos.
 
 _Ejemplo de cálculo:_
+
 $$PBI = 550,000 + 150,000 + 100,000$$
+
 $$PBI = 800,000$$
 
 ---
@@ -170,7 +178,7 @@ El **ingreso disponible** es el monto total del que dispone la sociedad (especí
 
 Matemáticamente, se expresa como:
 
-$$Y_d = C + A$$
+$$\boxed{Y_d = C + A(S)}$$
 
 Donde $C$ es el consumo y $A$ es el ahorro.
 
@@ -184,9 +192,14 @@ El consumo es la actividad económica fundamental en la que las familias y la so
 
 La ecuación macroeconómica del PBI por el lado del gasto es:
 
-$$PBI = C + I + G + XN$$
+$$\boxed{PBI = GCH (C) + GCG (C) + FBKF (I) + VE + X - M}$$
+
+$$\boxed{PBI = C + I + G + XN}$$
+
+$$\boxed{C = PBI - I - G + XN}$$
 
 _(Donde $C$ = Consumo, $I$ = Inversión, $G$ = Gasto Público, $XN$ = Exportaciones Netas)._
+
 
 ### 2.2. Componentes del Consumo
 
@@ -209,11 +222,13 @@ _Existen también factores culturales (clase social), psicológicos (motivación
 
 La función de consumo expresa la relación directa entre el ingreso disponible y el consumo privado.
 
-$$C = f(Y_d)$$
+$$\boxed{C = f(Y_d)}$$
 
 Su expresión matemática lineal es:
 
-$$C = C_0 + c(Y_d)$$
+$$\boxed{C = C_0 + c(Y_d)}$$
+
+$$\boxed{C = C_0 + PMgC(Y_d)}$$
 
 Donde:
 
@@ -226,10 +241,11 @@ Donde:
 
 La PMC es la proporción de una unidad monetaria (ej. un Sol o un Dólar) de ingreso adicional que se destina al consumo. Se asume que es una variable constante a corto plazo.
 
-$$PMC = \frac{\Delta C}{\Delta Y_d}$$
+$$\boxed{PMgC = \frac{\Delta C}{\Delta Y_d}}$$
 
 Dado que cualquier aumento en el consumo será menor que el aumento respectivo en el ingreso, la PMC siempre se encuentra entre 0 y 1:
-$$0 < PMC < 1$$
+
+$$0 < PMgC < 1$$
 
 ---
 
@@ -256,13 +272,23 @@ Se divide en tres componentes:
 
 Dado que el ingreso se divide entre consumo y ahorro ($Y_d = C + A$), podemos deducir la función de ahorro a partir de la función de consumo:
 
-$$A = Y_d - (C_0 + cY_d)$$
+$$A = Y_d - [C]$$
 
-$$A = -C_0 + Y_d - cY_d$$
+$$A = Y_d - [C_0 + PMgC(Y_d)]$$
 
-$$A = -C_0 + (1 - c)Y_d$$
+$$\boxed{A = Y_d - C_0 - PMgC(Y_d)}$$
 
-Si definimos $s = (1 - c)$ como la Propensión Marginal a Ahorrar, la función queda:
+$$A = -C_0 + Y_d - PMgC(Y_d)$$
+
+$$A = -C_0 + (Y_d)\underbrace{(1 - PMgC)}_\text{PMgA}$$
+
+$$\boxed{A = -C_0 + PMgA(Y_d)}$$
+
+<!-- $$A = -C_0 + Y_d - cY_d$$ -->
+
+<!-- $$A = -C_0 + (1 - c)Y_d$$ -->
+
+Si definimos $s = (1 - c) \text{ o } PMgA = (1-PMgC)$ como la Propensión Marginal a Ahorrar, la función queda:
 
 $$A = -C_0 + s(Y_d)$$
 
@@ -279,7 +305,7 @@ $$PMA = \frac{\Delta A}{\Delta Y_d}$$
 
 Puesto que todo ingreso adicional se consume o se ahorra, la suma de ambas propensiones siempre es igual a 1:
 
-$$PMA + PMC = 1 \implies PMA = 1 - PMC$$
+$$PMgA + PMgC = 1 \implies PMgA = 1 - PMgC$$
 
 ---
 
@@ -297,8 +323,8 @@ $$\Delta \text{ Ahorro} \rightarrow \Delta \text{ Inversión} \rightarrow \text{
 ### 4.2. Tipos de Inversión
 
 - **Inversión bruta fija:** Adquisición de nuevos bienes de capital por parte de las empresas.
-  - _Inversión neta:_ Aumento real del stock de capital.
-  - _Inversión de reposición:_ Reemplazo de bienes de capital depreciados u obsoletos.
+    - _Inversión neta:_ Aumento real del stock de capital.
+    - _Inversión de reposición:_ Reemplazo de bienes de capital depreciados u obsoletos.
 - **Variación de existencias:** Incrementos en los inventarios de productos terminados.
 
 ### 4.3. Determinantes de la Inversión
@@ -310,6 +336,7 @@ $$\Delta \text{ Ahorro} \rightarrow \Delta \text{ Inversión} \rightarrow \text{
 ### 4.4. Efecto Multiplicador de la Inversión
 
 La inversión genera un impacto expansivo en la economía. Una unidad monetaria de inversión genera $k$ veces más unidades de ingreso nacional. El ciclo es el siguiente:
+
 _Aumento de la Inversión $\rightarrow$ Mayor producción de bienes de capital $\rightarrow$ Más contratación de mano de obra $\rightarrow$ Más salarios $\rightarrow$ Más consumo (según la PMC) y Más ahorro $\rightarrow$ Mayor producción general de bienes y servicios $\rightarrow$ Más empleo._
 
 ---
@@ -386,7 +413,7 @@ El **Deflactor del PBI** es un índice de precios que calcula la variación de l
 
 Se calcula dividiendo el PBI Nominal entre el PBI Real y multiplicando el resultado por 100.
 
-$$ \text{Deflactor del PBI} = \left( \frac{\text{PBI Nominal}}{\text{PBI Real}} \right) \times 100 $$
+$$\boxed{ \text{Deflactor del PBI} = \left( \frac{\text{PBI Nominal}}{\text{PBI Real}} \right) \times 100 }$$
 
 **Donde:**
 *   **PBI Nominal:** Es el valor de la producción a precios corrientes (los precios del año actual).
@@ -404,11 +431,14 @@ La fórmula conceptual básica es:
 
 $$ \text{IPC}_t = \left( \frac{\text{Costo de la canasta en el año actual (t)}}{\text{Costo de la misma canasta en el año base}} \right) \times 100 $$
 
+$$\boxed{ \text{IPC}_n = \left( \frac{\text{P del bien en el año (n)}}{\text{P del bien en el año base}} \right) \times 100 }$$
+
 Si lo expresamos matemáticamente detallando precios ($P$) y cantidades ($Q$) (usando la estructura de un índice de Laspeyres, que mantiene fijas las cantidades del año base):
 
 $$ \text{IPC}_t = \left( \frac{\sum_{i=1}^{n} (P_{i,t} \cdot Q_{i,base})}{\sum_{i=1}^{n} (P_{i,base} \cdot Q_{i,base})} \right) \times 100 $$
 
 **Donde:**
+
 *   $P_{i,t}$: Precio del bien $i$ en el año actual $t$.
 *   $P_{i,base}$: Precio del bien $i$ en el año base.
 *   $Q_{i,base}$: Cantidad del bien $i$ consumida en el año base (la canasta se mantiene fija).
