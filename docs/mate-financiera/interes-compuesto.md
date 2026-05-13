@@ -146,9 +146,11 @@ Para comprender esta operación, es fundamental definir las siguientes variables
 - **Valor Nominal ($C_n$, $S$ o $V_n$):** Es el valor futuro de la deuda o del título valor. Es decir, el monto que está escrito en el documento (como un pagaré o letra de cambio) y que debe pagarse a la fecha de vencimiento.
 - **Valor Líquido o Actual ($C_0$, $P$ o $V_a$):** Es el valor efectivo que se recibe o se paga el día de hoy tras haber aplicado el descuento al valor nominal.
 - **Descuento ($D_c$):** Es la diferencia monetaria entre el valor nominal y el valor líquido. Representa el costo financiero por anticipar el pago.
-  $$D_c = C_n - C_0$$
+    
+    $$D_c = C_n - C_0$$
 
 La fórmula general para hallar el valor presente bajo la lógica del descuento compuesto es la inversa de la capitalización:
+
 $$C_0 = C_n \cdot (1+i)^{-n}$$
 
 ---
@@ -162,6 +164,7 @@ En el sistema financiero, el descuento compuesto se clasifica en dos modalidades
 Se basa estrictamente en la ley de capitalización compuesta aplicada en sentido inverso. En este método, **el descuento se calcula sobre el valor líquido o actual ($V_a$)**. Es el método matemáticamente exacto o "justo".
 
 **Fórmula de actualización (Valor Actual):**
+
 $$V_a = V_n \cdot (1+i)^{-n}$$
 
 - **Con Tasa Constante:** Se aplica un único tipo de interés ($i$) durante todo el plazo ($n$).
@@ -172,10 +175,15 @@ $$V_a = V_n \cdot (1+i)^{-n}$$
 >
 > - **Datos:** $V_n = 50,000$ | $i = 0.08$ | $n = 3$ años
 > - **Cálculo:**
->   $$V_a = 50,000 \cdot (1 + 0.08)^{-3}$$
->   $$V_a = 50,000 \cdot (1.08)^{-3}$$
->   $$V_a = 50,000 \cdot 0.793832$$
->   $$V_a = 39,691.60 \text{ soles}$$
+> 
+> $$V_a = 50,000 \cdot (1 + 0.08)^{-3}$$
+> 
+> $$V_a = 50,000 \cdot (1.08)^{-3}$$
+> 
+> $$V_a = 50,000 \cdot 0.793832$$
+> 
+> $$V_a = 39,691.60 \text{ soles}$$
+> 
 > - **Conclusión:** La empresa recibirá hoy **39,691.60 soles**, y la diferencia ($50,000 - 39,691.60 = 10,308.40$) representa el descuento racional.
 
 ### 8.2. Descuento Bancario (o Comercial)
@@ -192,25 +200,26 @@ Para hallar el Valor Líquido ($V_a$) tras el descuento:
 $$V_a = V_n - D_b$$
 
 **Ejemplo de Descuento Bancario:**
-Un comerciante desea descontar una letra de cambio de $15,000 soles en un banco comercial. La letra vence en 18 meses. El banco aplica una tasa de descuento compuesto del 2% mensual. Calcula el descuento total que aplicará el banco y el valor neto que recibirá el comerciante.
 
-- **Datos:** $V_n = 15,000$ | $d = 0.02$ mensual | $n = 18$ meses (Las unidades de tiempo ya coinciden).
-- **Cálculo del Descuento Bancario ($D_b$):**
-
-$$D_b = 15,000 \cdot \left[1 - (1 - 0.02)^{18}\right]$$
-
-$$D_b = 15,000 \cdot \left[1 - (0.98)^{18}\right]$$
-
-$$D_b = 15,000 \cdot [1 - 0.6951]$$
-
-$$D_b = 15,000 \cdot 0.3049$$
-
-$$D_b = 4,573.50 \text{ soles}$$
-
-- **Cálculo del Valor Líquido ($V_a$):**
-  
-$$V_a = 15,000 - 4,573.50$$
-  
-$$V_a = 10,426.50 \text{ soles}$$
-
-- **Conclusión:** El banco cobrará un descuento de **4,573.50 soles** y el comerciante recibirá efectivamente **10,426.50 soles**.
+> Un comerciante desea descontar una letra de cambio de $15,000 soles en un banco comercial. La letra vence en 18 meses. El banco aplica una tasa de descuento compuesto del 2% mensual. Calcula el descuento total que aplicará el banco y el valor neto que recibirá el comerciante.
+> 
+> - **Datos:** $V_n = 15,000$ | $d = 0.02$ mensual | $n = 18$ meses (Las unidades de tiempo ya coinciden).
+> - **Cálculo del Descuento Bancario ($D_b$):**
+> 
+> $$D_b = 15,000 \cdot \left[1 - (1 - 0.02)^{18}\right]$$
+> 
+> $$D_b = 15,000 \cdot \left[1 - (0.98)^{18}\right]$$
+> 
+> $$D_b = 15,000 \cdot [1 - 0.6951]$$
+> 
+> $$D_b = 15,000 \cdot 0.3049$$
+> 
+> $$D_b = 4,573.50 \text{ soles}$$
+> 
+> - **Cálculo del Valor Líquido ($V_a$):**
+>   
+> $$V_a = 15,000 - 4,573.50$$
+>   
+> $$V_a = 10,426.50 \text{ soles}$$
+> 
+> - **Conclusión:** El banco cobrará un descuento de **4,573.50 soles** y el comerciante recibirá efectivamente **10,426.50 soles**.
