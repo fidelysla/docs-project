@@ -184,22 +184,33 @@ A diferencia del descuento racional, en esta modalidad **la tasa de descuento ($
 
 **Fórmulas:**
 Para hallar directamente el monto del Descuento Bancario ($D_b$):
+
 $$D_b = V_n \cdot \left[1 - (1 - d)^n\right]$$
 
 Para hallar el Valor Líquido ($V_a$) tras el descuento:
+
 $$V_a = V_n - D_b$$
 
-> **Ejemplo de Descuento Bancario:**
-> Un comerciante desea descontar una letra de cambio de $15,000 soles en un banco comercial. La letra vence en 18 meses. El banco aplica una tasa de descuento compuesto del 2% mensual. Calcula el descuento total que aplicará el banco y el valor neto que recibirá el comerciante.
->
-> - **Datos:** $V_n = 15,000$ | $d = 0.02$ mensual | $n = 18$ meses (Las unidades de tiempo ya coinciden).
-> - **Cálculo del Descuento Bancario ($D_b$):**
->   $$D_b = 15,000 \cdot \left[1 - (1 - 0.02)^{18}\right]$$
->   $$D_b = 15,000 \cdot \left[1 - (0.98)^{18}\right]$$
->   $$D_b = 15,000 \cdot [1 - 0.6951]$$
->   $$D_b = 15,000 \cdot 0.3049$$
->   $$D_b = 4,573.50 \text{ soles}$$
-> - **Cálculo del Valor Líquido ($V_a$):**
->   $$V_a = 15,000 - 4,573.50$$
->   $$V_a = 10,426.50 \text{ soles}$$
-> - **Conclusión:** El banco cobrará un descuento de **4,573.50 soles** y el comerciante recibirá efectivamente **10,426.50 soles**.
+**Ejemplo de Descuento Bancario:**
+Un comerciante desea descontar una letra de cambio de $15,000 soles en un banco comercial. La letra vence en 18 meses. El banco aplica una tasa de descuento compuesto del 2% mensual. Calcula el descuento total que aplicará el banco y el valor neto que recibirá el comerciante.
+
+- **Datos:** $V_n = 15,000$ | $d = 0.02$ mensual | $n = 18$ meses (Las unidades de tiempo ya coinciden).
+- **Cálculo del Descuento Bancario ($D_b$):**
+
+$$D_b = 15,000 \cdot \left[1 - (1 - 0.02)^{18}\right]$$
+
+$$D_b = 15,000 \cdot \left[1 - (0.98)^{18}\right]$$
+
+$$D_b = 15,000 \cdot [1 - 0.6951]$$
+
+$$D_b = 15,000 \cdot 0.3049$$
+
+$$D_b = 4,573.50 \text{ soles}$$
+
+- **Cálculo del Valor Líquido ($V_a$):**
+  
+$$V_a = 15,000 - 4,573.50$$
+  
+$$V_a = 10,426.50 \text{ soles}$$
+
+- **Conclusión:** El banco cobrará un descuento de **4,573.50 soles** y el comerciante recibirá efectivamente **10,426.50 soles**.
