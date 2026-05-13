@@ -1,4 +1,3 @@
-
 # El Interés Compuesto
 
 ## 1. Introducción al Interés Compuesto
@@ -110,12 +109,15 @@ $$\sum \text{Valores Originales en la Fecha Focal} = \sum \text{Valores Nuevos e
 
 ### Pasos para resolver una Ecuación de Valor:
 
-1.  **Determinar la Tasa:** Asegurarse de usar la tasa efectiva o la tasa proporcional correspondiente al período (nunca operar directamente con la nominal anual si hay capitalización menor al año).
+1.  **Determinar la Tasa:** Asegurarse de **_usar la tasa efectiva o la tasa proporcional_** correspondiente al período (nunca operar directamente con la nominal anual si hay capitalización menor al año).
 2.  **Dibujar la Línea de Tiempo:** Graficar los flujos de caja, ubicando los montos de las obligaciones originales (arriba) y los nuevos pagos propuestos (abajo) en sus respectivos períodos.
 3.  **Seleccionar la Fecha Focal:** Elegir el momento de referencia. Aunque se puede elegir cualquier fecha, se recomienda establecerla en el momento donde se ubica la incógnita ($X$).
 4.  **Trasladar los Valores:**
-    - Si el dinero está _antes_ de la fecha focal, se debe **capitalizar** hacia adelante usando la fórmula de Valor Futuro: $\text{Monto} \times (1+i)^n$
-    - Si el dinero está _después_ de la fecha focal, se debe **descontar** hacia atrás usando la fórmula de Valor Presente: $\frac{\text{Monto}}{(1+i)^n}$
+    - Si el dinero está _antes_ de la fecha focal, se debe **capitalizar** hacia adelante usando la fórmula de Valor Futuro:
+      - $\text{Monto (VP)} \times (1+i)^n$
+
+    - Si el dinero está _después_ de la fecha focal, se debe **descontar** hacia atrás usando la fórmula de Valor Presente:
+      - $\frac{\text{Monto (VF)}}{(1+i)^n}$
 
 ---
 
@@ -134,3 +136,70 @@ Para agilizar los cálculos matemáticos, Excel ofrece funciones integradas que 
 
 - `=INT.EFECTIVO(tasa_nominal; num_per_año)` _(Nota: En algunas versiones es `TASA.EFECTIVA`)_: Convierte una tasa nominal anual a la verdadera tasa efectiva anual (TEA).
 - `=TASA.NOMINAL(tasa_efectiva; num_per_año)`: Realiza el proceso inverso, convirtiendo una tasa efectiva anual a su equivalente nominal para un número de capitalizaciones dado.
+
+## 7. Descuento Compuesto: Conceptos Básicos
+
+El **Descuento Compuesto** es la operación financiera inversa a la capitalización. Consiste en calcular el valor actual (o efectivo) de un capital futuro mediante la deducción de los intereses acumulados. Su objetivo principal es sustituir un capital con vencimiento en el futuro ($C_n$) por otro equivalente con vencimiento en el presente ($C_0$).
+
+Para comprender esta operación, es fundamental definir las siguientes variables:
+
+- **Valor Nominal ($C_n$, $S$ o $V_n$):** Es el valor futuro de la deuda o del título valor. Es decir, el monto que está escrito en el documento (como un pagaré o letra de cambio) y que debe pagarse a la fecha de vencimiento.
+- **Valor Líquido o Actual ($C_0$, $P$ o $V_a$):** Es el valor efectivo que se recibe o se paga el día de hoy tras haber aplicado el descuento al valor nominal.
+- **Descuento ($D_c$):** Es la diferencia monetaria entre el valor nominal y el valor líquido. Representa el costo financiero por anticipar el pago.
+  $$D_c = C_n - C_0$$
+
+La fórmula general para hallar el valor presente bajo la lógica del descuento compuesto es la inversa de la capitalización:
+$$C_0 = C_n \cdot (1+i)^{-n}$$
+
+---
+
+## 8. Tipos de Descuento Compuesto y Diferencias
+
+En el sistema financiero, el descuento compuesto se clasifica en dos modalidades principales, dependiendo de sobre qué base se calculan los intereses a descontar:
+
+### 8.1. Descuento Racional (o Matemático)
+
+Se basa estrictamente en la ley de capitalización compuesta aplicada en sentido inverso. En este método, **el descuento se calcula sobre el valor líquido o actual ($V_a$)**. Es el método matemáticamente exacto o "justo".
+
+**Fórmula de actualización (Valor Actual):**
+$$V_a = V_n \cdot (1+i)^{-n}$$
+
+- **Con Tasa Constante:** Se aplica un único tipo de interés ($i$) durante todo el plazo ($n$).
+- **Con Tasa Variable:** El valor actual se obtiene multiplicando el valor nominal por los factores de actualización individuales de cada período.
+
+> **Ejemplo de Descuento Racional:**
+> Una empresa tiene un pagaré con un valor nominal de $50,000 soles que vence dentro de 3 años. Si la tasa de interés de mercado es del 8% anual compuesto, ¿cuál es el valor actual (líquido) del documento si se aplica un descuento racional?
+>
+> - **Datos:** $V_n = 50,000$ | $i = 0.08$ | $n = 3$ años
+> - **Cálculo:**
+>   $$V_a = 50,000 \cdot (1 + 0.08)^{-3}$$
+>   $$V_a = 50,000 \cdot (1.08)^{-3}$$
+>   $$V_a = 50,000 \cdot 0.793832$$
+>   $$V_a = 39,691.60 \text{ soles}$$
+> - **Conclusión:** La empresa recibirá hoy **39,691.60 soles**, y la diferencia ($50,000 - 39,691.60 = 10,308.40$) representa el descuento racional.
+
+### 8.2. Descuento Bancario (o Comercial)
+
+A diferencia del descuento racional, en esta modalidad **la tasa de descuento ($d$) se aplica directamente sobre el valor nominal o futuro ($V_n$)** del título. Es el método preferido por las instituciones bancarias para el anticipo de letras de cambio y pagarés, ya que genera un descuento mayor (y por ende, un mayor beneficio para el banco).
+
+**Fórmulas:**
+Para hallar directamente el monto del Descuento Bancario ($D_b$):
+$$D_b = V_n \cdot \left[1 - (1 - d)^n\right]$$
+
+Para hallar el Valor Líquido ($V_a$) tras el descuento:
+$$V_a = V_n - D_b$$
+
+> **Ejemplo de Descuento Bancario:**
+> Un comerciante desea descontar una letra de cambio de $15,000 soles en un banco comercial. La letra vence en 18 meses. El banco aplica una tasa de descuento compuesto del 2% mensual. Calcula el descuento total que aplicará el banco y el valor neto que recibirá el comerciante.
+>
+> - **Datos:** $V_n = 15,000$ | $d = 0.02$ mensual | $n = 18$ meses (Las unidades de tiempo ya coinciden).
+> - **Cálculo del Descuento Bancario ($D_b$):**
+>   $$D_b = 15,000 \cdot \left[1 - (1 - 0.02)^{18}\right]$$
+>   $$D_b = 15,000 \cdot \left[1 - (0.98)^{18}\right]$$
+>   $$D_b = 15,000 \cdot [1 - 0.6951]$$
+>   $$D_b = 15,000 \cdot 0.3049$$
+>   $$D_b = 4,573.50 \text{ soles}$$
+> - **Cálculo del Valor Líquido ($V_a$):**
+>   $$V_a = 15,000 - 4,573.50$$
+>   $$V_a = 10,426.50 \text{ soles}$$
+> - **Conclusión:** El banco cobrará un descuento de **4,573.50 soles** y el comerciante recibirá efectivamente **10,426.50 soles**.
