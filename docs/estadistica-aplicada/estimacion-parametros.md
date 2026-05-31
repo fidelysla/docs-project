@@ -1,293 +1,408 @@
-# Estadística Aplicada II: Estimación de Parámetros
+# ESTADÍSTICA APLICADA: ESTIMACIÓN DE PARÁMETROS
 
-**Institución:** Universidad Ricardo Palma
-**Facultad:** Ciencias Económicas y Empresariales
+## PARTE I: TEORÍA Y FÓRMULAS ESTADÍSTICAS
 
----
+### 1. Inferencia Estadística
 
-## 1. Introducción a la Inferencia Estadística
+La inferencia estadística es la rama de la estadística que nos permite sacar conclusiones (inferir) sobre los parámetros de toda una población, basándonos en la información obtenida de una muestra representativa extraída de dicha población.
 
-La **inferencia estadística** es la rama de la estadística que nos permite formular afirmaciones, conclusiones o predicciones sobre los parámetros desconocidos de una población entera, basándonos únicamente en la información obtenida de una muestra representativa extraída de dicha población.
+Los dos pilares fundamentales de la inferencia estadística son:
 
-Dado que no se analiza a toda la población, estas afirmaciones siempre conllevan un grado de incertidumbre. Por ello, la inferencia proporciona los procedimientos matemáticos e inductivos necesarios para medir y acotar esa incertidumbre.
-
-Sus dos pilares fundamentales son:
-
-1.  **Estimación de parámetros** (puntual y por intervalos).
+1.  **Estimación de parámetros** (Puntual y por Intervalos).
 2.  **Prueba de Hipótesis**.
 
 ---
 
-## 2. Estimación Estadística
+### 2. Estimación Puntual y Propiedades de un Buen Estimador
 
-Consiste en utilizar los datos obtenidos en una muestra para calcular valores aproximados de los parámetros poblacionales desconocidos (como la media poblacional $\mu$, la varianza $\sigma^2$ o la proporción $\pi$). Se divide en dos enfoques:
+La estimación puntual consiste en utilizar un único valor numérico (calculado a partir de los datos de la muestra) para aproximar el valor de un parámetro poblacional desconocido.
 
-### 2.1. Estimación Puntual
+A la estadística calculada en la muestra (por ejemplo, la media muestral $\bar{x}$) se le llama **estimador**, y al parámetro de la población que se desea descubrir (por ejemplo, la media poblacional $\mu$) se le denota genéricamente como $\theta$.
 
-Se calcula un **único valor** o punto a partir de la muestra para aproximar el parámetro. Por ejemplo, usar la media de la muestra ($\bar{x}$) para estimar la media de la población ($\mu$).
+Un buen estimador puntual $\hat{\theta}$ debe cumplir con cuatro propiedades matemáticas fundamentales:
 
-A la fórmula o estadístico utilizado se le llama **estimador** (denotado como $\hat{\theta}$), y al valor numérico resultante se le llama **estimación**.
-
-#### Propiedades de un Buen Estimador Puntual
-
-Para que un estadístico sea considerado un buen estimador de un parámetro $\theta$, debe cumplir con cuatro propiedades ideales:
-
-1.  **Insesgamiento (Estimador Insesgado):** Un estimador es insesgado si, en promedio, su valor esperado es exactamente igual al parámetro poblacional que intenta estimar.
-
+1.  **Insesgamiento (Estimador Insesgado):** Su valor esperado (media de todas las estimaciones posibles) es exactamente igual al parámetro poblacional. No sobrestima ni subestima sistemáticamente.
+    
     $$E(\hat{\theta}) = \theta$$
 
-    _Ejemplo:_ La media muestral ($\bar{x}$) es un estimador insesgado de $\mu$, y la varianza muestral ($s^2$ dividida entre $n-1$) es un estimador insesgado de $\sigma^2$.
+2.  **Consistencia:** A medida que el tamaño de la muestra ($n$) crece tendiendo al infinito, la varianza del estimador tiende a cero y la estimación se acerca con probabilidad 1 al parámetro real.
 
-2.  **Consistencia:** A medida que el tamaño de la muestra ($n$) crece y se acerca al infinito, el valor del estimador se aproxima cada vez más al verdadero valor del parámetro, reduciendo su varianza a cero.
+    $$\lim_{n \to \infty} E(\hat{\theta}) = \theta \quad \text{y} \quad \lim_{n \to \infty} V(\hat{\theta}) = 0$$
 
-    $$
-    \lim_{n \to \infty} E(\hat{\theta}) = \theta \quad \text{y} \quad \lim_{n \to \infty} V(\hat{\theta}) = 0
-    $$
+3.  **Eficiencia:** Si tenemos dos estimadores insesgados para un mismo parámetro, el más eficiente es aquel que tiene la **menor varianza**.
 
-3.  **Eficiencia:** Entre dos estimadores insesgados, el más eficiente es aquel que tiene la **menor varianza**. Menor varianza significa mayor precisión.
+    $$V(\hat{\theta}_1) < V(\hat{\theta}_2)$$
 
-    $$
-    V(\hat{\theta}_1) < V(\hat{\theta}_2) \implies \hat{\theta}_1 \text{ es más eficiente}
-    $$
+4.  **Suficiencia:** El estimador extrae y utiliza toda la información contenida en la muestra acerca del parámetro.
 
-4.  **Suficiencia:** Un estimador es suficiente si utiliza o extrae absolutamente toda la información relevante contenida en la muestra acerca del parámetro.
+#### Principales Estimadores Puntuales
 
-#### Método de los Momentos
-
-Es un procedimiento para hallar estimadores puntuales. Consiste en igualar los momentos poblacionales (esperanzas matemáticas) con los momentos muestrales (promedios de potencias).
-
-- **Momento poblacional de orden $k$:** $E(X^k)$
-- **Momento muestral de orden $k$:** $m_k = \frac{1}{n} \sum_{i=1}^n x_i^k$
-
-Al igualarlos, se obtiene un sistema de ecuaciones del cual se despejan los parámetros desconocidos.
+- **Para la Media Poblacional ($\mu$):** La media muestral ($\bar{x}$).
+  $$ \hat{\mu} = \bar{x} = \frac{\sum x_i}{n} $$
+- **Para la Varianza Poblacional ($\sigma^2$):** La varianza muestral ($s^2$).
+  $$ \hat{\sigma}^2 = s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1} $$
+- **Para la Proporción Poblacional ($\pi$ o $P$):** La proporción muestral ($p$).
+  $$ \hat{\pi} = p = \frac{k}{n} $$ _(Donde $k$ son los casos de éxito)._
 
 ---
 
-### 2.2. Estimación por Intervalos (Intervalos de Confianza)
+### 3. Estimación por el Método de los Momentos
 
-Debido a las fluctuaciones del azar, una estimación puntual casi nunca será exactamente igual al parámetro poblacional; siempre existe un **error de estimación**.
+Es una técnica para encontrar estimadores puntuales. Consiste en igualar los **momentos muestrales** (características calculadas en los datos) con los **momentos poblacionales** (esperanzas matemáticas teóricas) y resolver el sistema de ecuaciones resultante.
 
-Para solventar esto, se construye un **Intervalo de Confianza (IC)**: un rango de valores definido por un límite inferior y uno superior, dentro del cual se espera que se encuentre el verdadero parámetro con un cierto nivel de probabilidad o **nivel de confianza** (denotado como $1 - \alpha$).
-
-La estructura general de un intervalo de confianza es:
-
-$$
-IC = \text{Estimador Puntual} \pm (\text{Coeficiente de Confiabilidad} \times \text{Error Estándar})
-$$
+- Momento poblacional de orden $k$: $E(X^k)$
+- Momento muestral de orden $k$: $m_k = \frac{\sum x_i^k}{n}$
+- El método plantea que: $m_k = E(X^k)$ para $k = 1, 2, ..., m$.
 
 ---
 
-## 3. Intervalos de Confianza para la Media Poblacional ($\mu$)
+### 4. Estimación por Intervalos de Confianza (Concepto General)
 
-### A. Caso: Varianza poblacional ($\sigma^2$) CONOCIDA
+Dado que la estimación puntual casi nunca acierta al valor exacto del parámetro debido al error aleatorio de muestreo, es preferible construir un **Intervalo de Confianza (IC)**.
 
-Si conocemos la varianza de la población de antemano (o si la muestra es suficientemente grande), utilizamos la distribución Normal Estándar ($Z$).
+Un intervalo de confianza nos da un límite inferior ($L_{inf}$) y un límite superior ($L_{sup}$) dentro de los cuales, con un cierto nivel de probabilidad o **nivel de confianza ($1 - \alpha$)**, se encuentra el verdadero valor del parámetro $\theta$.
 
-$$IC(\mu) = \left[ \bar{x} - z_{1-\alpha/2} \frac{\sigma}{\sqrt{n}}, \;\; \bar{x} + z_{1-\alpha/2} \frac{\sigma}{\sqrt{n}} \right]$$
+$$ P(L*{inf} \le \theta \le L*{sup}) = 1 - \alpha $$
 
 _Donde:_
 
-- $\bar{x}$: Media de la muestra.
-- $z_{1-\alpha/2}$: Valor crítico de la distribución Normal que acumula un área de $1-\alpha/2$.
-- $\frac{\sigma}{\sqrt{n}}$: Error estándar de la media.
-
-### B. Caso: Varianza poblacional ($\sigma^2$) DESCONOCIDA
-
-Cuando no conocemos $\sigma^2$ (lo cual es muy común en la práctica) y trabajamos con muestras, utilizamos la desviación estándar de la muestra ($s$) y la distribución **t de Student** con $n-1$ grados de libertad.
-
-$$IC(\mu) = \left[ \bar{x} - t_{(n-1; 1-\alpha/2)} \frac{s}{\sqrt{n}}, \;\; \bar{x} + t_{(n-1; 1-\alpha/2)} \frac{s}{\sqrt{n}} \right]$$
-
-### _Corrección por Población Finita_
-
-Si conocemos el tamaño total de la población ($N$) y el tamaño de la muestra ($n$) representa más del 5% de la población (es decir, $\frac{n}{N} > 0.05$), se debe multiplicar el error estándar por el factor de corrección:
-$$\sqrt{\frac{N-n}{N-1}}$$
+- $1 - \alpha$: Nivel de confianza (ej. 0.90, 0.95, 0.99).
+- $\alpha$: Nivel de significancia (probabilidad de error).
 
 ---
 
-## 4. Desarrollo Detallado de Ejercicios (1, 2 y 3)
+### 5. Intervalos de Confianza para UNA Población
 
-### 📝 Ejemplo 1: Intervalo para la media con varianza conocida
+#### 5.1. Para la Media ($\mu$)
 
-**Enunciado:**
-Un analista de investigación de mercados desea estimar el ingreso mensual promedio de los hogares de un sector de Lima Metropolitana. Con una confianza del 95%, tomó una muestra de 100 hogares y halló un ingreso promedio de US$ 1500. Según cifras oficiales, la desviación estándar poblacional de los ingresos es US$ 300. ¿Entre qué valores se encuentra el ingreso promedio mensual de todos los hogares de dicho sector?
+La fórmula depende de si conocemos la varianza de la población ($\sigma^2$) y de si la población es infinita o finita (si conocemos su tamaño $N$).
 
-**Desarrollo paso a paso:**
+**A. Con Varianza ($\sigma^2$) Poblacional Conocida:**
+Utilizamos la distribución Normal Estándar ($Z$).
+$$ IC(\mu) = \bar{x} \pm z\_{1-\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} $$
 
-1.  **Identificación de Datos:**
-    - Tamaño de muestra ($n$) = 100
-    - Media muestral ($\bar{x}$) = 1500
-    - Desviación estándar poblacional conocida ($\sigma$) = 300
-    - Nivel de confianza ($1 - \alpha$) = 0.95 (o 95%)
+**B. Con Varianza ($\sigma^2$) Desconocida (Se usa la muestral $s^2$):**
+Utilizamos la distribución $t$ de Student con $n-1$ grados de libertad.
+$$ IC(\mu) = \bar{x} \pm t\_{(n-1; 1-\alpha/2)} \cdot \frac{s}{\sqrt{n}} $$
 
-2.  **Cálculo del valor crítico ($Z$):**
+> **Nota sobre el Factor de Corrección para Poblaciones Finitas (FCPF):**
+> Si conocemos el tamaño exacto de la población ($N$) y extraemos una muestra considerable (usualmente si $n > N/20$), debemos multiplicar el "error estándar" (la fracción de la derecha) por el FCPF: $\sqrt{\frac{N-n}{N-1}}$.
 
-    Como el nivel de confianza es 95%, $\alpha = 0.05$. El área a la izquierda del valor crítico positivo es $1 - \alpha/2 = 0.975$.
-    Buscando en la tabla Normal Estándar: $z_{0.975} = 1.96$.
+#### 5.2. Tamaño de Muestra para estimar la Media
 
-3.  **Cálculo del Error Estándar:**
+Si deseamos un Margen de Error máximo ($B$), el tamaño de muestra $n$ se calcula así:
 
-    $$\text{Error Estándar} = \frac{\sigma}{\sqrt{n}} = \frac{300}{\sqrt{100}} = \frac{300}{10} = 30$$
+- **Población infinita:** 
+    
+    $$n = \frac{z_{1-\alpha/2}^2 \cdot \sigma^2}{B^2}$$
 
-4.  **Cálculo del Margen de Error:**
+- **Población finita ($N$):**
+    
+    $$n = \frac{N \cdot z_{1-\alpha/2}^2 \cdot \sigma^2}{(N-1)B^2 + z_{1-\alpha/2}^2 \cdot \sigma^2}$$
 
-    $$\text{Margen de Error} = z \times \text{Error Estándar} = 1.96 \times 30 = 58.80$$
+#### 5.3. Para la Proporción ($\pi$)
 
-5.  **Construcción del Intervalo:**
+Para muestras grandes ($n > 30$), aplicamos la distribución Normal:
+$$ IC(\pi) = p \pm z\_{1-\alpha/2} \sqrt{\frac{p(1-p)}{n}} $$
 
-    $$IC(\mu) = 1500 \pm 58.80$$
-    - Límite Inferior: $1500 - 58.80 = 1441.20$
-    - Límite Superior: $1500 + 58.80 = 1558.80$
+*(Igualmente, se le aplica el factor de corrección $\sqrt{\frac{N-n}{N-1}}$ si la población es finita).\*
 
-**Conclusión:**
-Podemos afirmar con un 95% de confianza que el verdadero ingreso mensual promedio de todos los hogares de ese sector se encuentra entre **US$ 1441.20 y US$ 1558.80**.
+#### 5.4. Tamaño de Muestra para estimar la Proporción
+
+- **Población infinita:** 
+    
+    $$n = \frac{z_{1-\alpha/2}^2 \cdot p(1-p)}{B^2}$$
+
+- **Población finita ($N$):** 
+
+    $$n = \frac{N \cdot z_{1-\alpha/2}^2 \cdot p(1-p)}{(N-1)B^2 + z_{1-\alpha/2}^2 \cdot p(1-p)}$$
+
+#### 5.5. Para la Varianza ($\sigma^2$) y Desviación Estándar ($\sigma$)
+
+Utilizamos la distribución Chi-Cuadrado ($\chi^2$). El intervalo es asimétrico.
+
+$$
+IC(\sigma^2) = \left[ \frac{(n-1)s^2}{\chi^2_{(n-1; 1-\alpha/2)}} ; \frac{(n-1)s^2}{\chi^2_{(n-1; \alpha/2)}} \right]
+$$
+
+*(Para hallar el IC de la desviación estándar $\sigma$, simplemente se saca la raíz cuadrada a ambos límites).\*
 
 ---
 
-### 📝 Ejemplo 2: Intervalo para la media con varianza desconocida e impacto de la población finita
+### 6. Intervalos de Confianza para DOS Poblaciones
 
-**Enunciado:**
-Una muestra de 100 cuentas de ahorros en BANAMEX mostró un saldo promedio de US$ 1000 con una desviación estándar (muestral) de US$ 500.
+#### 6.1. Diferencia de Proporciones ($\pi_1 - \pi_2$)
 
-a) Halle el intervalo de confianza al 95% asumiendo una población muy grande.
+Permite comparar proporciones de dos grupos independientes (muestras grandes).
 
-b) Halle el intervalo asumiendo que BANAMEX tiene exactamente $N = 1000$ cuentas de ahorros en total.
+$$
+IC(\pi*1 - \pi_2) = (p_1 - p_2) \pm z*{1-\alpha/2} \sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}
+$$
 
-**Desarrollo paso a paso - Parte A (Población Infinita):**
+**Interpretación de los signos del Intervalo:**
 
-1.  **Datos:**
+- Si $IC = [-, -]$ (ambos negativos): $\pi_1 < \pi_2$
+- Si $IC = [+, +]$ (ambos positivos): $\pi_1 > \pi_2$
+- Si $IC = [-, +]$ (pasa por el cero): $\pi_1 = \pi_2$ (No hay diferencia significativa).
 
-    $n = 100$,
+#### 6.2. Razón de Varianzas ($\sigma_1^2 / \sigma_2^2$)
 
-    $\bar{x} = 1000$,
+Se usa para comparar si dos poblaciones tienen la misma variabilidad (homocedasticidad). Emplea la distribución $F$ de Fisher.
 
-    $s = 500$ (desviación muestral, varianza poblacional desconocida),
+$$ IC\left(\frac{\sigma*1^2}{\sigma_2^2}\right) = \left[ \frac{s_1^2}{s_2^2} F*{(n*2-1; n_1-1; \alpha/2)} \ ; \ \frac{s_1^2}{s_2^2} F*{(n_2-1; n_1-1; 1-\alpha/2)} \right] $$
 
-    Confianza = 95%.
+**Interpretación:** Si el intervalo contiene al **número 1**, significa que las varianzas son estadísticamente iguales ($\sigma_1^2 = \sigma_2^2$).
 
-2.  **Valor crítico ($t$ de Student):**
+#### 6.3. Diferencia de Medias ($\mu_1 - \mu_2$)
 
-    Dado que no conocemos $\sigma$, usamos la distribución $t$.
+Sirve para comparar promedios de dos grupos. Hay 3 escenarios teóricos:
 
-    Grados de libertad ($gl$) = $n - 1 = 99$.
+**A. Varianzas poblacionales conocidas:**
 
-    Para un 95% de confianza, buscamos en la tabla $t$:
+$$ IC(\mu*1 - \mu_2) = (\bar{x}\_1 - \bar{x}\_2) \pm z*{1-\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} $$
 
-    $t_{(99; 0.975)} \approx 1.984$.
+**B. Varianzas desconocidas, pero iguales ($\sigma_1^2 = \sigma_2^2$):**
+Se calcula una "Varianza Ponderada" ($s_p^2$):
 
-3.  **Error Estándar y Margen de Error:**
+$$ s*p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2} $$
+El intervalo usa la $t$ de Student con $gl = n_1 + n_2 - 2$:
 
-    $$\text{Error Estándar} = \frac{s}{\sqrt{n}} = \frac{500}{10} = 50$$
+$$ IC(\mu_1 - \mu_2) = (\bar{x}\_1 - \bar{x}\_2) \pm t*{(n_1+n_2-2; 1-\alpha/2)} \sqrt{s_p^2 \left(\frac{1}{n_1} + \frac{1}{n_2}\right)} $$
 
-    $$\text{Margen de Error} = 1.984 \times 50 = 99.21$$
+**C. Varianzas desconocidas y diferentes ($\sigma_1^2 \neq \sigma_2^2$):**
+Se usa la fórmula de Welch para los grados de libertad ($\nu$) de la $t$ de Student:
 
-4.  **Intervalo:**
+$$ \nu \approx \frac{\left(\frac{s*1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(s_1^2 / n_1)^2}{n_1-1} + \frac{(s_2^2 / n_2)^2}{n_2-1}} $$
 
-    $$IC(\mu) = 1000 \pm 99.21 = [900.79, 1099.21]$$
-
-**Desarrollo paso a paso - Parte B (Población Finita $N=1000$):**
-
-1.  **Factor de Corrección:** Como muestreamos 100 de 1000 (el 10%, que es mayor al 5%), debemos ajustar el error estándar.
-
-    $$\text{Factor} = \sqrt{\frac{N-n}{N-1}} = \sqrt{\frac{1000-100}{1000-1}} = \sqrt{\frac{900}{999}} \approx 0.949$$
-
-2.  **Nuevo Error Estándar:**
-
-    $$\text{Error Estándar Ajustado} = \frac{s}{\sqrt{n}} \times \text{Factor} = 50 \times 0.949 \approx 47.458$$
-
-3.  **Nuevo Margen de Error:**
-
-    $$\text{Margen de Error} = 1.984 \times 47.458 \approx 94.157$$
-
-4.  **Intervalo Final:**
-
-    $$IC(\mu) = 1000 \pm 94.157 = [905.83, 1094.16]$$
-
-    _(Nota: Al conocer que la población es pequeña, el error disminuye y el intervalo se vuelve más estrecho y preciso)._
+$$ IC(\mu_1 - \mu_2) = (\bar{x}\_1 - \bar{x}\_2) \pm t*{(\nu; 1-\alpha/2)} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
 
 ---
 
-### 📝 Ejemplo 3: Efecto del Nivel de Confianza y Tamaño de Muestra
+---
 
-**Enunciado:**
-En una muestra de 35 cigarrillos se obtuvo un promedio de nicotina de 3.0 mg. Asuma que la distribución es normal con $\sigma = 1.0$ mg.
+## PARTE II: EJERCICIOS RESUELTOS Y EXPLICADOS
 
-a) Halle los intervalos de confianza del 90%, 95% y 99%.
+A continuación, se desarrollan los ejemplos del documento aplicando las fórmulas correspondientes y explicando el proceso de toma de decisiones.
 
-b) ¿Qué pasaría con el intervalo del 95% si la muestra aumentara a 45 cigarrillos?
+### Ejercicio 1: IC para la Media con Varianza Conocida
 
-**Desarrollo paso a paso - Parte A (Cambio de Confianza):**
+Un analista desea estimar el ingreso mensual promedio de los hogares de un sector con 95% de confianza. Tomó una muestra de 100 hogares, hallando un ingreso promedio de US$ 1,500. Cifras oficiales indican que la desviación estándar de la población es de US$ 300. ¿Cuál es el intervalo de confianza?
 
-1.  **Datos iniciales:** 
-    
-    $n = 35$, $\bar{x} = 3.0$, $\sigma = 1.0$.
-    
-    Error estándar constante: $\frac{\sigma}{\sqrt{n}} = \frac{1}{\sqrt{35}} \approx 0.169$
+**Datos:**
 
-2.  **Intervalo al 90%:**
+- $n = 100$
+- $\bar{x} = 1500$
+- $\sigma = 300$ (Varianza conocida)
+- Confianza = 95% $\rightarrow 1 - \alpha = 0.95 \rightarrow \alpha = 0.05 \rightarrow \alpha/2 = 0.025$.
+- Valor crítico Normal Estándar: $z_{0.975} = 1.96$
 
-    Valor $Z = 1.645$.
+**Desarrollo:**
+Como la varianza poblacional ($\sigma$) es conocida, usamos la distribución $Z$:
+$$ IC(\mu) = 1500 \pm 1.96 \left(\frac{300}{\sqrt{100}}\right) $$
+$$ IC(\mu) = 1500 \pm 1.96(30) $$
+$$ IC(\mu) = 1500 \pm 58.80 $$
+*(El Error de Estimación es US$ 58.80)\*
 
-    $$IC = 3.0 \pm (1.645 \times 0.169) = 3.0 \pm 0.278 \implies [2.72, \; 3.28]$$
-
-3.  **Intervalo al 95%:**
-
-    Valor $Z = 1.96$.
-
-    $$IC = 3.0 \pm (1.96 \times 0.169) = 3.0 \pm 0.331 \implies [2.67, \; 3.33]$$
-
-4.  **Intervalo al 99%:**
-
-    Valor $Z = 2.58$.
-
-    $$IC = 3.0 \pm (2.58 \times 0.169) = 3.0 \pm 0.436 \implies [2.56, \; 3.44]$$
-
-    _Explicación teórica:_ A medida que deseamos estar más seguros (mayor confianza), el intervalo necesita ensancharse para garantizar que capture al verdadero parámetro.
-
-**Desarrollo paso a paso - Parte B (Cambio en Tamaño de Muestra):**
-
-1.  **Nuevos Datos:** 
-    
-    $n = 45$, 
-    
-    $\bar{x} = 3.0$, 
-    
-    $\sigma = 1.0$, 
-    
-    Confianza = 95%: $1-\alpha = 0.95$ ($Z = 1.96$).
-
-2.  **Nuevo Error Estándar:**
-
-    $$\frac{1}{\sqrt{45}} \approx 0.149$$
-
-3.  **Nuevo Intervalo:**
-
-    $$IC = 3.0 \pm (1.96 \times 0.149) = 3.0 \pm 0.292 \implies [2.71, \; 3.29]$$
-
-    _Explicación teórica:_ Al aumentar la muestra de 35 a 45, poseemos más información de la población. Esto reduce la incertidumbre, permitiendo que el intervalo de confianza sea más estrecho (más preciso) sin necesidad de sacrificar el nivel de confianza del 95%.
+**Respuesta:**
+$$ IC(\mu) = [1441.20 \ , \ 1558.80] $$
+Con un 95% de confianza, el ingreso mensual promedio de todos los hogares se encuentra entre US$ 1,441.20 y US$ 1,558.80.
 
 ---
 
-## 5. Menciones a Casos y Ejercicios Adicionales del Documento
+### Ejercicio 2: IC para la Media (Varianza Desconocida - Población Infinita vs Finita)
 
-El documento original abarca fórmulas y ejemplos aplicados a otros escenarios estadísticos. A continuación se resume el propósito de cada uno:
+Una muestra de 100 cuentas de ahorros en BANAMEX mostró un saldo promedio de US$ 1,000 con una desviación estándar (de la muestra) de US$ 500. Nivel de confianza al 95%.
 
-- **Cálculo de Tamaño de Muestra para la Media (Ejemplo 4):**
-  Utiliza el margen de error máximo permitido ($B$) para despejar algebraicamente el valor de $n$. En el _Ejemplo 4_ se calcula a cuántos contribuyentes se debe encuestar en un municipio para estimar el monto de arbitrios con un error máximo de S/. 3.
+#### a) Considerando a BANAMEX como una población infinita:
 
-- **Intervalo de Confianza para la Proporción $\pi$ (Ejemplo 5):**
-  Aplica la aproximación normal para variables categóricas (ej. porcentaje de éxito o fracaso). La fórmula usa la proporción de la muestra ($\hat{p}$) en lugar de la media. El _Ejemplo 5_ calcula un intervalo para estimar la proporción real de artefactos eléctricos defectuosos en una fábrica.
+**Datos:** $n = 100$, $\bar{x} = 1000$, $s = 500$ (Varianza poblacional desconocida).
 
-- **Tamaño de Muestra para la Proporción (Ejemplo 6):**
-  Similar al caso de la media, pero aplicado a porcentajes. El _Ejemplo 6_ determina cuántas encuestas se deben realizar (y el costo total operativo) para estimar la preferencia por un producto con un margen de error del 4%.
+- Se usa $t$ de Student. Grados de libertad: $n-1 = 99$.
+- Valor crítico $t_{(99; 0.975)} \approx 1.984$.
 
-- **Intervalo de Confianza para la Varianza $\sigma^2$ (Ejemplo 7):**
-  Permite estimar la variabilidad o dispersión poblacional. No usa la distribución Normal, sino la distribución asimétrica **Chi-cuadrado ($\chi^2$)**. El _Ejemplo 7_ aplica esto para encontrar los límites de la variabilidad del diámetro de anillos para motores producidos en una fábrica.
+**Desarrollo:**
+$$ IC(\mu) = 1000 \pm 1.984 \left(\frac{500}{\sqrt{100}}\right) $$
+$$ IC(\mu) = 1000 \pm 1.984(50) = 1000 \pm 99.21 $$
 
-- **Intervalo para la Diferencia de Proporciones $\pi_1 - \pi_2$ (Ejemplo 8):**
-  Se utiliza para comparar dos grupos independientes y ver si sus proporciones difieren estadísticamente. Si el intervalo incluye el cero, no hay diferencia significativa. El _Ejemplo 8_ evalúa si existe diferencia real en el porcentaje de baterías defectuosas entre dos marcas competidoras (CAPSA vs. VOLTA).
+**Respuesta:** $P(900.79 \le \mu \le 1099.21) = 0.95$
 
-- **Intervalo para la Razón de Varianzas $\sigma_1^2 / \sigma_2^2$ (Ejemplo 9):**
-  Compara la variabilidad entre dos poblaciones utilizando la distribución de probabilidad **F de Fisher**. Si el intervalo incluye al número 1, se concluye que las varianzas son estadísticamente iguales. El _Ejemplo 9_ compara si la volatilidad (variabilidad de precios) de dos tipos de acciones bursátiles (A y B) es diferente.
+#### b) Si se sabe que el banco tiene exactamente $N = 1,000$ cuentas:
 
-- **Intervalo para la Diferencia de Medias $\mu_1 - \mu_2$ (Ejemplo 10):**
-  Permite evaluar si la media poblacional de un grupo es mayor, menor o igual a la de otro. El documento presenta fórmulas para cuando las varianzas son conocidas, desconocidas pero iguales, o desconocidas y diferentes. El _Ejemplo 10_ aplica este concepto para comparar la vida útil promedio (en años) de dos marcas diferentes de motores para refrigeradores.
+Dado que el tamaño de la muestra ($n=100$) supera el 5% de la población total ($N=1000$), se debe aplicar el Factor de Corrección para Poblaciones Finitas (FCPF):
+$$ FCPF = \sqrt{\frac{N-n}{N-1}} = \sqrt{\frac{1000-100}{1000-1}} = \sqrt{\frac{900}{999}} \approx 0.949 $$
+**Desarrollo del nuevo error estándar modificado:**
+$$ \hat{\sigma}\_{\bar{x}} = \frac{500}{\sqrt{100}} \sqrt{\frac{900}{999}} = 50 \cdot 0.949 \approx 47.458 $$
+$$ IC(\mu) = 1000 \pm 1.984 (47.458) = 1000 \pm 94.16 $$
+
+**Respuesta:** $P(905.84 \le \mu \le 1094.16) = 0.95$.
+_(Nota: Conocer a la población reduce la incertidumbre, logrando un intervalo más estrecho/preciso)._
+
+---
+
+### Ejercicio 3: Efecto de la Confianza y del Tamaño de Muestra
+
+Contenido promedio de nicotina: $\bar{x} = 3.0$ mg, varianza poblacional conocida $\sigma = 1.0$ mg.
+
+#### a) Efecto del nivel de confianza (Fijando $n = 35$):
+
+Fórmula a usar: $\bar{x} \pm z \cdot (\sigma/\sqrt{n}) \rightarrow 3.0 \pm z \cdot (1.0/\sqrt{35}) \rightarrow 3.0 \pm z \cdot 0.169$
+
+- **Para 90%** ($z = 1.645$): $IC = 3.0 \pm (1.645)(0.169) = [2.72 \ , \ 3.28]$
+- **Para 95%** ($z = 1.96$): $IC = 3.0 \pm (1.96)(0.169) = [2.67 \ , \ 3.33]$
+- **Para 99%** ($z = 2.58$): $IC = 3.0 \pm (2.58)(0.169) = [2.56 \ , \ 3.44]$
+
+**Conclusión:** Si el nivel de confianza **aumenta**, el intervalo se vuelve más **ancho** (menos preciso, pero más seguro).
+
+#### b) Efecto del tamaño de la muestra (Con 95% de confianza, pero $n = 45$):
+
+Error estándar modificado: $\sigma / \sqrt{n} = 1.0 / \sqrt{45} = 0.149$.
+$$ IC(\mu) = 3.0 \pm 1.96(0.149) = 3.0 \pm 0.29 $$
+$$ IC(\mu) = [2.71 \ , \ 3.29] $$
+
+**Conclusión:** Si el tamaño de la muestra **aumenta** (de 35 a 45), la longitud del intervalo **disminuye** (es más preciso).
+
+---
+
+### Ejercicio 4: Tamaño de Muestra para la Media
+
+Se desea estimar el monto de cobro de arbitrios con un error máximo ($B$) de S/. 3 y 95% de confianza. Se sabe que $\sigma = 35$.
+
+#### a) Tamaño necesario (Población infinita):
+
+Usamos la fórmula: $n = \frac{z^2 \cdot \sigma^2}{B^2}$
+$$ n = \frac{(1.96)^2 (35)^2}{3^2} = \frac{3.8416 \cdot 1225}{9} = 522.88 $$
+**Respuesta:** Se necesitan redondear a **523 contribuyentes** (siempre se redondea al techo para asegurar la confianza).
+
+#### b) Tamaño necesario si la población es de $N = 5000$:
+
+Usamos la fórmula corregida:
+$$ n = \frac{N \cdot z^2 \cdot \sigma^2}{(N-1)B^2 + z^2 \cdot \sigma^2} $$
+$$ n = \frac{5000 \cdot (1.96)^2 \cdot (35)^2}{(4999)(3^2) + (1.96)^2(35)^2} = \frac{23,529,800}{44991 + 4705.96} = 473.46 $$
+**Respuesta:** Al ser una población finita, necesitamos encuestar solo a **474 contribuyentes**.
+
+---
+
+### Ejercicio 5: IC para la Proporción
+
+El gerente afirma que el 96% de productos son fabricados correctamente. En una muestra de $n = 200$, se hallaron 25 defectuosos. ¿Cuál es el IC al 95% de la proporción de artefactos en **buen estado**? ¿Tiene razón el gerente?
+
+**Datos:**
+
+- $n = 200$
+- Casos de éxito (buen estado) $k = 200 - 25 = 175$
+- Proporción muestral: $p = 175 / 200 = 0.875$
+- Confianza 95% $\rightarrow z_{0.975} = 1.96$
+
+**Desarrollo:**
+
+$$ IC(\pi) = p \pm z\_{1-\alpha/2} \sqrt{\frac{p(1-p)}{n}} $$
+
+$$ IC(\pi) = 0.875 \pm 1.96 \sqrt{\frac{0.875 \cdot 0.125}{200}} $$
+
+$$ IC(\pi) = 0.875 \pm 1.96(0.0234) = 0.875 \pm 0.0458 $$
+
+**Respuesta:** $IC = [0.829 \ , \ 0.920]$
+Como el intervalo va del 82.9% al 92%, y la afirmación del gerente era del 96%, **la duda sobre la afirmación del gerente es razonable**, ya que el 96% está fuera (muy por encima) de nuestro intervalo de confianza.
+
+---
+
+### Ejercicio 6: Tamaño de Muestra y Costos para una Proporción
+
+Se quiere estimar la proporción de amas de casa que prefieren un producto. Error ($B$) no mayor a 4% (0.04), confianza del 95% ($z = 1.96$), proporción estimada inicial $p = 0.20$. ¿Cuál será el costo si los gastos base son US$ 4000 y cada entrevista cuesta US$ 65?
+
+**Paso 1: Calcular tamaño de muestra ($n$)**
+$$ n = \frac{z^2 p(1-p)}{B^2} = \frac{(1.96)^2 \cdot 0.20 \cdot 0.80}{(0.04)^2} = \frac{3.8416 \cdot 0.16}{0.0016} = 384.16 \approx 385 \text{ personas} $$
+
+**Paso 2: Calcular Costo Total**
+$$ \text{Costo Total} = \text{Costo Fijo} + (\text{Costo por Encuesta} \times n) $$
+$$ \text{Costo Total} = 4000 + (65 \times 385) = 4000 + 25025 = US\$ \ 29,025 $$
+
+---
+
+### Ejercicio 7: IC para la Varianza y Desviación Estándar
+
+Muestra de $n=24$ anillos de motor. Desviación estándar muestral $s=0.0065$. Hallar límites de variabilidad (IC para varianza) al 95%.
+
+**Datos:**
+
+- Grados de libertad = $n-1 = 23$.
+- Valores críticos Chi-Cuadrado ($\alpha/2 = 0.025$, $1-\alpha/2 = 0.975$):
+    - $\chi^2_{(23; 0.975)} = 38.076$ (Para el límite inferior).
+    - $\chi^2_{(23; 0.025)} = 11.689$ (Para el límite superior).
+
+**Desarrollo para la Varianza ($\sigma^2$):**
+
+$$ L*{inf} = \frac{(24-1)(0.0065)^2}{38.076} = \frac{23 \cdot 0.00004225}{38.076} \approx 0.000026 $$
+
+$$ L*{sup} = \frac{(24-1)(0.0065)^2}{11.689} = \frac{0.00097175}{11.689} \approx 0.000083 $$
+
+**Respuesta Varianza:** $P(0.000026 \le \sigma^2 \le 0.000083) = 0.95$
+
+**Para la Desviación Estándar ($\sigma$):** Sacamos raíz cuadrada a los límites.
+**Respuesta D. Estándar:** $P(0.00505 \le \sigma \le 0.00912) = 0.95$
+
+---
+
+### Ejercicio 8: Diferencia de Proporciones
+
+Baterías defectuosas de dos empresas. ¿Hay diferencia significativa con 99% de confianza?
+
+- **CAPSA:** $n_1 = 250$, defectuosas $k_1 = 20 \rightarrow p_1 = 20/250 = 0.08$
+- **VOLTA:** $n_2 = 300$, defectuosas $k_2 = 18 \rightarrow p_2 = 18/300 = 0.06$
+- Confianza 99% $\rightarrow z_{0.995} = 2.58$.
+
+**Desarrollo:**
+$$ IC(\pi_1 - \pi_2) = (0.08 - 0.06) \pm 2.58 \sqrt{\frac{0.08(0.92)}{250} + \frac{0.06(0.94)}{300}} $$
+$$ IC(\pi_1 - \pi_2) = 0.02 \pm 2.58 \sqrt{0.0002944 + 0.000188} = 0.02 \pm 2.58(0.02196) $$
+$$ IC(\pi_1 - \pi_2) = 0.02 \pm 0.0566 $$
+
+**Respuesta e Interpretación:**
+$$ IC(\pi_1 - \pi_2) = [-0.0366 \ , \ 0.0766] $$
+Como el intervalo contiene signos negativos y positivos **(atraviesa el cero)**, se concluye matemáticamente que $\pi_1 = \pi_2$. Es decir, **no hay evidencia estadística de que exista una diferencia significativa** en la proporción de defectos entre CAPSA y VOLTA.
+
+---
+
+### Ejercicio 9: IC para la Razón de Varianzas
+
+Precios de dos acciones. ¿Es la variabilidad diferente con 95% de confianza?
+
+- **Acción A:** $n_1 = 15$, $s_1^2 = 1.54$
+- **Acción B:** $n_2 = 15$, $s_2^2 = 2.96$
+
+**Desarrollo:**
+Calculamos los valores críticos de F de Fisher para 14 y 14 grados de libertad:
+
+- $F_{(14; 14; 0.025)} = 0.335730$
+- $F_{(14; 14; 0.975)} = 2.97859$
+
+Aplicamos la fórmula del intervalo para el cociente $\sigma_1^2 / \sigma_2^2$:
+$$ IC = \left[ 0.335730 \left(\frac{1.54}{2.96}\right) \ ; \ 2.97859 \left(\frac{1.54}{2.96}\right) \right] $$
+$$ IC = [ 0.335730 (0.5202) \ ; \ 2.97859 (0.5202) ] $$
+
+**Respuesta e Interpretación:**
+$$ IC\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = [0.175 \ , \ 1.550] $$
+Como el intervalo **contiene a la unidad (el número 1)**, no se puede afirmar que las variabilidades sean diferentes. Por ende, se asume que las varianzas poblacionales son **iguales** ($\sigma_1^2 = \sigma_2^2$).
+
+---
+
+### Ejercicio 10: Diferencia de Medias (Varianzas desconocidas, asumidas iguales)
+
+Duración de vida útil de motores (en años). Confianza del 90%. Asumiendo variabilidad idéntica.
+
+- **Marca A:** $n_1 = 50$, $\bar{x}_1 = 12.0$, $s_1 = 1.2$
+- **Marca B:** $n_2 = 50$, $\bar{x}_2 = 13.8$, $s_2 = 1.5$
+- Confianza 90% $\rightarrow t_{(98; 0.95)} \approx 1.66055$ (Grados de libertad: $50+50-2 = 98$).
+
+**Paso 1: Calcular la Varianza Combinada Ponderada ($s_p^2$)**
+$$ s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2} = \frac{(49)(1.2^2) + (49)(1.5^2)}{98} $$
+$$ s_p^2 = \frac{49(1.44) + 49(2.25)}{98} = \frac{70.56 + 110.25}{98} = 1.845 $$
+
+**Paso 2: Calcular el Intervalo de Confianza**
+$$ IC(\mu_1 - \mu_2) = (12.0 - 13.8) \pm 1.66055 \sqrt{1.845 \left(\frac{1}{50} + \frac{1}{50}\right)} $$
+$$ IC = -1.8 \pm 1.66055 \sqrt{1.845(0.04)} = -1.8 \pm 1.66055 \sqrt{0.0738} $$
+$$ IC = -1.8 \pm 1.66055(0.27166) = -1.8 \pm 0.451 $$
+
+**Respuesta e Interpretación:**
+$$ IC(\mu_1 - \mu_2) = [-2.251 \ , \ -1.349] $$
+Dado que **ambos límites son negativos**, esto indica matemáticamente que $(\mu_1 - \mu_2) < 0$, lo que implica que **$\mu_1 < \mu_2$**.
+**Conclusión:** Podemos afirmar con un 90% de confianza que la duración promedio de los motores de la Marca A es significativamente menor que la duración promedio de los motores de la Marca B.
