@@ -7,7 +7,7 @@
 
 ---
 
-![Interes Simple y Compuesto](/assets/images/mate-financiera/interes-simple-interes-compuesto.jpg)
+![Interes Simple y Compuesto](../assets/images/mate-financiera/interes-simple-interes-compuesto.jpg)
 
 ## 1. Conceptos Básicos del Interés Simple
 

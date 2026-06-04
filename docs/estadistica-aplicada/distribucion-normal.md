@@ -17,7 +17,7 @@ $$
 
 ## 2. Distribución normal estándar
 
-![Distribucion Normal Estándar](/assets/images/estadistica-aplicada/distr-normal-std.jpg)
+![Distribucion Normal Estándar](../assets/images/estadistica-aplicada/distr-normal-std.jpg)
 
 Una variable tiene distribución normal estándar si:
 

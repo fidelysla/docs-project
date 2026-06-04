@@ -79,6 +79,8 @@ La distribución muestral del estadístico de prueba se divide en dos zonas mutu
 
 Gráficamente, estas regiones se distribuyen de la siguiente manera:
 
+![regiones-criticas-de-rechazo](../assets/images/estadistica-aplicada/regiones-rechazo.png)
+
 - **Cola Izquierda ($H_1: \theta < \theta_0$):** Toda la región de rechazo (área $\alpha$) se ubica en el extremo izquierdo de la distribución.
 - **Cola Derecha ($H_1: \theta > \theta_0$):** Toda la región de rechazo (área $\alpha$) se ubica en el extremo derecho de la distribución.
 - **Cola Bilateral ($H_1: \theta \neq \theta_0$):** La región de rechazo se divide en dos partes iguales (área $\alpha/2$ cada una) en ambos extremos de la curva.
@@ -117,13 +119,13 @@ $$z_c = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
 | $H_0: \mu = \mu_0$ / $H_1: \mu > \mu_0$    | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ |  $z_{1-\alpha}$  |    $z_c > z_{1-\alpha}$    |
 | $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ | $z_{1-\alpha/2}$ | $\|z_c\| > z_{1-\alpha/2}$ |
 
-**Criterio del $p$-valor:**
+<!-- **Criterio del $p$-valor:**
 
 | Hipótesis                                  |                    Estadístico                     |                      Cálculo del $p$-valor                       |              Regla de decisión              |
 | :----------------------------------------- | :------------------------------------------------: | :--------------------------------------------------------------: | :-----------------------------------------: |
 | $H_0: \mu = \mu_0$ / $H_1: \mu < \mu_0$    | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ | $P\!\left(Z < \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}\right)$ | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
 | $H_0: \mu = \mu_0$ / $H_1: \mu > \mu_0$    | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ | $P\!\left(Z > \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}\right)$ | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
-| $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ |                $2\,P\!\left(Z < -\|z_c\|\right)$                 | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
+| $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $z_c = \dfrac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$ |                $2\,P\!\left(Z < -\|z_c\|\right)$                 | Rechazar $H_0$ si $p\text{-valor} < \alpha$ | -->
 
 ---
 
@@ -141,13 +143,13 @@ $$t_c = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}$$
 | $H_0: \mu = \mu_0$ / $H_1: \mu > \mu_0$    | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ |  $t_{1-\alpha}$  |    $t_c > t_{1-\alpha}$    |
 | $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ | $t_{1-\alpha/2}$ | $\|t_c\| > t_{1-\alpha/2}$ |
 
-**Criterio del $p$-valor:**
+<!-- **Criterio del $p$-valor:**
 
 | Hipótesis                                  |                  Estadístico                  |                    Cálculo del $p$-valor                    |              Regla de decisión              |
 | :----------------------------------------- | :-------------------------------------------: | :---------------------------------------------------------: | :-----------------------------------------: |
 | $H_0: \mu = \mu_0$ / $H_1: \mu < \mu_0$    | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ | $P\!\left(t < \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}\right)$ | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
 | $H_0: \mu = \mu_0$ / $H_1: \mu > \mu_0$    | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ | $P\!\left(t > \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}\right)$ | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
-| $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ |              $2\,P\!\left(t < -\|t_c\|\right)$              | Rechazar $H_0$ si $p\text{-valor} < \alpha$ |
+| $H_0: \mu = \mu_0$ / $H_1: \mu \neq \mu_0$ | $t_c = \dfrac{\bar{x} - \mu_0}{s / \sqrt{n}}$ |              $2\,P\!\left(t < -\|t_c\|\right)$              | Rechazar $H_0$ si $p\text{-valor} < \alpha$ | -->
 
 ## 7. Ejemplos Resueltos
 
@@ -185,7 +187,7 @@ Dado que la gerencia busca evidencia de que el gasto es _superior_ a S/. 2000 pa
 Un fabricante afirma que, mediante el uso de un aditivo especial en la gasolina, los automóviles podrían recorrer, por término medio, 3 kilómetros más por litro. Para evaluar este producto se usa una muestra aleatoria de 100 automóviles, alcanzando un incremento medio de 3.4 kilómetros por litro, con una desviación estándar de 1.8 kilómetros. ¿Con $\alpha = 0.05$, se puede afirmar que con el uso del aditivo los automóviles incrementarán su recorrido?
 
 **Solución:**
-De los datos tenemos: $\mu_0 = 3.00$, $n = 100$, $\bar{x} = 3.40$, $s = 1.80$, $\alpha = 0.05$. 
+De los datos tenemos: $\mu_0 = 3.00$, $n = 100$, $\bar{x} = 3.40$, $s = 1.80$, $\alpha = 0.05$.
 
 Como $\sigma^2$ es desconocida, usamos el estadístico $t$.
 
@@ -194,7 +196,7 @@ Como $\sigma^2$ es desconocida, usamos el estadístico $t$.
     - $H_1: \mu > 3$ (Con el uso del aditivo los automóviles SÍ incrementarán su recorrido).
 2.  **Nivel de significación:** $\alpha = 0.05$
 3.  **Estadístico de Prueba:**
-    
+
     $$t_c = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} = \frac{3.4 - 3.0}{1.8 / \sqrt{100}} = \frac{0.4}{0.18} = 2.22$$
 
 4.  **Valor Crítico:**
@@ -207,7 +209,7 @@ Como $\sigma^2$ es desconocida, usamos el estadístico $t$.
 6.  **Decisión de la Prueba:**
     Como $t_c = 2.22 > 1.66039$, la decisión es **Rechazar $H_0$**.
 7.  **Conclusión:**
-    Con un nivel de significación del 5%, SE PUEDE AFIRMAR que con el uso del aditivo los automóviles incrementarán su recorrido.
+    Con un nivel de significación del 5%, SE PUEDE AFIRMAR que con el uso del aditivo los automóviles (SI) incrementarán su recorrido.
 
 ---
 
@@ -247,26 +249,26 @@ Además de evaluar el estadístico $Z$ o $t$, la regla de decisión puede establ
 
 ### 9.1. Región Crítica basada en la Media Muestral ($\bar{X}_c$)
 
-**Para una Prueba de Cola Izquierda ($H_1: \mu < \mu_0$):**
+A) **Para una Prueba de Cola Izquierda ($H_1: \mu < \mu_0$):**
 Partimos de la probabilidad de cometer Error Tipo I ($\alpha$):
 
-$$ \alpha = P(\bar{X} < \bar{X}_c \mid \mu = \mu_0) $$
+$$ \alpha = P(\bar{X} < \bar{X}\_c \mid \mu = \mu_0) $$
 
 Estandarizando, llegamos a la fórmula del valor crítico de la media:
 
-$$ \bar{X}\_c = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}} $$
+$$ \boxed{\bar{X}_c = \mu_0 + z_\alpha \cdot \frac{\sigma}{\sqrt{n}}} $$
 
-*(Nota: $z_\alpha$ será un valor negativo).*
+_(Nota: $z_\alpha$ será un valor negativo).\_
 
 **Regla:** Se rechaza $H_0$ si $\bar{X} < \bar{X}_c$.
 
-**Para una Prueba de Cola Derecha ($H_1: \mu > \mu_0$):**
+B) **Para una Prueba de Cola Derecha ($H_1: \mu > \mu_0$):**
 
-$$ \alpha = P(\bar{X} > \bar{X}_c \mid \mu = \mu_0) $$
+$$ \alpha = P(\bar{X} > \bar{X}\_c \mid \mu = \mu_0) $$
 
 La fórmula del valor crítico de la media es:
 
-$$ \bar{X}\_c = \mu_0 + z_{1-\alpha} \cdot \frac{\sigma}{\sqrt{n}} $$
+$$ \boxed{\bar{X}_c = \mu_0 + z_{1-\alpha} \cdot \frac{\sigma}{\sqrt{n}}} $$
 
 **Regla:** Se rechaza $H_0$ si $\bar{X} > \bar{X}_c$.
 
@@ -274,17 +276,17 @@ $$ \bar{X}\_c = \mu_0 + z_{1-\alpha} \cdot \frac{\sigma}{\sqrt{n}} $$
 
 El Error Tipo II ($\beta$) es la probabilidad de No Rechazar $H_0$ cuando en realidad es falsa (es decir, cuando el verdadero promedio es $\mu = \mu_1$).
 
-**Para una Prueba de Cola Izquierda:**
+A) **Para una Prueba de Cola Izquierda:**
 Dado que la zona de no rechazo está a la derecha de $\bar{X}_c$, calculamos:
 
 $$ \beta = P(\bar{X} \ge \bar{X}\_c \mid \mu = \mu_1) = P\left(Z \ge \frac{\bar{X}\_c - \mu_1}{\sigma / \sqrt{n}}\right) $$
 
-**Para una Prueba de Cola Derecha:**
+B) **Para una Prueba de Cola Derecha:**
 Dado que la zona de no rechazo está a la izquierda de $\bar{X}_c$, calculamos:
 
 $$ \beta = P(\bar{X} \le \bar{X}\_c \mid \mu = \mu_1) = P\left(Z \le \frac{\bar{X}\_c - \mu_1}{\sigma / \sqrt{n}}\right) $$
 
-**Potencia de la Prueba:** Es la probabilidad de tomar la decisión correcta cuando $H_0$ es falsa.
+C) **Potencia de la Prueba:** Es la probabilidad de tomar la decisión correcta cuando $H_0$ es falsa.
 
 $$ \text{Potencia} = 1 - \beta $$
 
@@ -376,3 +378,186 @@ $$ \bar{X}_c = \mu_0 + t_{\alpha} \left(\frac{s}{\sqrt{n}}\right) \approx 500 + 
 El Error Tipo II ocurre si $\bar{X} \le \bar{X}_c$ siendo $\mu = 508$:
 $$ \beta = P(\bar{X} \le 503.578 \mid \mu = 508) = P\left(t \le \frac{503.578 - 508}{10/\sqrt{30}}\right) = P(t \le -2.42) $$
 Buscando en la tabla $t$ para 29 grados de libertad, el área a la izquierda de $-2.42$ es aproximadamente **$\beta \approx 0.011$**. La probabilidad de cometer Error Tipo II es muy baja (1.1%).
+
+---
+
+## 12. Pruebas de Hipótesis para la Proporción Poblacional ($\pi$)
+
+Cuando se trabaja con variables cualitativas (éxito/fracaso, posee/no posee un atributo), el parámetro de interés es la proporción poblacional, denotada como $\pi$. El estimador muestral es la proporción de la muestra, denotada como $p = \frac{k}{n}$, donde $k$ es el número de éxitos y $n$ el tamaño de la muestra.
+
+### Criterio del Estadístico de Prueba (Muestras grandes, $n > 30$)
+
+Para tamaños de muestra lo suficientemente grandes, la distribución de la proporción muestral $p$ se aproxima a una distribución normal. Se utiliza el estadístico $Z$.
+
+**Tabla de Criterios de Decisión para la Proporción:**
+
+| Hipótesis                                   |                    Estadístico de Prueba                    | Valores Críticos | Reglas para rechazar $H_0$ |
+| :------------------------------------------ | :---------------------------------------------------------: | :--------------: | :------------------------: |
+| $H_0: \pi = \pi_0$<br>$H_1: \pi < \pi_0$    | $z_c = \frac{p - \pi_0}{\sqrt{\frac{\pi_0(1 - \pi_0)}{n}}}$ |    $z_\alpha$    |      $z_c < z_\alpha$      |
+| $H_0: \pi = \pi_0$<br>$H_1: \pi > \pi_0$    | $z_c = \frac{p - \pi_0}{\sqrt{\frac{\pi_0(1 - \pi_0)}{n}}}$ |  $z_{1-\alpha}$  |    $z_c > z_{1-\alpha}$    |
+| $H_0: \pi = \pi_0$<br>$H_1: \pi \neq \pi_0$ | $z_c = \frac{p - \pi_0}{\sqrt{\frac{\pi_0(1 - \pi_0)}{n}}}$ | $z_{1-\alpha/2}$ | $\|z_c\| > z_{1-\alpha/2}$ |
+
+**Regla de decisión bajo el criterio del p-valor:**
+
+- Si $p\text{-valor} < \alpha \rightarrow$ Se Rechaza $H_0$
+- Caso contrario $\rightarrow$ NO se Rechaza $H_0$
+
+---
+
+### 12.1. Valor Crítico de la Proporción Muestral ($p_c$) y Error Tipo II
+
+Al igual que con la media, es posible establecer el límite de la región de rechazo directamente en la escala de las proporciones (valor $p_c$) y utilizarlo para calcular la probabilidad de cometer Error Tipo II ($\beta$).
+
+**A. Para Prueba de Cola Izquierda ($H_1: \pi < \pi_0$)**
+
+- **Valor crítico de la proporción ($p_c$):**
+
+  $$p_c = \pi_0 + z_\alpha \sqrt{\frac{\pi_0(1 - \pi_0)}{n}}$$
+
+  _Regla:_ Se rechaza $H_0$ si $p < p_c$. _(Nota: $z_\alpha$ es negativo).\_
+
+- **Cálculo de $\beta$ (dado un $\pi_1 < \pi_0$ verdadero):**
+  $$\beta = P(p \ge p_c \mid \pi = \pi_1) = P\left(Z \ge \frac{p_c - \pi_1}{\sqrt{\frac{\pi_1(1 - \pi_1)}{n}}}\right)$$
+
+**B. Para Prueba de Cola Derecha ($H_1: \pi > \pi_0$)**
+
+- **Valor crítico de la proporción ($p_c$):**
+
+  $$ p*c = \pi_0 + z*{1-\alpha} \sqrt{\frac{\pi_0(1 - \pi_0)}{n}} $$
+
+  _Regla:_ Se rechaza $H_0$ si $p > p_c$.
+
+- **Cálculo de $\beta$ (dado un $\pi_1 > \pi_0$ verdadero):**
+
+  $$\beta = P(p \le p_c \mid \pi = \pi_1) = P\left(Z \le \frac{p_c - \pi_1}{\sqrt{\frac{\pi_1(1 - \pi_1)}{n}}}\right)$$
+
+---
+
+## 13. Ejemplos Resueltos: Pruebas para la Proporción
+
+### Ejemplo 1: Prueba Bilateral (Marca de Cigarrillos)
+
+Un fabricante de cigarrillos asegura que el 20% de los fumadores prefieren la marca que ellos producen (marca A). Para probar esta afirmación se toma una muestra de 40 fumadores a quienes se les consulta sobre la marca de cigarrillos que fuman. Si 9 de los entrevistados prefieren la marca A. ¿Con $\alpha = 0.05$, se puede rebatir la afirmación del fabricante?
+
+**Solución:**
+Datos: $\pi_0 = 0.20$, $n = 40$, $k = 9$, $p = \frac{9}{40} = 0.225$. $\alpha = 0.05$.
+
+1.  **Hipótesis:**
+    - $H_0: \pi = 0.20$ (La proporción NO es diferente al 20%; no se rebate al fabricante).
+    - $H_1: \pi \neq 0.20$ (La proporción SÍ es diferente al 20%; se rebate al fabricante).
+2.  **Estadístico de Prueba:**
+    $$ z_c = \frac{p - \pi_0}{\sqrt{\frac{\pi_0(1 - \pi_0)}{n}}} = \frac{0.225 - 0.20}{\sqrt{\frac{0.20(0.80)}{40}}} = \frac{0.025}{0.0632} = 0.40 $$
+3.  **Valor Crítico:** Para dos colas ($\alpha/2 = 0.025$): $z_{1-\alpha/2} = z_{0.975} = 1.96$.
+4.  **Regla y Decisión:** Si $|z_c| > 1.96$ se rechaza $H_0$. Como $|0.40| < 1.96$, la decisión es **No Rechazar $H_0$**.
+5.  **Conclusión:** Con un nivel de significación del 5%, NO es posible rebatir la afirmación del fabricante. No hay evidencia de que la preferencia sea diferente al 20%.
+
+---
+
+### Ejemplo 2: Prueba Unilateral Izquierda y Análisis Integral (Llegadas Tarde)
+
+El gerente de una gran compañía afirma que _al menos_ 25% de sus empleados llegan tarde. Para comprobar su afirmación, revisa 40 empleados y verifica que 8 han llegado tarde.
+
+- a) Con $\alpha = 0.02$, ¿hay razón para concluir que el gerente está exagerando?
+- b) ¿Qué valor máximo debe tener la proporción de la muestra ($p_c$) para rechazar $H_0$, asumiendo $\alpha = 0.05$ y $n = 60$? _(Nota: El enunciado dice "para no rechazar", pero calcula el límite de rechazo)._
+- c) Hallar la potencia de la prueba cuando $\pi = 20\%$ (usando los datos de b).
+
+**Solución a) Evaluación de la afirmación original:**
+
+Datos: $\pi_0 = 0.25$, $n = 40$, $p = \frac{8}{40} = 0.20$, $\alpha = 0.02$.
+
+- **Hipótesis:** $H_0: \pi \ge 0.25$ vs $H_1: \pi < 0.25$ (El gerente exagera, la proporción es menor).
+- **Estadístico:**
+  $$ z_c = \frac{0.20 - 0.25}{\sqrt{\frac{0.25(0.75)}{40}}} = \frac{-0.05}{0.0685} = -0.7303 $$
+- **Valor Crítico:** $z_{0.02} = -2.0537$.
+- **P-valor:** $P(Z < -0.73) = 0.233$. (Como $0.233 > 0.02$, NO se rechaza).
+- **Proporción Crítica ($p_c$):** $p_c = 0.25 + (-2.05)(0.0685) \approx 0.1096$. (Como $p = 0.20 > 0.1096$, NO se rechaza).
+- **Conclusión:** Con un NS del 2%, NO se puede afirmar que el gerente esté exagerando (no hay evidencia suficiente para decir que es menor al 25%).
+
+**Solución b) Cálculo del Valor Crítico de la Proporción ($p_c$) con nuevos datos:**
+
+Nuevos datos: $\pi_0 = 0.25$, $n = 60$, $\alpha = 0.05$. Valor $z_{0.05} = -1.64485$.
+
+$$p_c = \pi_0 + z_\alpha \sqrt{\frac{\pi_0(1 - \pi_0)}{n}} $$
+
+$$p_c = 0.25 - 1.64485 \sqrt{\frac{0.25(0.75)}{60}} = 0.25 - 1.64485(0.0559) \approx 0.15805 $$
+
+**Solución c) Cálculo de $\beta$ y Potencia si $\pi_1 = 0.20$:**
+
+El Error Tipo II ocurre si $p \ge 0.15805$ cuando la realidad es $\pi = 0.20$.
+
+$$ \beta = P(p \ge 0.15805 \mid \pi = 0.20) = P\left(Z \ge \frac{0.15805 - 0.20}{\sqrt{\frac{0.20(0.80)}{60}}}\right) $$
+
+$$ \beta = P\left(Z \ge \frac{-0.04195}{0.05164}\right) = P(Z \ge -0.8123) \approx 0.7917 $$
+
+La Potencia de la prueba es: $1 - \beta = 1 - 0.7917 = \mathbf{0.2083}$.
+
+---
+
+### Ejemplo 3: Prueba Unilateral Derecha (Campaña de Detergente)
+
+La aceptación de un detergente es del 20%. Se hace una campaña para incrementarla. De $n=450$ consumidores, $105$ lo utilizan ($p = 105/450 = 0.2333$).
+
+a) Con $\alpha = 0.025$, ¿fue efectiva la campaña?
+
+b) Probabilidad de no rechazar $H_0$ si la verdadera aceptación es $\pi_1 = 22\%$.
+
+**Solución a) Prueba de Hipótesis:**
+
+- **Hipótesis:** $H_0: \pi \le 0.20$ (No efectiva) vs $H_1: \pi > 0.20$ (Sí fue efectiva).
+- **Estadístico:**
+  $$ z_c = \frac{0.2333 - 0.20}{\sqrt{\frac{0.20(0.80)}{450}}} = \frac{0.0333}{0.01886} = 1.766 $$
+- **Valor Crítico:** Para $\alpha = 0.025$ (cola derecha), $z_{0.975} = 1.96$.
+- **Criterio $p_c$:**
+  $$ p_c = 0.20 + 1.96 \left(\sqrt{\frac{0.20(0.80)}{450}}\right) = 0.20 + 1.96(0.01886) = 0.236958 $$
+- **Decisión:** Como $z_c = 1.766 < 1.96$ (y de forma equivalente $p = 0.2333 < 0.236958$), **NO se rechaza $H_0$**.
+- **Conclusión:** Con un NS del 2.5%, NO es posible afirmar que la campaña de publicidad fue efectiva.
+
+**Solución b) Cálculo de Error Tipo II ($\beta$) si $\pi_1 = 0.22$:**
+
+No rechazamos $H_0$ si $p < 0.236958$.
+
+$$ \beta = P(p < 0.236958 \mid \pi = 0.22) = P\left(Z \le \frac{0.236958 - 0.22}{\sqrt{\frac{0.22(0.78)}{450}}}\right) $$
+
+$$ \beta = P\left(Z \le \frac{0.016958}{0.019528}\right) \approx P(Z \le 0.868) \approx \mathbf{0.8074} $$
+
+---
+
+## 14. Pruebas de Hipótesis para la Varianza Poblacional ($\sigma^2$)
+
+Para realizar inferencias sobre la varianza de una población, se asume que la variable de estudio tiene una distribución normal. El estadístico de prueba se basa en la distribución Chi-cuadrado ($\chi^2$) con $n-1$ grados de libertad.
+
+**Tabla de Criterios de Decisión para la Varianza:**
+
+| Hipótesis                                                       |          Estadístico de Prueba           |                       Valores Críticos                       |                             Reglas para rechazar $H_0$                             |
+| :-------------------------------------------------------------- | :--------------------------------------: | :----------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| $H_0: \sigma^2 = \sigma_0^2$<br>$H_1: \sigma^2 < \sigma_0^2$    | $\chi^2_c = \frac{(n-1)s^2}{\sigma_0^2}$ |                   $\chi^2_{(n-1; \alpha)}$                   |                        $\chi^2_c < \chi^2_{(n-1; \alpha)}$                         |
+| $H_0: \sigma^2 = \sigma_0^2$<br>$H_1: \sigma^2 > \sigma_0^2$    | $\chi^2_c = \frac{(n-1)s^2}{\sigma_0^2}$ |                  $\chi^2_{(n-1; 1-\alpha)}$                  |                       $\chi^2_c > \chi^2_{(n-1; 1-\alpha)}$                        |
+| $H_0: \sigma^2 = \sigma_0^2$<br>$H_1: \sigma^2 \neq \sigma_0^2$ | $\chi^2_c = \frac{(n-1)s^2}{\sigma_0^2}$ | $\chi^2_{(n-1; \alpha/2)}$ y<br>$\chi^2_{(n-1; 1-\alpha/2)}$ | $\chi^2_c < \chi^2_{(n-1; \alpha/2)}$ o<br>$\chi^2_c > \chi^2_{(n-1; 1-\alpha/2)}$ |
+
+_(Nota: La distribución Chi-cuadrado no es simétrica y toma valores únicamente positivos, por lo que los valores críticos de la cola izquierda y derecha difieren numéricamente)._
+
+---
+
+### Ejemplo 4: Prueba Unilateral Derecha para la Varianza (Máquina empacadora)
+
+Una máquina empacadora de azúcar se usa para llenar bolsas de 2 Kg. Una muestra de 15 bolsas arrojó una media de 1.97 Kg con una desviación estándar muestral de $s = 0.012$ Kg. Si se supone que la distribución de los pesos es normal, y de la experiencia pasada se sabe que la desviación estándar teórica de los pesos es de $\sigma_0 = 0.009$ Kg, ¿puede explicarse el aparente incremento en la variabilidad por el error muestral únicamente? (Use $\alpha = 0.05$).
+
+**Solución:**
+El problema nos pregunta si la variabilidad ha aumentado de manera estadísticamente significativa.
+Datos: $\sigma_0 = 0.009 \rightarrow \sigma_0^2 = 0.009^2$, $n = 15$, $s = 0.012 \rightarrow s^2 = 0.012^2$, $\alpha = 0.05$.
+
+1.  **Hipótesis:**
+    - $H_0: \sigma^2 \le 0.009^2$ (La variabilidad no se ha incrementado).
+    - $H_1: \sigma^2 > 0.009^2$ (La variabilidad SÍ se ha incrementado).
+2.  **Nivel de Significación:** $\alpha = 0.05$
+3.  **Estadístico de Prueba:**
+    $$ \chi^2_c = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(15 - 1)(0.012^2)}{0.009^2} = \frac{14(0.000144)}{0.000081} \approx 24.889 $$
+4.  **Valor Crítico:**
+    Buscamos en la tabla Chi-cuadrado para $n-1 = 14$ grados de libertad y un área a la izquierda de $1-\alpha = 0.95$:
+    $$ \chi^2\_{(14; 0.95)} = 23.685 $$
+5.  **Regla de Decisión:**
+    Si $\chi^2_c > 23.685$, se rechaza $H_0$.
+6.  **Decisión:**
+    Como $24.889 > 23.685$, la decisión es **Rechazar $H_0$**.
+7.  **Conclusión:**
+    Con un nivel de significancia del 5%, se puede afirmar que la variabilidad en el peso de las bolsas se ha incrementado significativamente (no se debe únicamente al error de muestreo).

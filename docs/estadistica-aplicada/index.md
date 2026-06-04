@@ -4,9 +4,11 @@
 2. [Métodos de Muestreo Probabilístico](introduccion-muestreo.md)
 3. [Distribuciones Muestrales](distribuciones-muestrales.md)
 4. [Estimación de Parámetros](estimacion-parametros.md)
+5. [Prueba de Hipótesis](prueba-hipotesis.md)
 
 ---
 
+```
 Actúa como un experto en **Estadística Aplicada** y en **redacción académica en Markdown**.
 
 A partir de las imágenes proporcionadas (diapositivas de una presentación sobre _Métodos de Muestreo Probabilístico_), elabora un **documento completo en formato Markdown** que explique los conceptos presentados.
@@ -87,3 +89,4 @@ Generar un documento que:
 ---
 
 Si alguna parte del contenido de las imágenes no es clara, interpreta de la forma más coherente posible sin inventar información fuera del contexto.
+```
