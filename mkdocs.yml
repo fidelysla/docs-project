@@ -46,6 +46,7 @@ nav:
       - Resumen Teorico: estadistica-aplicada/resumen-teorico-est.md
       - Estimación de Parámetros: estadistica-aplicada/estimacion-parametros.md
       - Prueba de Hipótesis: estadistica-aplicada/prueba-hipotesis.md
+      - Regresion Lineal Simple: estadistica-aplicada/regresion-lineal-simple.md
   - Matematica Financiera:
       - Temas: mate-financiera/index.md
       - Conceptos Basicos: mate-financiera/conceptos-basicos.md

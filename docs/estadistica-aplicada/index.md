@@ -5,6 +5,7 @@
 3. [Distribuciones Muestrales](distribuciones-muestrales.md)
 4. [Estimación de Parámetros](estimacion-parametros.md)
 5. [Prueba de Hipótesis](prueba-hipotesis.md)
+6. [Regresion Lineal Simple](regresion-lineal-simple.md)
 
 ---
 
